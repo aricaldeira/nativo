@@ -1,0 +1,6 @@
+*.py[co]
+__pycache__/
+.directory
+.idea
+android_teclado_fisico/.gradle
+android_teclado_fisico/app/build

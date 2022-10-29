@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry>
+  <modelList>
+    <model>
+      <configItem>
+        <name>abnt</name>
+        <description>Brazilian ABNT</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+  </modelList>
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>nativo</name>
+        <shortDescription>br</shortDescription>
+        <description>Nativo</description>
+        <languageList>
+          <iso639Id>por</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>nativo</name>
+            <shortDescription>br</shortDescription>
+            <description>Nativo - padrão</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>ita</iso639Id>
+              <iso639Id>spa</iso639Id>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>nativo_acento_combinante</name>
+            <shortDescription>br</shortDescription>
+            <description>Nativo - acentos combinantes</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>ita</iso639Id>
+              <iso639Id>spa</iso639Id>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>obv</name>
+            <shortDescription>èỹ</shortDescription>
+            <description>Nativo - OBV</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>afi</name>
+            <shortDescription>ɐɛ</shortDescription>
+            <description>Nativo - AFI</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>original</name>
+            <shortDescription>or</shortDescription>
+            <description>Nativo - original</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>ita</iso639Id>
+              <iso639Id>spa</iso639Id>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>abnt2</name>
+            <shortDescription>ab</shortDescription>
+            <description>Nativo - abnt2</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>africa</name>
+            <shortDescription>af</shortDescription>
+            <description>Nativo - África</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>esperanto</name>
+            <shortDescription>eo</shortDescription>
+            <description>Nativo - Esperanto</description>
+            <languageList>
+              <iso639Id>epo</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>polones</name>
+            <shortDescription>pl</shortDescription>
+            <description>Nativo - Polonês</description>
+            <languageList>
+              <iso639Id>pol</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>turco</name>
+            <shortDescription>tr</shortDescription>
+            <description>Nativo - Turco</description>
+            <languageList>
+              <iso639Id>tur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>turco</name>
+            <shortDescription>ro</shortDescription>
+            <description>Nativo - Romeno</description>
+            <languageList>
+              <iso639Id>ron</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>grego</name>
+            <shortDescription>ελ</shortDescription>
+            <description>Nativo - Grego</description>
+            <languageList>
+              <iso639Id>gre</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>russo</name>
+            <shortDescription>ру</shortDescription>
+            <description>Nativo - Russo</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ucraniano</name>
+            <shortDescription>ук</shortDescription>
+            <description>Nativo - Ucraniano</description>
+            <languageList>
+              <iso639Id>ukr</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>devanagari</name>
+            <shortDescription>नाग</shortDescription>
+            <description>Nativo - Devanagari</description>
+            <languageList>
+              <iso639Id>hin</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>arabe</name>
+            <shortDescription>عَرَ</shortDescription>
+            <description>Nativo - Árabe</description>
+            <languageList>
+              <iso639Id>ara</iso639Id>
+              <iso639Id>per</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>persa</name>
+            <shortDescription>فا</shortDescription>
+            <description>Nativo - Persa</description>
+            <languageList>
+              <iso639Id>per</iso639Id>
+              <iso639Id>ara</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>hebraico</name>
+            <shortDescription>עִבְ</shortDescription>
+            <description>Nativo - Hebraico</description>
+            <languageList>
+              <iso639Id>heb</iso639Id>
+              <iso639Id>yid</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>coreano</name>
+            <shortDescription>한글</shortDescription>
+            <description>Nativo - Coreano</description>
+            <languageList>
+              <iso639Id>kor</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>armenio</name>
+            <shortDescription>Հա</shortDescription>
+            <description>Nativo - Armênio</description>
+            <languageList>
+              <iso639Id>hye</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>georgiano</name>
+            <shortDescription>მხ</shortDescription>
+            <description>Nativo - Georgiano</description>
+            <languageList>
+              <iso639Id>geo</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>shavian</name>
+            <shortDescription>𐑖𐑱</shortDescription>
+            <description>Nativo - Shavian</description>
+            <languageList>
+              <iso639Id>en</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+  </layoutList>
+  <optionList />
+</xkbConfigRegistry>

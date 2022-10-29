@@ -1,0 +1,28 @@
+! model
+  abnt            Brazilian ABNT
+
+! layout
+  nativo          Nativo
+
+! variant
+  nativo          nativo: Nativo - padrão
+  nativo_acento_combinante  nativo: Nativo - acentos combinantes
+  obv             nativo: Nativo - OBV
+  afi             nativo: Nativo - AFI
+  original        nativo: Nativo - original
+  abnt2           nativo: Nativo - abnt2
+  africa          nativo: Nativo - África
+  esperanto       nativo: Nativo - Esperanto
+  polones         nativo: Nativo - Polonês
+  turco           nativo: Nativo - Turco
+  grego           nativo: Nativo - Grego
+  russo           nativo: Nativo - Russo
+  ucraniano       nativo: Nativo - Ucraniano
+  devanagari      nativo: Nativo - Devanagari
+  arabe           nativo: Nativo - Árabe
+  persa           nativo: Nativo - Persa
+  hebraico        nativo: Nativo - Hebraico
+  coreano         nativo: Nativo - Coreano
+  armenio         nativo: Nativo - Armênio
+  georgiano       nativo: Nativo - Georgiano
+  shavian         nativo: Nativo - Shavian
