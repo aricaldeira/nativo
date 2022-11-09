@@ -1,0 +1,105 @@
+#
+# nativo.map
+#
+alt_is_meta
+keymaps 0-12
+include "qwerty-layout"
+include "linux-with-alt-and-altgr"
+strings as usual
+compose as usual for "iso-8859-1"
+
+keycode   1 = Escape Escape
+keycode  14 = Delete  Delete
+keycode  15 = Tab Tab
+keycode  28 = Return
+keycode  29 = Control
+keycode  42 = Shift
+keycode  54 = Shift
+keycode  56 = Alt
+keycode  58 = Caps_Lock
+keycode  69 = Num_Lock
+keycode  97 = Control
+keycode 125 = Scroll_Backward
+keycode 126 = Scroll_Forward
+keycode 127 = Compose
+keycode  70 = Scroll_Lock Show_Memory Show_Registers Show_State
+
+#strings as usual
+#compose as usual for "iso-8859-1"
+
+keycode  57 = space underscore nobreakspace U+202f Control_underscore
+
+#
+# Garante o funcionamento correto do teclado numérico
+#
+keycode 83 = comma
+shift keycode 83 = comma
+control alt keycode  83 = Boot
+
+keycode 121 = period
+shift keycode 121 = period
+
+#
+# Linha numérica
+#
+keycode 41 = apostrophe quotedbl backslash bar
+keycode  2 = one exclam onesuperior exclamdown
+keycode  3 = two at twosuperior onehalf
+keycode  4 = three numbersign threesuperior threequarters
+keycode  5 = four dollar sterling onequarter
+keycode  6 = five percent cent
+keycode  7 = six dead_diaeresis
+keycode  8 = seven ampersand
+keycode  9 = eight asterisk
+keycode 10 = nine parenleft
+keycode 11 = zero parenright
+keycode 12 = minus underscore section paragraph
+keycode 13 = equal plus section plusminus
+
+#
+# Primeira linha
+#
+keycode 16 = +q +Q slash slash Control_q
+keycode 17 = +w +W question question Control_w
+keycode 18 = +e +E degree degree Control_e
+keycode 19 = +r +R VoidSymbol VoidSymbol Control_r
+keycode 20 = +t +T U+2019 U+2040 Control_t
+keycode 21 = +y +Y backslash VoidSymbol Control_y
+keycode 22 = +u +U +ubreve +Ubreve Control_w
+keycode 23 = +i +I VoidSymbol VoidSymbol Control_i
+keycode 24 = +o +O VoidSymbol VoidSymbol Control_o
+keycode 25 = +p +P paragraph VoidSymbol Control_p
+keycode 26 = dead_acute dead_grave dead_diaeresis
+keycode 27 = bracketleft braceleft ordfeminine
+
+#
+# Segunda linha
+#
+keycode 30 = +a +A VoidSymbol VoidSymbol Control_a
+keycode 31 = +s +S VoidSymbol VoidSymbol Control_s
+keycode 32 = +d +D VoidSymbol VoidSymbol Control_d
+keycode 33 = +f +F VoidSymbol VoidSymbol Control_f
+keycode 34 = +g +G VoidSymbol VoidSymbol Control_g
+keycode 35 = +h +H VoidSymbol VoidSymbol Control_h
+keycode 36 = +j +J VoidSymbol VoidSymbol Control_j
+keycode 37 = +k +K VoidSymbol VoidSymbol Control_k
+keycode 38 = +l +L VoidSymbol VoidSymbol Control_l
+keycode 39 = +ccedilla +Ccedilla
+keycode 40 = dead_tilde dead_circumflex dead_caron
+keycode 43 = bracketright braceright masculine
+
+#
+# Terceira linha
+#
+keycode 86 = backslash bar
+keycode 44 = +z +Z backslash backslash Control_z
+keycode 45 = +x +X bar bar Control_x
+keycode 46 = +c +C VoidSymbol VoidSymbol Control_c
+keycode 47 = +v +V VoidSymbol VoidSymbol Control_v
+keycode 48 = +b +B VoidSymbol VoidSymbol Control_b
+keycode 49 = +n +N VoidSymbol VoidSymbol Control_n
+keycode 50 = +m +M U+00b5 VoidSymbol Control_m
+keycode 51 = comma less
+keycode 52 = period greater
+keycode 53 = semicolon colon
+keycode 89 = slash question degree questiondown
