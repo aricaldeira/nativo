@@ -1,0 +1,126 @@
+//
+// Leiaute Nativo para russo
+//
+
+//
+// Acentos são mostrados usando “o” como exemplo
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ Х   │ Ш   │ Ы   │ Л   │ Т   │ К   │ П   │ ó   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   Щ │   И │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ И   │ Е   │ А   │ О   │ У   │ М   │ Д   │ С   │ Р   │ Н   │ Ь   │     ┃       ┃
+// ┃Lock     ┃   Ы │   Э │   Я │   Ё │   Ю │     │     │     │     │     │   Ъ │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Й   │ Ч   │ Ж   │ Б   │ Ц   │ Я   │ В   │ Г   │ Ф   │ З   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │   А │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_russo" {
+
+// Cyrillic_che_vertstroke, Cyrillic_CHE_vertstroke
+// Cyrillic_ka_vertstroke,Cyrillic_KA_vertstroke
+// Cyrillic_ka_descender,   Cyrillic_KA_descender
+// Cyrillic_ha_descender, Cyrillic_HA_descender
+// Macedonia_kje, Macedonia_KJE
+// Macedonia_gje, Macedonia_GJE
+
+// Byelorussian_shortu, Byelorussian_SHORTU
+// Cyrillic_lje, Cyrillic_LJE
+// Serbian_tshe, Serbian_TSHE
+//
+// Serbian_dje, Serbian_DJE
+// Cyrillic_nje, Cyrillic_NJE
+//
+// Cyrillic_dzhe, Cyrillic_DZHE
+// Cyrillic_je, Cyrillic_JE
+// Macedonia_dse, Macedonia_DSE
+
+//
+// Tatar
+// Cyrillic_shha,     Cyrillic_SHHA
+// Cyrillic_o_bar,    Cyrillic_O_bar
+// Cyrillic_schwa,          Cyrillic_SCHWA
+// Cyrillic_u_straight, Cyrillic_U_straight_bar
+// Cyrillic_en_descender,     Cyrillic_EN_descender
+// Cyrillic_ghe_bar,  Cyrillic_GHE_bar
+//
+
+//
+// Chuvash
+// 0x010004f3,  0x010004f2  cyrillic u with double acute Ӳӳ
+// 0x010004d7,  0x010004d6  cyrillic ye with breve Ӗӗ
+// 0x010004d1,  0x010004d0  cyrillic a with breve Ӑӑ
+// 0x010004ab,  0x010004aa  cyrillic s with descender Ҫҫ
+//
+
+// Udmurt
+// 0x010004dd,  0x010004dc  Ӝӝ
+// 0x010004e7,  0x010004e6  Ӧӧ
+// 0x010004f5,  0x010004f4  Ӵӵ
+// 0x010004e5,  0x010004e4  Ӥӥ
+// 0x010004df,  0x010004de  Ӟӟ
+//
+
+//
+// Komi
+// 0x010004e7,  0x010004e6  Ӧӧ
+//
+
+    //
+    // Linha numérica
+    //
+    // Símbolo do rublo, e o de número
+    //
+    key <AE06> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, NoSymbol, U20bd, dollar ] };
+    key <AE07> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, NoSymbol, numerosign ] };
+
+    //
+    // Linha superior
+    //
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ha,       Cyrillic_HA ] };
+    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_sha,      Cyrillic_SHA, Cyrillic_shcha,    Cyrillic_SHCHA ] };
+    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [     Cyrillic_yeru,     Cyrillic_YERU, Cyrillic_i,        Cyrillic_I ] };
+    key <AD07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_el,       Cyrillic_EL ] };
+    key <AD08> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_te,       Cyrillic_TE ] };
+    key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ka,       Cyrillic_KA ] };
+    key <AD10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_pe,       Cyrillic_PE ] };
+    key <AD11> { [ dead_acute ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_i,        Cyrillic_I, Cyrillic_yeru, Cyrillic_YERU ] };
+    key <AC02> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ie,       Cyrillic_IE, Cyrillic_e, Cyrillic_E ] };
+    key <AC03> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_a,        Cyrillic_A, Cyrillic_ya, Cyrillic_YA ] };
+    key <AC04> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_o,        Cyrillic_O, Cyrillic_io, Cyrillic_IO ] };
+    key <AC05> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_u,        Cyrillic_U, Cyrillic_yu, Cyrillic_YU ] };
+    key <AC06> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_em,       Cyrillic_EM ] };
+    key <AC07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_de,       Cyrillic_DE ] };
+    key <AC08> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_es,       Cyrillic_ES ] };
+    key <AC09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_er,       Cyrillic_ER ] };
+    key <AC10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_en,       Cyrillic_EN ] };
+    key <AC11> { type = "FOUR_LEVEL_ALPHABETIC", [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [   Cyrillic_shorti,   Cyrillic_SHORTI ] };
+    key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_che,      Cyrillic_CHE ] };
+    key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_zhe,      Cyrillic_ZHE ] };
+    key <AB04> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_be,       Cyrillic_BE ] };
+    key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_tse,      Cyrillic_TSE ] };
+    key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ya,       Cyrillic_YA, Cyrillic_a,        Cyrillic_A  ] };
+    key <AB07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ve,       Cyrillic_VE ] };
+    key <AB08> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_ghe,      Cyrillic_GHE ] };
+    key <AB09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ef,       Cyrillic_EF ] };
+    key <AB10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ze,       Cyrillic_ZE ] };
+
+};

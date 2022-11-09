@@ -1,0 +1,72 @@
+//
+// Leiaute Nativo para georgiano
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ ხ   │     │     │     │ ტ   │ კ   │ პ   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │ ჰ   │ შ   │ ყ   │ ლ   │ თ   │ ქ   │ ფ   │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │ ღ   │     │     │     ┃       ┃
+// ┃Lock     ┃ ი   │ ე   │ ა   │ ო   │ უ   │ მ   │ დ   │ ს   │ რ   │ ნ   │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │     │ ჭ   │     │     │ წ   │     │     │     │     │     │     ┃           ┃
+// ┃Shift┃     │ ძ   │ ჩ   │ ჟ   │ ბ   │ ც   │ ჯ   │ ვ   │ გ   │ ჶ   │ ზ   │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_georgiano" {
+
+//#define XK_Georgian_he                U10f1  /* U+10F1 GEORGIAN LETTER HE */
+//#define XK_Georgian_hie               U10f2  /* U+10F2 GEORGIAN LETTER HIE */
+//#define XK_Georgian_we                U10f3  /* U+10F3 GEORGIAN LETTER WE */
+//#define XK_Georgian_har               U10f4  /* U+10F4 GEORGIAN LETTER HAR */
+//#define XK_Georgian_hoe               U10f5  /* U+10F5 GEORGIAN LETTER HOE */
+
+    //
+    // Linha superior
+    //
+    key <AD04> { [ Georgian_hae, Georgian_xan ] };
+    key <AD05> { [ Georgian_shin ] };
+    key <AD06> { [ Georgian_qar ] };
+    key <AD07> { [ Georgian_las ] };
+    key <AD08> { [ Georgian_tan, Georgian_tar ] };
+    key <AD09> { [ Georgian_khar, Georgian_kan ] };
+    key <AD10> { [ Georgian_phar, Georgian_par ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ Georgian_in ] };
+    key <AC02> { [ Georgian_en ] };
+    key <AC03> { [ Georgian_an ] };
+    key <AC04> { [ Georgian_on ] };
+    key <AC05> { [ Georgian_un ] };
+    key <AC06> { [ Georgian_man ] };
+    key <AC07> { [ Georgian_don ] };
+    key <AC08> { [ Georgian_san ] };
+    key <AC09> { [ Georgian_rae, Georgian_ghan ] };
+    key <AC10> { [ Georgian_nar ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ Georgian_jil ] };
+    key <AB02> { [ Georgian_chin, Georgian_char ] };
+    key <AB03> { [ Georgian_zhar ] };
+    key <AB04> { [ Georgian_ban ] };
+    key <AB05> { [ Georgian_can, Georgian_cil ] };
+    key <AB06> { [ Georgian_jhan ] };
+    key <AB07> { [ Georgian_vin ] };
+    key <AB08> { [ Georgian_gan ] };
+    key <AB09> { [ Georgian_fi ] };
+    key <AB10> { [ Georgian_zen ] };
+
+};
+

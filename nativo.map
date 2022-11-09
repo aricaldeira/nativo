@@ -45,8 +45,8 @@ shift keycode 121 = period
 keycode 41 = equal bar U+2260 backslash Control_backslash
 keycode  2 = +asterisk +zero multiply
 keycode  3 = +plus +one plusminus
-keycode  4 = +slash +two division
-keycode  5 = +minus +three U+2212 U+2044
+keycode  4 = +slash +two division U+2044
+keycode  5 = +minus +three U+2212 underscore
 keycode  6 = +numbersign +four percent
 keycode  7 = +dollar +five
 keycode  8 = +braceleft +six
@@ -64,7 +64,7 @@ keycode 17 = comma semicolon
 keycode 18 = period colon
 keycode 19 = +h +H VoidSymbol VoidSymbol Control_h
 keycode 20 = +x +X VoidSymbol VoidSymbol Control_x
-keycode 21 = +w +W U+F8FD U+F8FE Control_w
+keycode 21 = +w +W VoidSymbol VoidSymbol Control_w
 keycode 22 = +l +L U+2018 U+2039 Control_l
 keycode 23 = +t +T U+2019 U+2040 Control_t
 keycode 24 = +c +C U+201C U+00AB Control_c
@@ -91,8 +91,8 @@ keycode 43 = apostrophe quotedbl U+2019
 #
 # Terceira linha
 #
-keycode 86 = minus underscore minus underscore
-keycode 44 = +y +Y +U+1EF9 +U+1EF8 Control_y
+keycode 86 = tilde slash tilde slash
+keycode 44 = +y +Y VoidSymbol VoidSymbol Control_y
 keycode 45 = +ccedilla +Ccedilla
 keycode 46 = +j +J VoidSymbol VoidSymbol Control_j
 keycode 47 = +b +B VoidSymbol VoidSymbol Control_b

@@ -1,0 +1,94 @@
+//
+// Leiaute Nativo para italiano
+//
+
+//
+// Acentos são mostrados usando “o” como exemplo; dead_currency é ¤ e dead_greek é β
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │ " | │ ! ¡ │ @ ½ │ # ¾ │ $ ¼ │ %   │ ö   │ &   │ *   │ (   │ )   │ _   │ + ± ┃Backspace  ┃
+// │ ' \ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 £ │ 5 ¢ │ 6 € │ 7 β │ 8   │ 9   │ 0   │ -   │ = § ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃ Q   │ W   │ E   │ R   │ T   │ Y   │ U   │ I   │ O   │ P   │ ò   │ {   ┃Enter    ┃
+// ┃Tab    ┃   / │   ? │   ° │   ¤ │     │     │     │     │     │     │ ó ǒ │ [ ª ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ A   │ S   │ D   │ F   │ G   │ H   │ J   │ K   │ L   │ Ç   │ ô   │ }   ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │ õ ö │ ] º ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃ |   │ Z   │ X   │ C   │ V   │ B   │ N   │ M   │ <   │ >   │ :   │ ? ¿ ┃           ┃
+// ┃Shift┃ \   │     │     │     │     │     │     │   µ │ ,   │ .   │ ;   │ / ° ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+
+partial alphanumeric_keys
+xkb_symbols "abnt2" {
+
+    //
+    // Linha numérica
+    //
+    key <TLDE> { [ apostrophe, quotedbl, backslash, bar ] };
+    key <AE01> { [ 1, exclam, onesuperior, exclamdown ] };
+    key <AE02> { [ 2, at, twosuperior, onehalf ] };
+    key <AE03> { [ 3, numbersign, threesuperior, threequarters ] };
+    key <AE04> { [ 4, dollar, sterling, onequarter ] };
+    key <AE05> { [ 5, percent, cent, threeeighths ] };
+    key <AE06> { [ 6, dead_diaeresis, EuroSign ] };
+    key <AE07> { [ 7, ampersand, dead_greek ] };
+    key <AE08> { [ 8, asterisk ] };
+    key <AE09> { [ 9, parenleft ] };
+    key <AE10> { [ 0, parenright ] };
+    key <AE11> { [ minus, underscore ] };
+    key <AE12> { [ equal, plus, section, plusminus ] };
+
+    //
+    // Linha superior
+    //
+    key <AD01> { type="EIGHT_LEVEL_ALPHABETIC", [ q, Q, slash, slash, q, Q ] };
+    key <AD02> { type="EIGHT_LEVEL_ALPHABETIC", [ w, W, question, question, w, W ] };
+    key <AD03> { type="EIGHT_LEVEL_ALPHABETIC", [ e, E, degree, degree, e, E ] };
+    key <AD04> { type="EIGHT_LEVEL_ALPHABETIC", [ r, R, dead_currency, NoSymbol, r, R ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ t, T, NoSymbol, NoSymbol, t, T ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, NoSymbol, NoSymbol, y, Y ] };
+    key <AD07> { type="EIGHT_LEVEL_ALPHABETIC", [ u, U, ubreve, Ubreve, u, U ] };
+    key <AD08> { type="EIGHT_LEVEL_ALPHABETIC", [ i, I, NoSymbol, NoSymbol, i, I ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ o, O, NoSymbol, NoSymbol, o, O ] };
+    key <AD10> { type="EIGHT_LEVEL_ALPHABETIC", [ p, P, paragraph, NoSymbol, p, P ] };
+    key <AD11> { [ dead_acute, dead_grave, dead_diaeresis ] };
+    key <AD12> { [ bracketleft, braceleft, ordfeminine ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ a, A, NoSymbol, NoSymbol, a, A ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ s, S, NoSymbol, NoSymbol, s, S ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ d, D, NoSymbol, NoSymbol, d, D ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ f, F, NoSymbol, NoSymbol, f, F ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ g, G, NoSymbol, NoSymbol, g, G ] };
+    key <AC06> { type="EIGHT_LEVEL_ALPHABETIC", [ h, H, NoSymbol, NoSymbol, h, H ] };
+    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ j, J, NoSymbol, NoSymbol, j, J ] };
+    key <AC08> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K, NoSymbol, NoSymbol, k, K ] };
+    key <AC09> { type="EIGHT_LEVEL_ALPHABETIC", [ l, L, NoSymbol, NoSymbol, l, L ] };
+    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ ccedilla, Ccedilla, NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
+    key <AC11> { [ dead_tilde, dead_circumflex, dead_caron ] };
+    key <BKSL> { [ bracketright, braceright, masculine ] };
+
+    //
+    // Linha inferior
+    //
+    key <LSGT> { [ backslash, bar ] };
+    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ z, Z, backslash, backslash, z, Z ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ x, X, bar, bar, x, X ] };
+    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, c, C ] };
+    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ v, V, NoSymbol, NoSymbol, v, V ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ b, B, NoSymbol, NoSymbol, b, B ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, NoSymbol, NoSymbol, n, N ] };
+    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ m, M, greek_mu, NoSymbol, m, M ] };
+    key <AB08> { [ comma, less ] };
+    key <AB09> { [ period, greater ] };
+    key <AB10> { [ semicolon, colon ] };
+    key <AB11> { [ slash, question, degree, questiondown ] };
+
+};

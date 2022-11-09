@@ -1,0 +1,66 @@
+//
+// Leiaute Nativo para hebraico
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ ‭ח   │     │     │     │ ט   │ ך   │ ף   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │ ‭ה   │ ש   │ ו   │ ל   │ ת   │ כ   │ פ   │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃     │     │     │     │     │ ‭ם   │     │     │     │ ן   │     │     ┃       ┃
+// ┃Lock     ┃ ‭י   │ א   │ א   │ ו   │ ו   │ מ   │ ד   │ ש   │ ר   │ נ   │ ּ    │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │     │     │     │     │ ‭ץ   │     │     │     │ ף   │     │     ┃           ┃
+// ┃Shift┃     │ ‭י   │ ס   │ ע   │ ב   │ צ   │ ק   │ ו   │ ג   │ פ   │ ז   │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_hebraico" {
+
+    //
+    // Linha superior
+    //
+    key <AD04> { [ hebrew_he, hebrew_chet ] };
+    key <AD05> { [ hebrew_shin ] };
+    key <AD06> { [ hebrew_waw ] };
+    key <AD07> { [ hebrew_lamed ] };
+    key <AD08> { [ hebrew_taw, hebrew_tet ] };
+    key <AD09> { [ hebrew_kaph, hebrew_finalkaph ] };
+    key <AD10> { [ hebrew_pe, hebrew_finalpe ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ hebrew_yod, U200e ] };  // LR mark
+    key <AC02> { [ hebrew_aleph, U200f ] };  // RL mark
+    key <AC03> { [ hebrew_aleph, U202d ] };  // LR override
+    key <AC04> { [ hebrew_waw, U202e ] };  // RL override
+    key <AC05> { [ hebrew_waw ] };
+    key <AC06> { [ hebrew_mem, hebrew_finalmem ] };
+    key <AC07> { [ hebrew_dalet, U202a ] }; // LR embedding
+    key <AC08> { [ hebrew_shin, U202b ] }; // RL embedding
+    key <AC09> { [ hebrew_resh, U202c ] }; // pop directional formatting
+    key <AC10> { [ hebrew_nun, hebrew_finalnun ] };
+    key <AC11> { [ U05bc ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ hebrew_yod ] };
+    key <AB02> { [ hebrew_samech ] };
+    key <AB03> { [ hebrew_ayin ] };
+    key <AB04> { [ hebrew_bet ] };
+    key <AB05> { [ hebrew_zade, hebrew_finalzade ] };
+    key <AB06> { [ hebrew_qoph ] };
+    key <AB07> { [ hebrew_waw ] };
+    key <AB08> { [ hebrew_gimel ] };
+    key <AB09> { [ hebrew_pe, hebrew_finalpe ] };
+    key <AB10> { [ hebrew_zain ] };
+
+};

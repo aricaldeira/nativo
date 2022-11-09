@@ -1,0 +1,51 @@
+//
+// Leiaute Nativo para polonês
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ Ś   │ Ł   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   X │     │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │   Ę │   Ą │     │   Ó │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ J   │ Ć   │ Ź   │ B   │ C   │ Y   │ W   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Ń │     │   Ż │     │     │   Q │   V │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_polones" {
+
+    //
+    // Linha superior
+    //
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ sacute, Sacute, x, X, x, X ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ lstroke, Lstroke, NoSymbol, NoSymbol, w, W ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K, NoSymbol, NoSymbol, c, C ] };
+
+    //
+    // Linha central
+    //
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ e, E, eogonek, Eogonek, e, E ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ a, A, aogonek, Aogonek, a, A ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ u, U, oacute, Oacute, u, U ] };
+    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, NoSymbol, NoSymbol, n, N ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ j, J, nacute, Nacute, y, Y ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ cacute, Cacute, NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
+    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ zacute, Zacute, zabovedot, Zabovedot, j, J ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, k, K ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, q, Q, q, Q ] };
+    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ w, W, v, V, v, V ] };
+
+};

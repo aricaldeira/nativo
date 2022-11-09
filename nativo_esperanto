@@ -1,0 +1,44 @@
+//
+// Leiaute Nativo para Esperanto
+//
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ Ŝ   │ Ŭ   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │   Ĥ │   X │   W │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ J   │ Ĉ   │ Ĵ   │ B   │ C   │ Ĝ   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Y │   Ç │     │     │     │   Q │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_esperanto" {
+
+    //
+    // Linha superior
+    //
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [ h, H, hcircumflex, Hcircumflex ] };
+    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [ scircumflex, Scircumflex, x, X ] };
+    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [ ubreve, Ubreve, w, W ] };
+    key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [ k, K ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [ j, J, y, Y ] };
+    key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [ ccircumflex, Ccircumflex, ccedilla, Ccedilla ] };
+    key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [ jcircumflex, Jcircumflex ] };
+    key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [ c, C ] };
+    key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [ gcircumflex, Gcircumflex, q, Q ] };
+
+};

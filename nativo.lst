@@ -7,22 +7,28 @@
 ! variant
   nativo          nativo: Nativo - padrão
   nativo_acento_combinante  nativo: Nativo - acentos combinantes
-  obv             nativo: Nativo - OBV
-  afi             nativo: Nativo - AFI
-  original        nativo: Nativo - original
   abnt2           nativo: Nativo - abnt2
+  afi             nativo: Nativo - AFI
   africa          nativo: Nativo - África
+  catalao         nativo: Nativo - Catalão
+  espanhol        nativo: Nativo - Espanhol
   esperanto       nativo: Nativo - Esperanto
+  frances         nativo: Nativo - Francês
+  italiano        nativo: Nativo - Italiano
+  latim           nativo: Nativo - Latim
+  obv             nativo: Nativo - OBV
+  original        nativo: Nativo - original
   polones         nativo: Nativo - Polonês
+  romeno          nativo: Nativo - Romeno
   turco           nativo: Nativo - Turco
-  grego           nativo: Nativo - Grego
-  russo           nativo: Nativo - Russo
-  ucraniano       nativo: Nativo - Ucraniano
-  devanagari      nativo: Nativo - Devanagari
   arabe           nativo: Nativo - Árabe
-  persa           nativo: Nativo - Persa
-  hebraico        nativo: Nativo - Hebraico
-  coreano         nativo: Nativo - Coreano
   armenio         nativo: Nativo - Armênio
+  coreano         nativo: Nativo - Coreano
+  devanagari      nativo: Nativo - Devanagari
   georgiano       nativo: Nativo - Georgiano
+  grego           nativo: Nativo - Grego
+  hebraico        nativo: Nativo - Hebraico
+  persa           nativo: Nativo - Persa
+  russo           nativo: Nativo - Russo
   shavian         nativo: Nativo - Shavian
+  ucraniano       nativo: Nativo - Ucraniano

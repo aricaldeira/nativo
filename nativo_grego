@@ -1,0 +1,75 @@
+//
+// Leiaute Nativo para grego
+//
+
+//
+// Acentos são mostrados usando "ω" como exemplo
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │ ·   │ Χ   │ Ξ   │ Ψ   │ Λ   │ Τ   │ Κ   │ Π   │ ῶ   │     ┃Enter    ┃
+// ┃Tab    ┃ ;   │     │     │     │     │     │     │     │     │     │ ω̈ ὡ │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ Ι   │ Ε   │ Α   │ Ο   │ Υ   │ Μ   │ Δ   │ Σ   │ Ρ   │ Ν   │ ὼ   │     ┃       ┃
+// ┃Lock     ┃   ῳ │     │     │     │     │     │     │     │     │     │ ώ ὠ │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Η   │ ς   │ Ω   │ Β   │ Κ   │ Θ   │ Β   │ Γ   │ Φ   │ Ζ   │     ┃           ┃
+// ┃Shift┃ ;   │     │     │     │     │   Ϗ │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_grego" {
+
+    //
+    // Linha superior
+    //
+    // Altera o ponto de interrogação pra o ponto-e-vírgula,
+    // e o ponto-e-vírgula pro ponto-no-meio, como é usado em grego;
+    //
+    key <AD01> { [ semicolon, NoSymbol, question ] };
+    key <AD02> { [ NoSymbol, periodcentered ] };
+
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_chi,     Greek_CHI ] };
+    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_xi,      Greek_XI ] };
+    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_psi,     Greek_PSI ] };
+    key <AD07> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_lamda,   Greek_LAMDA ] };
+    key <AD08> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_tau,     Greek_TAU ] };
+    key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_kappa,   Greek_KAPPA ] };
+    key <AD10> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_pi,      Greek_PI ] };
+    key <AD11> { [ dead_diaeresis,    dead_tilde, dead_dasia ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_iota,    Greek_IOTA, dead_iota ] };
+    key <AC02> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_epsilon, Greek_EPSILON ] };
+    key <AC03> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_alpha,   Greek_ALPHA ] };
+    key <AC04> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_omicron, Greek_OMICRON ] };
+    key <AC05> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_upsilon, Greek_UPSILON ] };
+    key <AC06> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_mu,      Greek_MU ] };
+    key <AC07> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_delta,   Greek_DELTA ] };
+    key <AC08> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_sigma,   Greek_SIGMA ] };
+    key <AC09> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_rho,     Greek_RHO ] };
+    key <AC10> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_nu,      Greek_NU ] };
+    key <AC11> { [    dead_acute,    dead_grave, dead_psili ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_eta,     Greek_ETA ] };
+    key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_finalsmallsigma, Greek_SIGMA ] };
+    key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_omega,   Greek_OMEGA ] };
+    key <AB04> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_beta,    Greek_BETA ] };
+    key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_kappa,   Greek_KAPPA, U03d7, U03cf ] };
+    key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_theta,   Greek_THETA ] };
+    key <AB07> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_beta,    Greek_BETA ] };
+    key <AB08> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_gamma,   Greek_GAMMA ] };
+    key <AB09> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_phi,     Greek_PHI ] };
+    key <AB10> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_zeta,    Greek_ZETA ] };
+
+};

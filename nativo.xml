@@ -29,9 +29,6 @@
             <languageList>
               <iso639Id>por</iso639Id>
               <iso639Id>eng</iso639Id>
-              <iso639Id>ita</iso639Id>
-              <iso639Id>spa</iso639Id>
-              <iso639Id>fra</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -43,19 +40,22 @@
             <languageList>
               <iso639Id>por</iso639Id>
               <iso639Id>eng</iso639Id>
-              <iso639Id>ita</iso639Id>
-              <iso639Id>spa</iso639Id>
-              <iso639Id>fra</iso639Id>
             </languageList>
           </configItem>
         </variant>
+        <!--
+
+          Línguas com o alfabeto latino
+
+        -->
         <variant>
           <configItem>
-            <name>obv</name>
-            <shortDescription>èỹ</shortDescription>
-            <description>Nativo - OBV</description>
+            <name>abnt2</name>
+            <shortDescription>ab</shortDescription>
+            <description>Nativo - abnt2</description>
             <languageList>
               <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -71,33 +71,29 @@
         </variant>
         <variant>
           <configItem>
-            <name>original</name>
-            <shortDescription>or</shortDescription>
-            <description>Nativo - original</description>
-            <languageList>
-              <iso639Id>por</iso639Id>
-              <iso639Id>eng</iso639Id>
-              <iso639Id>ita</iso639Id>
-              <iso639Id>spa</iso639Id>
-              <iso639Id>fra</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>abnt2</name>
-            <shortDescription>ab</shortDescription>
-            <description>Nativo - abnt2</description>
-            <languageList>
-              <iso639Id>por</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>africa</name>
             <shortDescription>af</shortDescription>
             <description>Nativo - África</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>catalao</name>
+            <shortDescription>ca</shortDescription>
+            <description>Nativo - Catalão</description>
+            <languageList>
+              <iso639Id>cat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>espanhol</name>
+            <shortDescription>es</shortDescription>
+            <description>Nativo - Espanhol</description>
+            <languageList>
+              <iso639Id>spa</iso639Id>
+            </languageList>
           </configItem>
         </variant>
         <variant>
@@ -107,6 +103,57 @@
             <description>Nativo - Esperanto</description>
             <languageList>
               <iso639Id>epo</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>frances</name>
+            <shortDescription>fr</shortDescription>
+            <description>Nativo - Francês</description>
+            <languageList>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>italiano</name>
+            <shortDescription>it</shortDescription>
+            <description>Nativo - Italiano</description>
+            <languageList>
+              <iso639Id>ita</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>latim</name>
+            <shortDescription>la</shortDescription>
+            <description>Nativo - Latim</description>
+            <languageList>
+              <iso639Id>lat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>obv</name>
+            <shortDescription>èỹ</shortDescription>
+            <description>Nativo - OBV</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>original</name>
+            <shortDescription>or</shortDescription>
+            <description>Nativo - original</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -122,17 +169,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>turco</name>
-            <shortDescription>tr</shortDescription>
-            <description>Nativo - Turco</description>
-            <languageList>
-              <iso639Id>tur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>turco</name>
+            <name>romeno</name>
             <shortDescription>ro</shortDescription>
             <description>Nativo - Romeno</description>
             <languageList>
@@ -142,31 +179,47 @@
         </variant>
         <variant>
           <configItem>
-            <name>grego</name>
-            <shortDescription>ελ</shortDescription>
-            <description>Nativo - Grego</description>
+            <name>turco</name>
+            <shortDescription>tr</shortDescription>
+            <description>Nativo - Turco</description>
             <languageList>
-              <iso639Id>gre</iso639Id>
+              <iso639Id>tur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <!--
+
+          Outros alfabetos e sistemas de escrita
+
+        -->
+        <variant>
+          <configItem>
+            <name>arabe</name>
+            <shortDescription>عَرَ</shortDescription>
+            <description>Nativo - Árabe</description>
+            <languageList>
+              <iso639Id>ara</iso639Id>
+              <iso639Id>per</iso639Id>
             </languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>russo</name>
-            <shortDescription>ру</shortDescription>
-            <description>Nativo - Russo</description>
+            <name>armenio</name>
+            <shortDescription>Հա</shortDescription>
+            <description>Nativo - Armênio</description>
             <languageList>
-              <iso639Id>rus</iso639Id>
+              <iso639Id>hye</iso639Id>
             </languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>ucraniano</name>
-            <shortDescription>ук</shortDescription>
-            <description>Nativo - Ucraniano</description>
+            <name>coreano</name>
+            <shortDescription>한글</shortDescription>
+            <description>Nativo - Coreano</description>
             <languageList>
-              <iso639Id>ukr</iso639Id>
+              <iso639Id>kor</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -182,23 +235,21 @@
         </variant>
         <variant>
           <configItem>
-            <name>arabe</name>
-            <shortDescription>عَرَ</shortDescription>
-            <description>Nativo - Árabe</description>
+            <name>georgiano</name>
+            <shortDescription>მხ</shortDescription>
+            <description>Nativo - Georgiano</description>
             <languageList>
-              <iso639Id>ara</iso639Id>
-              <iso639Id>per</iso639Id>
+              <iso639Id>geo</iso639Id>
             </languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>persa</name>
-            <shortDescription>فا</shortDescription>
-            <description>Nativo - Persa</description>
+            <name>grego</name>
+            <shortDescription>ελ</shortDescription>
+            <description>Nativo - Grego</description>
             <languageList>
-              <iso639Id>per</iso639Id>
-              <iso639Id>ara</iso639Id>
+              <iso639Id>gre</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -215,31 +266,22 @@
         </variant>
         <variant>
           <configItem>
-            <name>coreano</name>
-            <shortDescription>한글</shortDescription>
-            <description>Nativo - Coreano</description>
+            <name>persa</name>
+            <shortDescription>فا</shortDescription>
+            <description>Nativo - Persa</description>
             <languageList>
-              <iso639Id>kor</iso639Id>
+              <iso639Id>per</iso639Id>
+              <iso639Id>ara</iso639Id>
             </languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>armenio</name>
-            <shortDescription>Հա</shortDescription>
-            <description>Nativo - Armênio</description>
+            <name>russo</name>
+            <shortDescription>ру</shortDescription>
+            <description>Nativo - Russo</description>
             <languageList>
-              <iso639Id>hye</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>georgiano</name>
-            <shortDescription>მხ</shortDescription>
-            <description>Nativo - Georgiano</description>
-            <languageList>
-              <iso639Id>geo</iso639Id>
+              <iso639Id>rus</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -250,6 +292,16 @@
             <description>Nativo - Shavian</description>
             <languageList>
               <iso639Id>en</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ucraniano</name>
+            <shortDescription>ук</shortDescription>
+            <description>Nativo - Ucraniano</description>
+            <languageList>
+              <iso639Id>ukr</iso639Id>
             </languageList>
           </configItem>
         </variant>

@@ -1,0 +1,77 @@
+//
+// Leiaute Nativo para ucraniano
+//
+
+//
+// Acentos são mostrados usando “o” como exemplo
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ Г   │ Ш   │ И   │ Л   │ Т   │ К   │ П   │ ó   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │   Х │   Щ │   Ы │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ І   │ Е   │ А   │ О   │ У   │ М   │ Д   │ С   │ Р   │ Н   │ Ь   │     ┃       ┃
+// ┃Lock     ┃   Ї │   Є │   Я │   Ё │   Ю │     │     │     │     │     │   Ъ │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Й   │ Ч   │ Ж   │ Б   │ Ц   │ Я   │ В   │ Ґ   │ Ф   │ З   │     ┃           ┃
+// ┃Shift┃     │     │   Э │     │     │     │   А │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_ucraniano" {
+
+    //
+    // Linha numérica
+    //
+    // Símbolo da hrvina, e o símbolo de número
+    //
+    key <AE06> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, NoSymbol, U20b4, dollar ] };
+    key <AE07> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, NoSymbol, numerosign ] };
+
+    //
+    // Linha superior
+    //
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_ghe,      Cyrillic_GHE,    Cyrillic_ha,       Cyrillic_HA ] };
+    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_sha,      Cyrillic_SHA, Cyrillic_shcha,    Cyrillic_SHCHA ] };
+    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_i,        Cyrillic_I,  Cyrillic_yeru,     Cyrillic_YERU ] };
+    key <AD07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_el,       Cyrillic_EL ] };
+    key <AD08> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_te,       Cyrillic_TE ] };
+    key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ka,       Cyrillic_KA ] };
+    key <AD10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_pe,       Cyrillic_PE ] };
+    key <AD11> { [ dead_acute ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type = "EIGHT_LEVEL_ALPHABETIC", [        Ukrainian_i,       Ukrainian_I, Ukrainian_yi, Ukrainian_YI ] };
+    key <AC02> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_ie,       Cyrillic_IE, Ukrainian_ie, Ukrainian_IE ] };
+    key <AC03> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_a,        Cyrillic_A, Cyrillic_ya, Cyrillic_YA ] };
+    key <AC04> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_o,        Cyrillic_O, Cyrillic_io, Cyrillic_IO ] };
+    key <AC05> { type = "EIGHT_LEVEL_ALPHABETIC", [        Cyrillic_u,        Cyrillic_U, Cyrillic_yu, Cyrillic_YU ] };
+    key <AC06> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_em,       Cyrillic_EM ] };
+    key <AC07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_de,       Cyrillic_DE ] };
+    key <AC08> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_es,       Cyrillic_ES ] };
+    key <AC09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_er,       Cyrillic_ER ] };
+    key <AC10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_en,       Cyrillic_EN ] };
+    key <AC11> { type = "FOUR_LEVEL_ALPHABETIC", [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [   Cyrillic_shorti,   Cyrillic_SHORTI ] };
+    key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_che,      Cyrillic_CHE, Cyrillic_e, Cyrillic_E ] };
+    key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_zhe,      Cyrillic_ZHE ] };
+    key <AB04> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_be,       Cyrillic_BE ] };
+    key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Cyrillic_tse,      Cyrillic_TSE ] };
+    key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ya,       Cyrillic_YA, Cyrillic_a,        Cyrillic_A  ] };
+    key <AB07> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ve,       Cyrillic_VE ] };
+    key <AB08> { type = "EIGHT_LEVEL_ALPHABETIC", [ Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] };
+    key <AB09> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ef,       Cyrillic_EF ] };
+    key <AB10> { type = "EIGHT_LEVEL_ALPHABETIC", [       Cyrillic_ze,       Cyrillic_ZE ] };
+
+};

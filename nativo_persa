@@ -1,0 +1,83 @@
+//
+// Leiaute Nativo para persa
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ ۰   │ ‭۱   │ ۲   │ ۳   │ ۴   │ ۵   │ ۶   │ ۷   │ ۸   │ ۹   │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │ ‭‭؛   │     │ ح   │     │ غ   │ ‎ﻻ‎   │ ط   │ ك   │     │  ْ   │     ┃Enter    ┃
+// ┃Tab    ┃ ؟ ‭ـ │ ،   │     │ ه   │ ش ‎ﻵ‎ │ ق ‎ﻹ │ ل ‎ﻷ‎ │ ت ة │ ک   │ پ   │  ٔ ٰ  │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ ‭‎ئ‎   │ ‎إ‎   │ ‎آ‎   │ ‎أ   │ ‎ؤ   │     │     │ ث   │     │     │  ّ   │     ┃       ┃
+// ┃Lock     ┃ ‭ى  ِ │ ع  ٍ │ ا  َ │ ء  ً │ و  ُ │ م  ٌ │ د   │ س ص │ ر   │ ن   │  ٕ  ٓ │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ ‭ی   │     │     │     │     │     │     │     │     │ ذ ظ │     ┃           ┃
+// ┃Shift┃ ‭    │ ي   │ چ   │ ژ   │ ب   │ خ   │ ج   │ ڤ   │ گ   │ ف   │ ز ض │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_persa" {
+
+    //
+    // Linha numérica
+    //
+    key <AE01> { [ NoSymbol, Farsi_0 ] };
+    key <AE02> { [ NoSymbol, Farsi_1 ] };
+    key <AE03> { [ NoSymbol, Farsi_2 ] };
+    key <AE04> { [ NoSymbol, Farsi_3 ] };
+    key <AE05> { [ NoSymbol, Farsi_4 ] };
+    key <AE06> { [ NoSymbol, Farsi_5 ] };
+    key <AE07> { [ NoSymbol, Farsi_6 ] };
+    key <AE08> { [ NoSymbol, Farsi_7 ] };
+    key <AE09> { [ NoSymbol, Farsi_8 ] };
+    key <AE10> { [ NoSymbol, Farsi_9 ] };
+
+    //
+    // Linha superior
+    //
+    key <AD01> { [ Arabic_question_mark, NoSymbol, Arabic_tatweel ] };
+    key <AD02> { [ Arabic_comma, Arabic_semicolon ] };
+//     key <AD03> { [ Arabic_fullstop ] };
+    key <AD04> { [ Arabic_heh, Arabic_hah, U06C0 ] };
+    key <AD05> { [ Arabic_sheen, NoSymbol, Ufef5 ] };
+    key <AD06> { [ Arabic_qaf, Arabic_ghain, Ufef9 ] };
+    key <AD07> { [ Arabic_lam, Ufefb, Ufef7 ] }; // Lam + alef
+    key <AD08> { [ Arabic_teh, Arabic_tah, Arabic_tehmarbuta ] };
+    key <AD09> { [ Arabic_keheh, Arabic_kaf ] };
+    key <AD10> { [ Arabic_peh ] };
+    key <AD11> { [ Arabic_hamza_above, Arabic_sukun, Arabic_superscript_alef ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ Farsi_yeh, Arabic_hamzaonyeh, Arabic_kasra, U200e ] }; // LR mark
+    key <AC02> { [ Arabic_ain, Arabic_hamzaunderalef, Arabic_kasratan, U200f ] }; // RL mark
+    key <AC03> { [ Arabic_alef, Arabic_maddaonalef, Arabic_fatha, U202d ] };  // LR override
+    key <AC04> { [ Arabic_hamza, Arabic_hamzaonalef, Arabic_fathatan, U202e ] }; // RL override
+    key <AC05> { [ Arabic_waw, Arabic_hamzaonwaw, Arabic_damma ] };
+    key <AC06> { [ Arabic_meem, NoSymbol, Arabic_dammatan ] };
+    key <AC07> { [ Arabic_dal, NoSymbol, NoSymbol, U202a ] }; // LR embedding
+    key <AC08> { [ Arabic_seen, Arabic_theh, Arabic_sad, U202b ] }; // RL embedding
+    key <AC09> { [ Arabic_ra, NoSymbol, NoSymbol,  U202c ] }; // pop directional formatting
+    key <AC10> { [ Arabic_noon ] };
+    key <AC11> { [ Arabic_hamza_below, Arabic_shadda,  Arabic_madda_above ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ Arabic_yeh, Arabic_alefmaksura ] };
+    key <AB02> { [ Arabic_tcheh, U0671 ] }; // Alef wasla
+    key <AB03> { [ Arabic_jeh ] };
+    key <AB04> { [ Arabic_beh ] };
+    key <AB05> { [ Arabic_khah ] };
+    key <AB06> { [ Arabic_jeem ] };
+    key <AB07> { [ Arabic_veh ] };
+    key <AB08> { [ Arabic_gaf ] };
+    key <AB09> { [ Arabic_feh ] };
+    key <AB10> { [ Arabic_zain, Arabic_thal, Arabic_dad, Arabic_zah ] };
+};

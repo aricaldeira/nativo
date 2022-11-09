@@ -1,0 +1,64 @@
+//
+// Leiaute Nativo para coreano
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │ ㅎ ᅙ │ ㄲ  │ ㄸ ᄝ │ ㅃ ᄛ │ ㅌ   │ ㅋ   │ ㅍ   │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ ㅢ   │ ㅖ   │ ㅑ   │ ㅛ   │ ㅠ   │     │     │     │     │     │     │     ┃       ┃
+// ┃Lock     ┃ ㅣ ᅬ │ ㅔ ᅰ │ ㅏ ᅪ │ ㅗ ᅬ │ ㅜ ᅱ │ ㅁ ᄝ │ ㄷ   │ ㅅ   │ ㄹ   │ ㄴ   │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ ㅢ  │     │ ㅒ   │     │ ㅕ   │     │     │     │     │     │     ┃           ┃
+// ┃Shift┃     │ ㅡ ᅱ │ ㅊ   │ ㅐ   │ ㅂ   │ ㅓ ᅯ │ ㅈ   │ ㅇ ᄫ │ ㄱ   │ ㅆ ᅗ │ ㅉ   │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_coreano" {
+
+    //
+    // Linha superior
+    //
+    key <AD04> { [ Hangul_Hieuh, Hangul_J_Hieuh, U1159 ] };
+    key <AD05> { [ Hangul_SsangKiyeog, Hangul_J_SsangKiyeog ] };
+    key <AD06> { [ Hangul_SsangDikeud, Hangul_J_SsangDikeud, U111D ] };
+    key <AD07> { [ Hangul_SsangPieub, Hangul_J_SsangPieub, U111B ] };
+    key <AD08> { [ Hangul_Tieut, Hangul_J_Tieut ] };
+    key <AD09> { [ Hangul_Khieuq, Hangul_J_Khieuq ] };
+    key <AD10> { [ Hangul_Phieuf, Hangul_J_Phieuf ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ Hangul_I, Hangul_YI, U116C ] };
+    key <AC02> { [ Hangul_E, Hangul_YE, U1170 ] };
+    key <AC03> { [ Hangul_A, Hangul_YA, U116A ] };
+    key <AC04> { [ Hangul_O, Hangul_YO, U116C ] };
+    key <AC05> { [ Hangul_U, Hangul_YU, U1171 ] };
+    key <AC06> { [ Hangul_Mieum, Hangul_J_Mieum, U111D ] };
+    key <AC07> { [ Hangul_Dikeud, Hangul_J_Dikeud ] };
+    key <AC08> { [ Hangul_Sios, Hangul_J_Sios ] };
+    key <AC09> { [ Hangul_Rieul, Hangul_J_Rieul ] };
+    key <AC10> { [ Hangul_Nieun, Hangul_J_Nieun ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ Hangul_EU, Hangul_YI, U1171 ] };
+    key <AB02> { [ Hangul_Cieuc, Hangul_J_Cieuc ] };
+    key <AB03> { [ Hangul_AE, Hangul_YAE, U116B ] };
+    key <AB04> { [ Hangul_Pieub, Hangul_J_Pieub ] };
+    key <AB05> { [ Hangul_EO, Hangul_YEO, U116F ] };
+    key <AB06> { [ Hangul_Jieuj, Hangul_J_Jieuj ] };
+    key <AB07> { [ Hangul_Ieung, Hangul_J_Ieung, U112B ] };
+    key <AB08> { [ U1100, Hangul_J_Kiyeog ] };
+    key <AB09> { [ Hangul_SsangSios, Hangul_J_SsangSios, U1157 ] };
+    key <AB10> { [ Hangul_SsangJieuj, Hangul_J_SsangJieuj ] };
+};

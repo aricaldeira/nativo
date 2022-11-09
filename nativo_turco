@@ -1,0 +1,46 @@
+//
+// Leiaute Nativo para turco
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ Ş   │ Ğ   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   X │   W │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ İ   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃   I │     │   Ä │   Ö │   Ü │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ I   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │   İ │   Q │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_turco" {
+
+    //
+    // Linha superior
+    //
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ scedilla, Scedilla, x, X ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ gbreve, Gbreve, w, W ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ i, Iabovedot, idotless, I ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, udiaeresis, Udiaeresis ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ idotless, I, i, Iabovedot ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, q, Q ] };
+
+};

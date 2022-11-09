@@ -1,0 +1,115 @@
+//
+// Leiaute Nativo para Devanagari
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ ०   │ १   │ २   │ ३   │ ४   │ ५   │ ६   │ ७   │ ८   │ ९   │    │    ̊┃Backspace  ┃
+// │     │     │     │     │     │    │     │     │      │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │   ऽ │   ॰ │ कः   │ ष   │ ॐ   │ ळ ऌ │ थ ॡ │ ख   │ फ   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │   । │   ॥ │ ह   │ श   │ व   │ ल कॢ │ त कॣ │ क ख़ │ प   │ क़ ॒ │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ की ई │ कै ऐ │ का आ │ कौ औ │ कू ऊ │     │ ध   │     │  ऋ  │   ॠ │ कँ   │     ┃       ┃
+// ┃Lock     ┃ कि इ │ के ए │ क् अ │ को ओ │ कु उ │ म   │ द ढ़ │ स   │ र कृ │ न कॄ │ कं ॑ │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ ञ   │ छ   │ झ   │ भ   │ ख   │ झ   │ ढ   │ घ   │ ठ   │ ङ   │     ┃           ┃
+// ┃Shift┃     │ य   │ च   │ ज   │ ब   │ क ख़ │ ज क़ │ ड ड़ │ ग ग़ │ ट फ़ │ ण ज़ │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ ०   │ १   │ २   │ ३   │ ४   │ ५   │ ६   │ ७   │ ८   │ ९   │    │    ̊┃Backspace  ┃
+// │     │     │     │     │     │    │     │     │      │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ कः   │ ष   │ ढ ढ़ │ ऌ   │ थ   │ ख ख़ │ फ फ़ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │ ह   │ श   │ ड ड़ │ ल कॢ │ त   │ क क़ │ प   │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ की ई │ कै ऐ │ का आ │ कौ औ │ कू ऊ │    │ ध   │    │ ऋ ॠ │ ण   │     │     ┃       ┃
+// ┃Lock     ┃ िक इ │ के ए │ क् अ │ को ओ │ कु उ │ म   │ द   │ स   │ र कृ │ न ङ │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ ञ   │ छ   │ ठ   │ भ   │ ॡ   │ झ   │     │ घ   │     │     │     ┃           ┃
+// ┃Shift┃     │ य   │ च ज़ │ ट   │ ब   │ ळ कॣ │ ज   │ व   │ ग ग़ │ फ़   │ ज़   │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+// ॅ ॲ ऍ ॉ ऑ
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_devanagari" {
+
+    //
+    // Linha numérica
+    //
+
+    //
+    // The FOUR_LEVEL_SEMIALPHABETIC type makes CapsLock behave as NumLock
+    // for the keys with numbers
+    //
+    key <AE01> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U0966 ] };
+    key <AE02> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U0967 ] };
+    key <AE03> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U0968 ] };
+    key <AE04> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U0969 ] };
+    key <AE05> { type = "FOUR_LEVEL_SEMIALPHABETIC", [    U20b9, U096a ] };
+    key <AE06> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U096b ] };
+    key <AE07> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U096c ] };
+    key <AE08> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U096d ] };
+    key <AE09> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U096e ] };
+    key <AE10> { type = "FOUR_LEVEL_SEMIALPHABETIC", [ NoSymbol, U096f ] };
+
+    //
+    // Linha superior
+    //
+    key <AD02> { [ NoSymbol, NoSymbol, U0965, U0970 ] };
+    key <AD03> { [ NoSymbol, NoSymbol, U0964, U093d ] };
+    key <AD04> { type="EIGHT_LEVEL_ALPHABETIC", [ U0939, U0903, NoSymbol, NoSymbol, h, H ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ U0936, U0937, NoSymbol, NoSymbol, x, X ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ U0935, U0950, NoSymbol, NoSymbol, w, W ] };
+    key <AD07> { type="EIGHT_LEVEL_ALPHABETIC", [ U0932, U0933,    U0962,    U090c, l, L ] };
+    key <AD08> { type="EIGHT_LEVEL_ALPHABETIC", [ U0924, U0925,    U0963,    U0961, t, T ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ U0915, U0916,    U0959, NoSymbol, c, C ] };
+    key <AD10> { type="EIGHT_LEVEL_ALPHABETIC", [ U092a, U092b, NoSymbol, NoSymbol, p, P ] };
+    key <AD11> { [    U093c, NoSymbol, U0952 ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ U093f,    U0940,    U0907,    U0908, i, I ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ U0947,    U0948,    U090f,    U0910, e, E ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ U094d,    U093e,    U0905,    U0906, a, A ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ U094b,    U094c,    U0913,    U0914, o, O ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ U0941,    U0942,    U0909,    U090a, u, U ] };
+    key <AC06> { type="EIGHT_LEVEL_ALPHABETIC", [ U092e, NoSymbol, NoSymbol, NoSymbol, m, M ] };
+    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ U0926,    U0927,    U095d, NoSymbol, d, D ] };
+    key <AC08> { type="EIGHT_LEVEL_ALPHABETIC", [ U0938, NoSymbol, NoSymbol, NoSymbol, s, S ] };
+    key <AC09> { type="EIGHT_LEVEL_ALPHABETIC", [ U0930, NoSymbol,    U0943,    U090b, r, R ] };
+    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ U0928, NoSymbol,    U0944,    U0960, n, N ] };
+    key <AC11> { [ U0902, U0901, U0951 ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ U092f, U091e, NoSymbol, NoSymbol, y, Y ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ U091a, U091b, NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
+    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ U091c, U091d, NoSymbol, NoSymbol, j, J ] };
+    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ U092c, U092d, NoSymbol, NoSymbol, b, B ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ U0915, U0916,    U0959, NoSymbol, k, K ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ U091c, U091d,    U0958, NoSymbol, q, Q ] };
+    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ U0921, U0922,    U095c, NoSymbol, v, V ] };
+    key <AB08> { type="EIGHT_LEVEL_ALPHABETIC", [ U0917, U0918,    U095a, NoSymbol, g, G ] };
+    key <AB09> { type="EIGHT_LEVEL_ALPHABETIC", [ U091f, U0920,    U095e, NoSymbol, f, F ] };
+    key <AB10> { type="EIGHT_LEVEL_ALPHABETIC", [ U0923, U0919,    U095b, NoSymbol, z, Z ] };
+
+    //
+    // Linha do espaço
+    //
+    // U200c - zero width non-joiner - ZWNJ
+    // U200d - zero width joiner word joiner ZWJ
+    key <SPCE> { [ space, underscore, U200c, U200d ] };
+};

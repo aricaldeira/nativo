@@ -1,0 +1,65 @@
+//
+// Leiaute Nativo para AFI - Alfabeto Fonético Internacional
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │   χ │   ɕ │     │     │     │     │     │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │   ɣ │   ʃ │   ŋ │   ʎ │  t͡s │     │  p͡s │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │   ʁ │     │     │ ˌ   ┃       ┃
+// ┃Lock     ┃   ɪ │   ɛ │   ɐ │   ɔ │   ʊ │     │  d͡z │     │   ɾ │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │     │     │   ʑ │     │     │     │     │     │     │     │     ┃           ┃
+// ┃Shift┃     │   ɲ │  t͡ʃ │   ʒ │  b͡z │  k͡s │  d͡ʒ │     │  g͡z │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_simbolos_afi" {
+
+    //
+    // Linha superior
+    //
+    key <AD04> { [ NoSymbol, NoSymbol, U0263, U03c7 ] }; // H
+    key <AD05> { [ NoSymbol, NoSymbol, U0283, U0255 ] }; // X
+    key <AD06> { [ NoSymbol, NoSymbol, U014b ] }; // W
+    key <AD07> { [ NoSymbol, NoSymbol, U028e ] }; // L
+    key <AD08> { [ NoSymbol, NoSymbol, Uf8fa ] }; // T
+
+    key <AD10> { [ NoSymbol, NoSymbol, Uf8f6 ] }; // P
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ NoSymbol, NoSymbol, U026a ] }; // I
+    key <AC02> { [ NoSymbol, NoSymbol, U025b ] }; // E
+    key <AC03> { [ NoSymbol, NoSymbol, U0250 ] }; // A
+    key <AC04> { [ NoSymbol, NoSymbol, U0254 ] }; // O
+    key <AC05> { [ NoSymbol, NoSymbol, U028a ] }; // U
+    key <AC06> { [ NoSymbol, NoSymbol ] };        // M
+    key <AC07> { [ NoSymbol, NoSymbol, Uf8f9 ] }; // D
+    key <AC08> { [ NoSymbol, NoSymbol ] };        // S
+    key <AC09> { [ NoSymbol, NoSymbol, U027e, U0281 ] }; // R
+    key <AC10> { [ NoSymbol, NoSymbol ] };        // N
+    key <AC11> { [ NoSymbol, NoSymbol ] };        // ´^
+    key <BKSL> { [ NoSymbol, U02cc ] };           // '
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ NoSymbol, NoSymbol, U0272 ] }; // Y
+    key <AB02> { [ NoSymbol, NoSymbol, Uf8fc ] }; // Ç
+    key <AB03> { [ NoSymbol, NoSymbol, U0292, U0291 ] }; // J
+    key <AB04> { [ NoSymbol, NoSymbol, Uf8f5 ] }; // B
+    key <AB05> { [ NoSymbol, NoSymbol, Uf8f8 ] }; // K
+    key <AB06> { [ NoSymbol, NoSymbol, Uf8fb ] }; // Q
+
+    key <AB08> { [ NoSymbol, NoSymbol, Uf8f7 ] }; // G
+
+};
