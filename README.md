@@ -100,7 +100,7 @@ Use como um modelo pra ajustar o que você achar melhor no seu próprio teclado.
     │ ⁷ ⇖ │ ⁸ ⇑ │ ⁹ ⇗ │ +   │   -       − (sinal de negativo)  − (traço "numérico" U+2012)
     │ 7 ↖ │ 8 ↑ │ 9 ↗ │ + + │   +       +                      +
     ├─────┼─────┼─────┼─────┤   ,       espaço fio (U+200A)    espaço inseparável fino (U+202F)
-    │ ⁴ ⇐│ ⁵ ⇔ │ ⁶ ⇗ │ ˙   │   .       ponto acima (U+02D9)
+    │ ⁴ ⇐ │ ⁵ ⇔ │ ⁶ ⇗ │ ˙   │   .       ponto acima (U+02D9)
     │ 4 ← │ 5 ↔ │ 6 ↗ │ .   │
     ├─────┼─────┼─────╆━━━━━┪   Para os números, o normal é o número, Shift dá o número como potência,
     │ ¹ ⇙ │ ² ⇓ │ ³ ⇘ ┃  E  ┃      AltGr dá a seta simples, AltGr + Shift a seta com corpo duplo
@@ -129,6 +129,8 @@ Use como um modelo pra ajustar o que você achar melhor no seu próprio teclado.
 
 ---
 ## Instalação e configuração
+
+_A instalação depende do python 3 e do pacote lxml, instale de acordo com as instruções da sua distro._
 
 Para instalar, execute o script `atualiza.sh`
 
