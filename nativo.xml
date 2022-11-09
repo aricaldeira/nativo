@@ -78,6 +78,16 @@
         </variant>
         <variant>
           <configItem>
+            <name>alemao</name>
+            <shortDescription>al</shortDescription>
+            <description>Nativo - Alemão</description>
+            <languageList>
+              <iso639Id>deu</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>catalao</name>
             <shortDescription>ca</shortDescription>
             <description>Nativo - Catalão</description>

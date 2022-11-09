@@ -35,6 +35,7 @@ sudo cp nativo_numerico /usr/share/X11/xkb/symbols
 sudo cp nativo_abnt2 /usr/share/X11/xkb/symbols
 sudo cp nativo_afi /usr/share/X11/xkb/symbols
 sudo cp nativo_africa /usr/share/X11/xkb/symbols
+sudo cp nativo_alemao /usr/share/X11/xkb/symbols
 sudo cp nativo_catalao /usr/share/X11/xkb/symbols
 sudo cp nativo_espanhol /usr/share/X11/xkb/symbols
 sudo cp nativo_esperanto /usr/share/X11/xkb/symbols

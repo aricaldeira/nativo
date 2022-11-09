@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+from pathlib import Path
 from lxml import etree
+
 
 def _ajusta_xml(nome_original):
     #
@@ -13,7 +15,7 @@ def _ajusta_xml(nome_original):
     #
     # Abre o XML nativo (com alguns ajustes)
     #
-    nativo = open('/home/ari/base/teclado/nativo.xml').read()
+    nativo = open(Path(__file__).parent.absolute().joinpath('nativo.xml')).read()
     nativo = nativo.replace('>nativo<', '>br<', 1)
     nativo = nativo.replace('>Nativo - abnt2', '>Brasil - ABNT2')
     nativo = nativo.replace('>Nativo', '>Brasil - Nativo')
@@ -72,8 +74,6 @@ def _ajusta_xml(nome_original):
 
     nativo = partes[0] + texto_base + partes[1]
     open(f'/usr/share/X11/xkb/rules/{nome_original}.lst', 'w').write(nativo)
-
-
 
 _ajusta_xml('base')
 _ajusta_xml('evdev')

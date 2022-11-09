@@ -40,6 +40,12 @@ xkb_symbols "africa" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "alemao" {
+    include "nativo(nativo)"
+    include "nativo_alemao(nativo_alemao)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "catalao" {
     include "nativo(nativo)"
     include "nativo_catalao(nativo_catalao)"
