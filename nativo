@@ -70,6 +70,24 @@ xkb_symbols "frances" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "guarani" {
+    include "nativo(nativo)"
+    include "nativo_guarani(nativo_guarani)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "guarani_digrafos" {
+    include "nativo(nativo)"
+    include "nativo_guarani(nativo_guarani_digrafos)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "guarani_kaiwa" {
+    include "nativo(nativo)"
+    include "nativo_guarani(nativo_guarani_kaiwa)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "italiano" {
     include "nativo(nativo)"
     include "nativo_italiano(nativo_italiano)"
@@ -139,6 +157,7 @@ xkb_symbols "devanagari" {
     include "nativo(nativo)"
     include "nativo_devanagari(nativo_devanagari)"
 };
+
 partial alphanumeric_keys
 xkb_symbols "georgiano" {
     include "nativo(nativo)"

@@ -1,0 +1,192 @@
+//
+// Leiaute Nativo para guarani
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │   ¤ │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │   ₲ │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ K   │ P   │ ò   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │ ó   │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ö   │     ┃       ┃
+// ┃Lock     ┃   Ĩ │   Ẽ │   Ã │   Õ │   Ũ │     │     │     │     │   Ñ │ õ ô │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ꞌ   │ J   │ B   │ C   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Ỹ │   Ç │     │     │     │     │     │   G̃ │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_guarani" {
+    //
+    // Linha numérica
+    //
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, U20b2, dead_currency ] };
+
+    //
+    // Linha superior
+    //
+    key <AD09> { [ k, K ] };
+    key <AD11> { [ dead_acute, dead_grave ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+
+    key <AC10> { [ n, N, ntilde, Ntilde ] };
+    key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB02> { [ Ua78c, Ua78b, ccedilla, Ccedilla ] };
+    key <AB05> { [ c, C ] };
+    key <AB08> { [ NoSymbol, NoSymbol, Uf8f0, Uf8ef ] };
+
+};
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │   ¤ │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │   ₲ │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ CH  │ G̃   │ L   │ T   │ K   │ P   │ ò   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   X │   W │     │     │     │     │ ó   │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ ND  │ S   │ R   │ N   │ ö   │     ┃       ┃
+// ┃Lock     ┃   Ĩ │   Ẽ │   Ã │   Õ │   Ũ │     │   D │     │     │     │ õ ô │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ñ   │ J   │ MB  │ C   │ Ꞌ   │ V   │ G   │ NG  │ NT  │     ┃           ┃
+// ┃Shift┃     │   Ỹ │   Ç │     │   B │     │   Q │     │     │   F │   Z │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_guarani_digrafos" {
+    //
+    // Linha numérica
+    //
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, U20b2, dead_currency ] };
+
+    //
+    // Linha superior
+    //
+    key <AD05> { [ Uf8e5, Uf8e4, x, X ] };
+    key <AD06> { [ Uf8f0, Uf8ef, w, W ] };
+
+    key <AD09> { [ k, K ] };
+
+    key <AD11> { [ dead_acute, dead_grave ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+
+    key <AC07> { [ Uf8ee, Uf8ed, d, D ] };
+
+    key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB02> { [ ntilde, Ntilde, ccedilla, Ccedilla ] };
+
+    key <AB04> { [ Uf8eb, Uf8ea, b, B ] };
+    key <AB05> { [ c, C ] };
+    key <AB06> { [ Ua78c, Ua78b, q, Q ] };
+
+
+    key <AB09> { [ Uf8df, Uf8de, f, F ] };
+    key <AB10> { [ Uf8e2, Uf8e1, z, Z ] };
+
+};
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ KW  │ T   │ K   │ P   │ ò   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   L │     │     │     │ ó   │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ ND  │ S   │ R   │ N   │ ö   │     ┃       ┃
+// ┃Lock     ┃   Ĩ │   Ẽ │   Ã │   Õ │   Ũ │     │   D │     │     │     │ õ ô │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ NH  │ J   │ MB  │ C   │ Ꞌ   │ V   │ G   │ NG  │ GW  │     ┃           ┃
+// ┃Shift┃     │   Ỹ │   Ç │     │   B │     │   Q │     │     │   F │   Z │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_guarani_kaiwa" {
+    //
+    // Linha superior
+    //
+    key <AD07> { [ Uf8d9, Uf8d8, l, L ] };
+
+    key <AD09> { [ k, K ] };
+
+    key <AD11> { [ dead_acute, dead_grave ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+
+    key <AC07> { [ Uf8ee, Uf8ed, d, D ] };
+
+    key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB02> { [ Uf8dc, Uf8db, ccedilla, Ccedilla ] };
+
+    key <AB04> { [ Uf8eb, Uf8ea, b, B ] };
+    key <AB05> { [ c, C ] };
+    key <AB06> { [ Ua78c, Ua78b, q, Q ] };
+
+    key <AB09> { [ Uf8df, Uf8de, f, F ] };
+    key <AB10> { [ Uf8d6, Uf8d5, z, Z ] };
+
+};
+
+//
+// Dígrafos e letras especiais
+//
+// Ua78c - ꞌ     Ua78b - Ꞌ
+// Uf8f0 - g̃     Uf8ef - G̃
+// Uf8e5 - ch    Uf8e4 - Ch    Uf8e3 - CH
+// Uf8d6 - gw    Uf8d5 - Gw    Uf8d4 - GW
+// Uf8d9 - kw    Uf8d8 - Kw    Uf8d7 - KW
+// Uf8eb - mb    Uf8ea - Mb    Uf8e9 - MB
+// Uf8ee - nd    Uf8ed - Nd    Uf8ec - ND
+// Uf8df - ng    Uf8de - Ng    Uf8dd - NG
+// Uf8dc - nh    Uf8db - Nh    Uf8da - NH
+// Uf8e2 - nt    Uf8e1 - Nt    Uf8e0 - NT
+// Uf8e8 - rr    Uf8e7 - Rr    Uf8e6 - RR
+//

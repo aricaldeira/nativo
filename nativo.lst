@@ -5,31 +5,34 @@
   nativo          Nativo
 
 ! variant
-  nativo          nativo: Nativo - padrão
+  nativo                    nativo: Nativo - padrão
   nativo_acento_combinante  nativo: Nativo - acentos combinantes
-  abnt2           nativo: Nativo - abnt2
-  afi             nativo: Nativo - AFI
-  africa          nativo: Nativo - África
-  alemao          nativo: Nativo - Alemão
-  catalao         nativo: Nativo - Catalão
-  espanhol        nativo: Nativo - Espanhol
-  esperanto       nativo: Nativo - Esperanto
-  frances         nativo: Nativo - Francês
-  italiano        nativo: Nativo - Italiano
-  latim           nativo: Nativo - Latim
-  obv             nativo: Nativo - OBV
-  original        nativo: Nativo - original
-  polones         nativo: Nativo - Polonês
-  romeno          nativo: Nativo - Romeno
-  turco           nativo: Nativo - Turco
-  arabe           nativo: Nativo - Árabe
-  armenio         nativo: Nativo - Armênio
-  coreano         nativo: Nativo - Coreano
-  devanagari      nativo: Nativo - Devanagari
-  georgiano       nativo: Nativo - Georgiano
-  grego           nativo: Nativo - Grego
-  hebraico        nativo: Nativo - Hebraico
-  persa           nativo: Nativo - Persa
-  russo           nativo: Nativo - Russo
-  shavian         nativo: Nativo - Shavian
-  ucraniano       nativo: Nativo - Ucraniano
+  abnt2                     nativo: Nativo - abnt2
+  afi                       nativo: Nativo - AFI
+  africa                    nativo: Nativo - África
+  alemao                    nativo: Nativo - Alemão
+  catalao                   nativo: Nativo - Catalão
+  espanhol                  nativo: Nativo - Espanhol
+  esperanto                 nativo: Nativo - Esperanto
+  frances                   nativo: Nativo - Francês
+  guarani                   nativo: Nativo - Guarani
+  guarani_digrafos          nativo: Nativo - Guarani - dígrafos
+  guarani_kaiwa             nativo: Nativo - Guarani - Kaiwá
+  italiano                  nativo: Nativo - Italiano
+  latim                     nativo: Nativo - Latim
+  obv                       nativo: Nativo - OBV
+  original                  nativo: Nativo - original
+  polones                   nativo: Nativo - Polonês
+  romeno                    nativo: Nativo - Romeno
+  turco                     nativo: Nativo - Turco
+  arabe                     nativo: Nativo - Árabe
+  armenio                   nativo: Nativo - Armênio
+  coreano                   nativo: Nativo - Coreano
+  devanagari                nativo: Nativo - Devanagari
+  georgiano                 nativo: Nativo - Georgiano
+  grego                     nativo: Nativo - Grego
+  hebraico                  nativo: Nativo - Hebraico
+  persa                     nativo: Nativo - Persa
+  russo                     nativo: Nativo - Russo
+  shavian                   nativo: Nativo - Shavian
+  ucraniano                 nativo: Nativo - Ucraniano

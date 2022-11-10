@@ -128,6 +128,37 @@
         </variant>
         <variant>
           <configItem>
+            <name>guarani</name>
+            <shortDescription>gu</shortDescription>
+            <description>Nativo - Guarani</description>
+            <languageList>
+              <iso639Id>grn</iso639Id>
+              <iso639Id>kgk</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>guarani_digrafos</name>
+            <shortDescription>gu</shortDescription>
+            <description>Nativo - Guarani - dígrafos</description>
+            <languageList>
+              <iso639Id>grn</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>guarani_kaiwa</name>
+            <shortDescription>kw</shortDescription>
+            <description>Nativo - Guarani - Kaiwá</description>
+            <languageList>
+              <iso639Id>kgk</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>italiano</name>
             <shortDescription>it</shortDescription>
             <description>Nativo - Italiano</description>
