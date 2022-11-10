@@ -8,13 +8,13 @@
 // │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
 // ┃       ┃     │     │     │ W   │ Y   │ Ỹ   │ M   │ K   │ P   │ L   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │     │   C │   Q │     │     │     ┃         ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃ O   │ U   │ A   │ I   │ E   │ T   │ N   │ S   │ R   │ D   │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │   Ç │     │     │     │     ┃       ┃
+// ┃Lock     ┃   Ô │   Ú │   Á │   Í │   Ê │     │     │     │     │     │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃     ┃ C   │ X   │ J   │ Ò   │ È   │ H   │ V   │ Z   │ F   │ B   │ G   │ Q   ┃           ┃
-// ┃Shift┃   Ç │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃Shift┃   Ç │   À │   Â │   Ó │   É │   Q │   C │   Ç │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -30,21 +30,21 @@ xkb_symbols "nativo_obv" {
     key <AD05> { [ y, Y ] };
     key <AD06> { [ U1EF9, U1EF8c ] };
     key <AD07> { [ m, M ] };
-    key <AD08> { [ k, K, c, C ] };
-    key <AD09> { [ p, P, q, Q ] };
+    key <AD08> { [ k, K ] };
+    key <AD09> { [ p, P ] };
     key <AD10> { [ l, L ] };
 
     //
     // Linha central
     //
-    key <AC01> { [ o, O ] };
-    key <AC02> { [ u, U ] };
-    key <AC03> { [ a, A ] };
-    key <AC04> { [ i, I ] };
-    key <AC05> { [ e, E ] };
+    key <AC01> { [ o, O, ocircumflex, Ocircumflex ] };
+    key <AC02> { [ u, U, uacute, Uacute ] };
+    key <AC03> { [ a, A, aacute, Aacute ] };
+    key <AC04> { [ i, I, iacute, Iacute ] };
+    key <AC05> { [ e, E, ecircumflex, Ecircumflex ] };
     key <AC06> { [ t, T ] };
     key <AC07> { [ n, N ] };
-    key <AC08> { [ s, S, ccedilla, Ccedilla ] };
+    key <AC08> { [ s, S ] };
     key <AC09> { [ r, R ] };
     key <AC10> { [ d, D ] };
 
@@ -52,13 +52,13 @@ xkb_symbols "nativo_obv" {
     // Linha inferior
     //
     key <LSGT> { [ c, C, ccedilla, Ccedilla ] };
-    key <AB01> { [ x, X ] };
-    key <AB02> { [ j, J ] };
-    key <AB03> { [ ograve, Ograve ] };
-    key <AB04> { [ egrave, Egrave ] };
-    key <AB05> { [ h, H ] };
-    key <AB06> { [ z, Z ] };
-    key <AB07> { [ v, V ] };
+    key <AB01> { [ x, X, agrave, Agrave ] };
+    key <AB02> { [ j, J, acircumflex, Acircumflex ] };
+    key <AB03> { [ ograve, Ograve, oacute, Oacute ] };
+    key <AB04> { [ egrave, Egrave, eacute, Eacute ] };
+    key <AB05> { [ h, H, q, Q ] };
+    key <AB06> { [ z, Z, c, C ] };
+    key <AB07> { [ v, V, ccedilla, Ccedilla ] };
     key <AB08> { [ f, F ] };
     key <AB09> { [ b, B ] };
     key <AB10> { [ g, G ] };
