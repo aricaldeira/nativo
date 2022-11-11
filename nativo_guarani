@@ -13,12 +13,16 @@
 // ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ö   │     ┃       ┃
 // ┃Lock     ┃   Ĩ │   Ẽ │   Ã │   Õ │   Ũ │     │     │     │     │   Ñ │ õ ô │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Y   │ Ꞌ   │ J   │ B   │ Û   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
-// ┃Shift┃     │   Ỹ │   Ç │     │     │   Û̃ │   Q │     │   G̃ │     │     │     ┃Shift      ┃
+// ┃     ┃     │ Y   │ Ꞌ   │ J   │ B   │ C   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Ỹ │   Ç │     │     │     │     │     │   G̃ │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
 // ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+// ┃     ┃     │ Y   │ Ꞌ   │ J   │ B   │ Û   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Ỹ │   Ç │     │     │   Û̃ │   Q │     │   G̃ │     │     │     ┃Shift      ┃
+//
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_guarani" {
@@ -49,8 +53,9 @@ xkb_symbols "nativo_guarani" {
     // Linha inferior
     //
     key <AB02> { [ Ua78c, Ua78b, ccedilla, Ccedilla ] };
-    key <AB05> { [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
-    key <AB06> { [ c, C, q, Q ] };
+    key <AB05> { [ c, C ] };
+    // key <AB05> { [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
+    // key <AB06> { [ c, C, q, Q ] };
     key <AB08> { [ NoSymbol, NoSymbol, Uf8f0, Uf8ef ] };
 
 };
@@ -168,7 +173,8 @@ xkb_symbols "nativo_guarani_kaiwa" {
     key <AB02> { [ Uf8dc, Uf8db, ccedilla, Ccedilla ] };
 
     key <AB04> { [ Uf8eb, Uf8ea, b, B ] };
-    key <AB05> { [ c, C ] };
+    key <AB05> { [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
+    // key <AB05> { [ c, C ] };
     key <AB06> { [ Ua78c, Ua78b, q, Q ] };
 
     key <AB09> { [ Uf8df, Uf8de, f, F ] };
