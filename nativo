@@ -94,6 +94,18 @@ xkb_symbols "italiano" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "ioruba_benin" {
+    include "nativo(nativo)"
+    include "nativo_ioruba(nativo_ioruba_benin)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "ioruba_nigeria" {
+    include "nativo(nativo)"
+    include "nativo_ioruba(nativo_ioruba_nigeria)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "latim" {
     include "nativo(nativo)"
     include "nativo_latim(nativo_latim)"

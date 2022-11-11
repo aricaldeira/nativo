@@ -169,6 +169,26 @@
         </variant>
         <variant>
           <configItem>
+            <name>ioruba_benin</name>
+            <shortDescription>yb</shortDescription>
+            <description>Nativo - Iorubá - Benin</description>
+            <languageList>
+              <iso639Id>yor</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ioruba_nigeria</name>
+            <shortDescription>yn</shortDescription>
+            <description>Nativo - Iorubá - Nigéria</description>
+            <languageList>
+              <iso639Id>yor</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>latim</name>
             <shortDescription>la</shortDescription>
             <description>Nativo - Latim</description>

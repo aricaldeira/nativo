@@ -42,6 +42,7 @@ sudo cp nativo_esperanto /usr/share/X11/xkb/symbols
 sudo cp nativo_frances /usr/share/X11/xkb/symbols
 sudo cp nativo_guarani /usr/share/X11/xkb/symbols
 sudo cp nativo_italiano /usr/share/X11/xkb/symbols
+sudo cp nativo_ioruba /usr/share/X11/xkb/symbols
 sudo cp nativo_latim /usr/share/X11/xkb/symbols
 sudo cp nativo_obv /usr/share/X11/xkb/symbols
 sudo cp nativo_original /usr/share/X11/xkb/symbols
