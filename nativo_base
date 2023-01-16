@@ -75,11 +75,11 @@ xkb_symbols "nativo_letras" {
 // │ | \ │ 0   │ 1   │ 2 ∕ │ 3 _ │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ < ᵃ̱ │ > ᵘ̱ ┃Backspace  ┃
 // │ = ≠ │ * × │ + ± │ / ÷ │ - − │ # % │ $ ¤ │ { β │ } ° │ [ ′ │ ] ″ │ ( ª │ ) º ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃ !   │ :   │ ;   │     │     │     │   ‹ │   › │   « │   » │ ò ọ │ & ¶ ┃Enter    ┃
-// ┃Tab    ┃ ? ― │ . — │ , — │   • │   · │   W̃ │   ‘ │   ’ │   “ │   ” │ õ o̱ │ @ § ┃         ┃
+// ┃       ┃ !   │ :   │ ;   │     │     │     │     │     │     │     │ ò o̱ │ & ¶ ┃Enter    ┃
+// ┃Tab    ┃ ? ― │ . — │ , — │   • │   · │   W̃ │   ‘ │   ’ │   “ │   ” │ õ o゙ │ @ § ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô ǒ │ " ȯ ┃       ┃
-// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │   µ │     │     │     │     │ ó ö │ ' ’ ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô   │ "   ┃       ┃
+// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │   µ │   ‹ │   › │   « │   » │ ó ö │ ' ’ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃     ┃ /   │     │     │     │     │     │     │     │     │     │     │ |   ┃           ┃
 // ┃Shift┃ ~   │   Ỹ │     │     │     │     │     │     │     │     │     │ \   ┃Shift      ┃
@@ -90,6 +90,8 @@ xkb_symbols "nativo_letras" {
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_simbolos" {
+    include "nativo_aspas(nativo_aspas)"
+    include "nativo_aspas(nativo_apostrofe_altgr)"
 
     //
     // Linha numérica
@@ -99,18 +101,28 @@ xkb_symbols "nativo_simbolos" {
     // sejam o padrão
     //
     key <TLDE> { [ equal, bar, notequal, backslash ] };
-    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply ] };
-    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 1, plusminus ] };
-    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 2, division, U2044 ] };
-    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 3, U2212, underscore ] };
-    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 4, percent ] };
-    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, dead_currency ] };
-    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 6, dead_greek ] };
-    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, degree ] };
-    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 8, minutes ] };
-    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, seconds ] };
-    key <AE11> { [ parenleft, less, ordfeminine, UF8F2 ] };
-    key <AE12> { [ parenright, greater, masculine, UF8F1 ] };
+    // key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 9, multiply, NoSymbol, 9, asterisk, multiply ] };
+    // key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 8, plusminus, NoSymbol, 8, plus, plusminus ] };
+    // key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 7, division, U2044, 7, slash, division, U2044 ] };
+    // key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 6, U2212, underscore, 6, minus, U2212, underscore ] };
+    // key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 5, percent, NoSymbol, 5, numbersign, percent ] };
+    // key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 4, dead_currency, NoSymbol, 4, dollar, dead_currency ] };
+    // key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 3, dead_greek, NoSymbol, 3, braceleft, dead_greek ] };
+    // key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 2, degree, NoSymbol, 2, braceright, degree ] };
+    // key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 1, minutes, NoSymbol, 1, bracketleft, minutes ] };
+    // key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 0, seconds, NoSymbol, 0, braceright, seconds ] };
+    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply, NoSymbol, 0, asterisk, multiply ] };
+    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 1, plusminus, NoSymbol, 1, plus, plusminus ] };
+    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 2, division, U2044, 2, slash, division, U2044 ] };
+    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 3, U2212, underscore, 3, minus, U2212, underscore ] };
+    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 4, percent, NoSymbol, 4, numbersign, percent ] };
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, dead_currency, NoSymbol, 5, dollar, dead_currency ] };
+    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 6, dead_greek, NoSymbol, 6, braceleft, dead_greek ] };
+    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, degree, NoSymbol, 7, braceright, degree ] };
+    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 8, minutes, NoSymbol, 8, bracketleft, minutes ] };
+    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, seconds, NoSymbol, 9, braceright, seconds ] };
+    key <AE11> { type = "EIGHT_LEVEL", [ parenleft, less, ordfeminine, UF8F2, parenleft, less, ordfeminine, UF8F2 ] };
+    key <AE12> { type = "EIGHT_LEVEL", [ parenright, greater, masculine, UF8F1, parenright, greater, masculine, UF8F1 ] };
 
     //
     // Linha superior
@@ -121,11 +133,8 @@ xkb_symbols "nativo_simbolos" {
     key <AD04> { [ NoSymbol, NoSymbol, enfilledcircbullet ] };
     key <AD05> { [ NoSymbol, NoSymbol, U00b7 ] };
     key <AD06> { [ NoSymbol, NoSymbol, UF8FD, UF8FE ] };
-    key <AD07> { [ NoSymbol, NoSymbol, leftsinglequotemark, U2039  ] };
-    key <AD08> { [ NoSymbol, NoSymbol, rightsinglequotemark, U203A ] };
-    key <AD09> { [ NoSymbol, NoSymbol, leftdoublequotemark, guillemotleft   ] };
-    key <AD10> { [ NoSymbol, NoSymbol, rightdoublequotemark, guillemotright ] };
-    key <AD11> { [ dead_tilde, dead_grave, U0331, dead_belowdot ] };
+
+    key <AD11> { [ dead_tilde, dead_grave, dead_voiced_sound, U0331 ] };
     key <AD12> { [ at, ampersand, section, paragraph ] };
 
     //
@@ -137,12 +146,8 @@ xkb_symbols "nativo_simbolos" {
     key <AC04> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
     key <AC05> { [ NoSymbol, NoSymbol, ubreve, Ubreve ] };
     key <AC06> { [ NoSymbol, NoSymbol, mu ] };
-    key <AC07> { [ NoSymbol, NoSymbol ] };
-    key <AC08> { [ NoSymbol, NoSymbol ] };
-    key <AC09> { [ NoSymbol, NoSymbol ] };
-    key <AC10> { [ NoSymbol, NoSymbol ] };
-    key <AC11> { [ dead_acute, dead_circumflex, dead_diaeresis, dead_caron ] };
-    key <BKSL> { [ apostrophe, quotedbl, rightsinglequotemark, dead_abovedot ] };
+
+    key <AC11> { [ dead_acute, dead_circumflex, dead_diaeresis, dead_abovedot ] };
 
     //
     // Linha inferior
@@ -187,10 +192,8 @@ xkb_symbols "nativo_base" {
     // Configura o "." e a "," no teclado numérico
     //
     include "keypad(core)"
-    include "nativo_numerico(ossmath)"
-    include "nativo_numerico(ossnumber)"
-    include "nativo_numerico(commaoss)"
     include "nativo_numerico(teclado_numerico)"
+    // include "nativo_numerico(teclado_numerico_embutido)"
 
     //
     // Makes AltGr use latch behavior, i.e., you can press AltGr, release it,

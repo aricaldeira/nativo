@@ -28,6 +28,13 @@ xkb_symbols "abnt2" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "abnt2-obv" {
+    include "nativo(nativo)"
+    include "nativo_abnt2(abnt2)"
+    include "nativo_obv(abnt2_obv)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "afi" {
     include "nativo(nativo)"
     include "nativo_afi(nativo_simbolos_afi)"
@@ -52,6 +59,30 @@ xkb_symbols "catalao" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "chines_pinyin" {
+    include "nativo(nativo)"
+    include "nativo_chines(nativo_chines_pinyin)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "chines_zhuyin" {
+    include "nativo(nativo)"
+    include "nativo_chines(nativo_chines_zhuyin)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "dinamarques" {
+    include "nativo(nativo)"
+    include "nativo_nordico(nativo_dinamarques)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "eslovaco" {
+    include "nativo(nativo)"
+    include "nativo_eslovaco(nativo_eslovaco)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "espanhol" {
     include "nativo(nativo)"
     include "nativo_espanhol(nativo_espanhol)"
@@ -61,6 +92,12 @@ partial alphanumeric_keys
 xkb_symbols "esperanto" {
     include "nativo(nativo)"
     include "nativo_esperanto(nativo_esperanto)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "feroes" {
+    include "nativo(nativo)"
+    include "nativo_nordico(nativo_feroes)"
 };
 
 partial alphanumeric_keys
@@ -106,9 +143,21 @@ xkb_symbols "ioruba_nigeria" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "islandes" {
+    include "nativo(nativo)"
+    include "nativo_nordico(nativo_islandes)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "latim" {
     include "nativo(nativo)"
     include "nativo_latim(nativo_latim)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "noruegues" {
+    include "nativo(nativo)"
+    include "nativo_nordico(nativo_noruegues)"
 };
 
 partial alphanumeric_keys
@@ -136,6 +185,24 @@ xkb_symbols "romeno" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "servo_croata" {
+    include "nativo(nativo)"
+    include "nativo_servo_croata(nativo_servo_croata_latim)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "sueco" {
+    include "nativo(nativo)"
+    include "nativo_nordico(nativo_sueco)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "tcheco" {
+    include "nativo(nativo)"
+    include "nativo_tcheco(nativo_tcheco)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "turco" {
     include "nativo(nativo)"
     include "nativo_turco(nativo_turco)"
@@ -156,6 +223,19 @@ partial alphanumeric_keys
 xkb_symbols "armenio" {
     include "nativo(nativo)"
     include "nativo_armenio(nativo_armenio)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "bielorrusso" {
+    include "nativo(nativo)"
+    include "nativo_bielorrusso(nativo_bielorrusso)"
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "bulgaro" {
+    include "nativo(nativo)"
+    include "nativo_bulgaro(nativo_bulgaro)"
 };
 
 partial alphanumeric_keys
@@ -189,6 +269,12 @@ xkb_symbols "hebraico" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "macedonio" {
+    include "nativo(nativo)"
+    include "nativo_macedonio(nativo_macedonio)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "persa" {
     include "nativo(nativo)"
     include "nativo_persa(nativo_persa)"
@@ -198,6 +284,12 @@ partial alphanumeric_keys
 xkb_symbols "russo" {
     include "nativo(nativo)"
     include "nativo_russo(nativo_russo)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "servo_croata_cirilico" {
+    include "nativo(nativo)"
+    include "nativo_servo_croata(nativo_servo_croata_cirilico)"
 };
 
 partial alphanumeric_keys

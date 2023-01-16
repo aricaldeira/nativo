@@ -36,7 +36,10 @@ sudo cp nativo_abnt2 /usr/share/X11/xkb/symbols
 sudo cp nativo_afi /usr/share/X11/xkb/symbols
 sudo cp nativo_africa /usr/share/X11/xkb/symbols
 sudo cp nativo_alemao /usr/share/X11/xkb/symbols
+sudo cp nativo_aspas /usr/share/X11/xkb/symbols
 sudo cp nativo_catalao /usr/share/X11/xkb/symbols
+sudo cp nativo_chines /usr/share/X11/xkb/symbols
+sudo cp nativo_eslovaco /usr/share/X11/xkb/symbols
 sudo cp nativo_espanhol /usr/share/X11/xkb/symbols
 sudo cp nativo_esperanto /usr/share/X11/xkb/symbols
 sudo cp nativo_frances /usr/share/X11/xkb/symbols
@@ -44,10 +47,14 @@ sudo cp nativo_guarani /usr/share/X11/xkb/symbols
 sudo cp nativo_italiano /usr/share/X11/xkb/symbols
 sudo cp nativo_ioruba /usr/share/X11/xkb/symbols
 sudo cp nativo_latim /usr/share/X11/xkb/symbols
+sudo cp nativo_moeda /usr/share/X11/xkb/symbols
+sudo cp nativo_nordico /usr/share/X11/xkb/symbols
 sudo cp nativo_obv /usr/share/X11/xkb/symbols
 sudo cp nativo_original /usr/share/X11/xkb/symbols
 sudo cp nativo_polones /usr/share/X11/xkb/symbols
 sudo cp nativo_romeno /usr/share/X11/xkb/symbols
+sudo cp nativo_servo_croata /usr/share/X11/xkb/symbols
+sudo cp nativo_tcheco /usr/share/X11/xkb/symbols
 sudo cp nativo_turco /usr/share/X11/xkb/symbols
 
 #
@@ -55,11 +62,14 @@ sudo cp nativo_turco /usr/share/X11/xkb/symbols
 #
 sudo cp nativo_arabe /usr/share/X11/xkb/symbols
 sudo cp nativo_armenio /usr/share/X11/xkb/symbols
+sudo cp nativo_bielorrusso /usr/share/X11/xkb/symbols
+sudo cp nativo_bulgaro /usr/share/X11/xkb/symbols
 sudo cp nativo_coreano /usr/share/X11/xkb/symbols
 sudo cp nativo_devanagari /usr/share/X11/xkb/symbols
 sudo cp nativo_georgiano /usr/share/X11/xkb/symbols
 sudo cp nativo_grego /usr/share/X11/xkb/symbols
 sudo cp nativo_hebraico /usr/share/X11/xkb/symbols
+sudo cp nativo_macedonio /usr/share/X11/xkb/symbols
 sudo cp nativo_persa /usr/share/X11/xkb/symbols
 sudo cp nativo_russo /usr/share/X11/xkb/symbols
 sudo cp nativo_shavian /usr/share/X11/xkb/symbols

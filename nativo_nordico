@@ -1,0 +1,148 @@
+//
+// Leiaute Nativo para línguas nórdicas: dinamarquês, norueguês, feroês, sueco e islandês
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T ’ │ K   │ P “ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ‚ │   ‘ │   „ │   “ │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │   Ø │   Æ │   Å │     │     │   › │   ‹ │   » │   « │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ Q   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_dinamarques" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_alemao)"
+
+    //
+    // Linha superior
+    //
+    key <AD09> { [ k, K ] };
+
+    //
+    // Linha central
+    //
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, oslash, Oslash ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, ae, AE ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, aring, Aring ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB05> { [ q, Q ] };
+    key <AB06> { [ c, C ] };
+};
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │   Ø │   Æ │   Å │     │     │   ‘ │   ’ │   “ │   ” │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ Q   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_noruegues" {
+    include "nativo_nordico(nativo_dinamarques)"
+    include "nativo_aspas(nativo_aspas_frances)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "nativo_feroes" {
+    include "nativo_nordico(nativo_dinamarques)"
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T ‘ │ K   │ P “ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ’ │   ’ │   ” │   ” │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S ‹ │ R   │ N « │     │     ┃       ┃
+// ┃Lock     ┃     │   Ö │   Ä │   Å │     │     │   › │   › │   » │   » │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ Q   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_sueco" {
+    include "nativo_nordico(nativo_dinamarques)"
+    include "nativo_aspas(nativo_aspas_sueco)"
+
+    //
+    // Linha central
+    //
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, adiaeresis, Adiaeresis ] };
+};
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T ’ │ K   │ P ” │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ‚ │   ‘ │   „ │   “ │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │     │   Æ │   Ö │     │     │   › │   ‹ │   » │   « │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃     │ Y   │ Ð   │ J   │ B   │ C   │ Þ   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │   Ç │     │     │     │   Q │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_islandes" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_alemao)"
+
+    //
+    // Linha superior
+    //
+    key <AD09> { [ k, K ] };
+
+    //
+    // Linha central
+    //
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, ae, AE ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ eth, ETH, ccedilla, Ccedilla ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ thorn, THORN, q, Q ] };
+};

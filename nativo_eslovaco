@@ -1,5 +1,5 @@
 //
-// Leiaute Nativo para catalão
+// Leiaute Nativo para eslovaco
 //
 
 //
@@ -7,32 +7,47 @@
 // │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
 // │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ C   │ P   │ ·   │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │ ò ô │     ┃         ┃
+// ┃       ┃     │     │     │ H   │ Š   │ Ľ   │ L   │ T ’ │ K   │ P ” │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   X │   W │   ‚ │   ‘ │   „ │   “ │ ǒ   │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ö   │ '   ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │ ó õ │ ’ "  ┃       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │     │   Ä │   Ô │     │     │   › │   ‹ │   » │   « │ ó   │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
-// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃ Ň   │ J   │ Č   │ Ž   │ B   │ C   │ Y   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │   Ň │   Ť │   Ď │     │     │   Q │   W │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
 // ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
 //
 partial alphanumeric_keys
-xkb_symbols "nativo_catalao" {
+xkb_symbols "nativo_eslovaco" {
     include "nativo_moeda(nativo_moeda_euro)"
-    include "nativo_aspas(nativo_aspas_frances)"
-    include "nativo_aspas(nativo_apostrofe_primeiro)"
+    include "nativo_aspas(nativo_aspas_alemao)"
 
     //
     // Linha superior
     //
-    key <AD11> { [ dead_grave, U00b7, dead_circumflex ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ scaron, Scaron, x, X, x, X ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ lcaron, Lcaron, w, W, w, W ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K, NoSymbol, NoSymbol, c, C ] };
+    key <AD11> { [ dead_caron ] };
 
     //
     // Linha central
     //
-    key <AC11> { [ dead_acute, dead_diaeresis, dead_tilde ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, adiaeresis, Adiaeresis ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, ocircumflex, Ocircumflex ] };
+
+
+    //
+    // Linha inferior
+    //
+    key <LSGT> { type="EIGHT_LEVEL_ALPHABETIC", [ ncaron, Ncaron ] };
+    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ j, J, ncaron, Ncaron ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ccaron, Ccaron, tcaron, Tcaron, ccedilla, Ccedilla ] };
+    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ zcaron, Zcaron, dcaron, Dcaron ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, k, K ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, q, Q, q, Q ] };
+    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ v, V, w, W, v, V ] };
 };

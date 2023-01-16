@@ -1,0 +1,31 @@
+//
+// Leiaute Nativo - símbolos de moedas diversos
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │   ¤ │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │   € │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_moeda_euro" {
+    //
+    // Linha numérica
+    //
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, Euro, dead_currency ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │   ¤ │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │   ₿ │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_moeda_bitcoin" {
+    //
+    // Linha numérica
+    //
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, U20bf, dead_currency ] };
+};

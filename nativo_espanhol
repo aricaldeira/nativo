@@ -4,17 +4,17 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ C   │ P   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ C   │ P   │ ò   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │ ö   │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ô   │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │ ó õ │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Y   │ Ñ   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
-// ┃Shift┃     │     │   Ç │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃ ¡   │ Y   │ Ñ   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃ ¿   │     │   Ç │     │     │     │     │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -22,8 +22,22 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_espanhol" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_frances)"
+
+    //
+    // Linha superior
+    key <AD11> { [ dead_diaeresis, dead_grave ] };
+
+    //
+    // Linha central
+    //
+    key <AC11> { [ dead_acute, dead_circumflex, dead_tilde ] };
+
+    //
     //
     // Linha inferior
     //
+    key <LSGT> { [ questiondown, exclamdown ] };
     key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ntilde, Ntilde, ccedilla, Ccedilla ] };
 };

@@ -40,23 +40,23 @@ xkb_symbols "nativo_guarani" {
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
-    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
-    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
-    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
-    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, utilde, Utilde ] };
 
-    key <AC10> { [ n, N, ntilde, Ntilde ] };
+    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, ntilde, Ntilde ] };
     key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
 
     //
     // Linha inferior
     //
-    key <AB02> { [ Ua78c, Ua78b, ccedilla, Ccedilla ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ Ua78c, Ua78b, ccedilla, Ccedilla ] };
     key <AB05> { [ c, C ] };
     // key <AB05> { [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
     // key <AB06> { [ c, C, q, Q ] };
-    key <AB08> { [ NoSymbol, NoSymbol, Uf8f0, Uf8ef ] };
+    key <AB08> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, Uf8f0, Uf8ef ] };
 
 };
 
@@ -89,8 +89,8 @@ xkb_symbols "nativo_guarani_digrafos" {
     //
     // Linha superior
     //
-    key <AD05> { [ Uf8e5, Uf8e4, x, X ] };
-    key <AD06> { [ Uf8f0, Uf8ef, w, W ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8e5, Uf8e4, x, X ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8f0, Uf8ef, w, W ] };
 
     key <AD09> { [ k, K ] };
 
@@ -99,29 +99,28 @@ xkb_symbols "nativo_guarani_digrafos" {
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
-    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
-    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
-    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
-    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, utilde, Utilde ] };
 
-    key <AC07> { [ Uf8ee, Uf8ed, d, D ] };
+    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8ee, Uf8ed, d, D ] };
 
     key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
 
     //
     // Linha inferior
     //
-    key <AB02> { [ ntilde, Ntilde, ccedilla, Ccedilla ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ntilde, Ntilde, ccedilla, Ccedilla ] };
 
-    key <AB04> { [ Uf8eb, Uf8ea, b, B ] };
+    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8eb, Uf8ea, b, B ] };
     key <AB05> { [ c, C ] };
-    key <AB06> { [ Ua78c, Ua78b, q, Q ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ Ua78c, Ua78b, q, Q ] };
 
 
-    key <AB09> { [ Uf8df, Uf8de, f, F ] };
-    key <AB10> { [ Uf8e2, Uf8e1, z, Z ] };
-
+    key <AB09> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8df, Uf8de, f, F ] };
+    key <AB10> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8e2, Uf8e1, z, Z ] };
 };
 
 
@@ -148,7 +147,7 @@ xkb_symbols "nativo_guarani_kaiwa" {
     //
     // Linha superior
     //
-    key <AD07> { [ Uf8d9, Uf8d8, l, L ] };
+    key <AD07> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8d9, Uf8d8, l, L ] };
 
     key <AD09> { [ k, K ] };
 
@@ -157,28 +156,28 @@ xkb_symbols "nativo_guarani_kaiwa" {
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol, itilde, Itilde ] };
-    key <AC02> { [ NoSymbol, NoSymbol, etilde, Etilde ] };
-    key <AC03> { [ NoSymbol, NoSymbol, atilde, Atilde ] };
-    key <AC04> { [ NoSymbol, NoSymbol, otilde, Otilde ] };
-    key <AC05> { [ NoSymbol, NoSymbol, utilde, Utilde ] };
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, itilde, Itilde ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, etilde, Etilde ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, atilde, Atilde ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, otilde, Otilde ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, utilde, Utilde ] };
 
-    key <AC07> { [ Uf8ee, Uf8ed, d, D ] };
+    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8ee, Uf8ed, d, D ] };
 
     key <AC11> { [ dead_tilde, dead_diaeresis, dead_circumflex ] };
 
     //
     // Linha inferior
     //
-    key <AB02> { [ Uf8dc, Uf8db, ccedilla, Ccedilla ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8dc, Uf8db, ccedilla, Ccedilla ] };
 
-    key <AB04> { [ Uf8eb, Uf8ea, b, B ] };
-    key <AB05> { [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
+    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8eb, Uf8ea, b, B ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ ucircumflex, Ucircumflex, Uf8d3, Uf8d2 ] };
     // key <AB05> { [ c, C ] };
-    key <AB06> { [ Ua78c, Ua78b, q, Q ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ Ua78c, Ua78b, q, Q ] };
 
-    key <AB09> { [ Uf8df, Uf8de, f, F ] };
-    key <AB10> { [ Uf8d6, Uf8d5, z, Z ] };
+    key <AB09> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8df, Uf8de, f, F ] };
+    key <AB10> { type="EIGHT_LEVEL_ALPHABETIC", [ Uf8d6, Uf8d5, z, Z ] };
 
 };
 

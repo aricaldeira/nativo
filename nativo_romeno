@@ -5,17 +5,17 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ H   │ Ș   │ W   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │   X │     │     │   Ț │     │     │     │     ┃         ┃
+// ┃       ┃     │     │     │ H   │ Ș   │ W   │ L   │ T   │ C   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
 // ┃Lock     ┃   Î │   Â │   Ă │     │     │     │     │     │     │     │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
-// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃     │ Y   │ Ț   │ J   │ B   │ K   │ X   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │   Ç │     │     │     │   Q │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -23,12 +23,13 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_romeno" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_polones)"
 
     //
     // Linha superior
     //
-    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ U0219, U0218, x, X ] };
-    key <AD08> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, U021b, U021a ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ U0219, U0218 ] };
 
     //
     // Linha central
@@ -37,4 +38,9 @@ xkb_symbols "nativo_romeno" {
     key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, acircumflex, Acircumflex ] };
     key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, abreve, Abreve ] };
 
+    //
+    // Linha inferior
+    //
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ U021b, U021a, ccedilla, Ccedilla ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ x, X, q, Q ] };
 };

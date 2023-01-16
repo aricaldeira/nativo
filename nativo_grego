@@ -6,17 +6,17 @@
 // Acentos são mostrados usando "ω" como exemplo
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
 // ┃       ┃     │     │ ·   │ Χ   │ Ξ   │ Ψ   │ Λ   │ Τ   │ Κ   │ Π   │ ῶ   │     ┃Enter    ┃
-// ┃Tab    ┃ ;   │     │     │     │     │     │     │     │     │     │ ω̈ ὡ │     ┃         ┃
+// ┃Tab    ┃ ;   │     │     │   Ϛ │   Ϟ │   Ϡ │   ‹ │   › │   « │   » │ ω̈ ὡ │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃ Ι   │ Ε   │ Α   │ Ο   │ Υ   │ Μ   │ Δ   │ Σ   │ Ρ   │ Ν   │ ὼ   │     ┃       ┃
-// ┃Lock     ┃   ῳ │     │     │     │     │     │     │     │     │     │ ώ ὠ │     ┃       ┃
+// ┃Lock     ┃   ῳ │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │ ώ ὠ │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Η   │ ς   │ Ω   │ Β   │ Κ   │ Θ   │ Β   │ Γ   │ Φ   │ Ζ   │     ┃           ┃
-// ┃Shift┃ ;   │     │     │     │     │   Ϗ │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃ ͵   │ Η   │ ς   │ Ω   │ Β   │ Κ   │ Θ   │ Β   │ Γ   │ Φ   │ Ζ   │     ┃           ┃
+// ┃Shift┃ ʹ   │     │     │     │     │   Ϗ │     │     │     │     │     │ ?   ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -24,6 +24,8 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_grego" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_frances)"
 
     //
     // Linha superior
@@ -34,9 +36,9 @@ xkb_symbols "nativo_grego" {
     key <AD01> { [ semicolon, NoSymbol, question ] };
     key <AD02> { [ NoSymbol, periodcentered ] };
 
-    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_chi,     Greek_CHI ] };
-    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_xi,      Greek_XI ] };
-    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_psi,     Greek_PSI ] };
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_chi,     Greek_CHI, U03db, U03da ] };
+    key <AD05> { type = "EIGHT_LEVEL_ALPHABETIC", [      Greek_xi,      Greek_XI, U03df, U03de ] };
+    key <AD06> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_psi,     Greek_PSI, U03e1, U03e0 ] };
     key <AD07> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_lamda,   Greek_LAMDA ] };
     key <AD08> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_tau,     Greek_TAU ] };
     key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_kappa,   Greek_KAPPA ] };
@@ -61,6 +63,7 @@ xkb_symbols "nativo_grego" {
     //
     // Linha inferior
     //
+    key <LSGT> { [ U0374, U0375 ] };
     key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_eta,     Greek_ETA ] };
     key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_finalsmallsigma, Greek_SIGMA ] };
     key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_omega,   Greek_OMEGA ] };
@@ -71,5 +74,6 @@ xkb_symbols "nativo_grego" {
     key <AB08> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_gamma,   Greek_GAMMA ] };
     key <AB09> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_phi,     Greek_PHI ] };
     key <AB10> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_zeta,    Greek_ZETA ] };
+    key <AB11> { [ question ] };
 
 };

@@ -4,17 +4,17 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ C   │ P   │ ò   │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │ ó   │     ┃         ┃
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T ’ │ K   │ P ” │ ò   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ‚ │   ‘ │   „ │   “ │ ó   │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ô   │     ┃       ┃
-// ┃Lock     ┃     │     │   Ä │   Ö │   Ü │     │     │   ẞ │     │     │ ö õ │     ┃       ┃
+// ┃Lock     ┃     │     │   Ä │   Ö │   Ü │     │   › │   ‹ │   » │   « │ ö õ │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │ Y   │ Ç   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   │     ┃           ┃
-// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃     │ Y   │ ẞ   │ J   │ B   │ Q   │ C   │ V   │ G   │ F   │ Z   │     ┃           ┃
+// ┃Shift┃     │     │   Ç │     │     │     │     │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -22,9 +22,13 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_alemao" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_alemao)"
+
     //
     // Linha superior
     //
+    key <AD09> { [ k, K ] };
     key <AD11> { [ dead_acute ] };
 
     //
@@ -33,8 +37,12 @@ xkb_symbols "nativo_alemao" {
     key <AC03> { [ NoSymbol, NoSymbol, adiaeresis, Adiaeresis ] };
     key <AC04> { [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
     key <AC05> { [ NoSymbol, NoSymbol, udiaeresis, Udiaeresis ] };
-
-    key <AC08> { [ NoSymbol, NoSymbol, ssharp, U1e9e ] };
-
     key <AC11> { [ dead_diaeresis, NoSymbol, dead_tilde ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ssharp, U1e9e, ccedilla, Ccedilla ] };
+    key <AB05> { [ q, Q ] };
+    key <AB06> { [ c, C ] };
 };

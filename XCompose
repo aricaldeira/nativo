@@ -13,14 +13,37 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_circumflex> <Ograve>       : "Ô"
 <dead_circumflex> <ograve>       : "ô"
 
-#<dead_acute> <E>                 : "Ê"
-#<dead_acute> <e>                 : "ê"
-#<dead_acute> <O>                 : "Ô"
-#<dead_acute> <o>                 : "ô"
-#<dead_circumflex> <E>            : "Ê"
-#<dead_circumflex> <e>            : "ê"
-#<dead_circumflex> <O>            : "Ô"
-#<dead_circumflex> <o>            : "ô"
+#
+# Asentus OBV
+#
+<dead_voiced_sound> <A> : "Á"
+<dead_voiced_sound> <a> : "á"
+<dead_voiced_sound> <I> : "Í"
+<dead_voiced_sound> <i> : "í"
+<dead_voiced_sound> <U> : "Ú"
+<dead_voiced_sound> <u> : "ú"
+<dead_voiced_sound> <E> : "Ê"
+<dead_voiced_sound> <e> : "ê"
+<dead_voiced_sound> <O> : "Ô"
+<dead_voiced_sound> <o> : "ô"
+<dead_voiced_sound> <Agrave> : "Â"
+<dead_voiced_sound> <agrave> : "â"
+<dead_voiced_sound> <Egrave> : "É"
+<dead_voiced_sound> <egrave> : "é"
+<dead_voiced_sound> <Ograve> : "Ó"
+<dead_voiced_sound> <ograve> : "ó"
+<dead_voiced_sound> <Y> : "Ỹ"
+<dead_voiced_sound> <y> : "ỹ"
+<dead_voiced_sound> <W> : "W̃"
+<dead_voiced_sound> <w> : "w̃"
+<dead_voiced_sound> <U1EF8> : "À"
+<dead_voiced_sound> <U1EF9> : "à"
+<dead_voiced_sound> <J> : "Â"
+<dead_voiced_sound> <j> : "â"
+<dead_voiced_sound> <C> : "Ç"
+<dead_voiced_sound> <c> : "ç"
+<dead_voiced_sound> <parenleft> : "↊" # U218A - dígito duodecimal 10
+<dead_voiced_sound> <parenright> : "↋" # U218B - dígito duodecimal 11
 
 <dead_tilde> <G>                  : "G̃" # U0047 U0303 # LATIN CAPITAL LETTER G + COMBINING TILDE
 <dead_tilde> <g>                  : "g̃" # U0067 U0303 # LATIN SMALL LETTER G + COMBINING TILDE
@@ -203,6 +226,15 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_tilde>      <U014A> : "Ŋ̃"
 <dead_diaeresis>  <U014A> : "Ŋ̈"
 
+<dead_acute>      <Cyrillic_io> : "ё́"
+<dead_acute>      <Cyrillic_IO> : "Ё́"
+<dead_acute>      <Ukrainian_i> : "і́"
+<dead_acute>      <Ukrainian_I> : "І́"
+<dead_acute>      <Ukrainian_yi> : "ї́"
+<dead_acute>      <Ukrainian_YI> : "Ї́"
+<dead_acute>      <Ukrainian_ie> : "є́"
+<dead_acute>      <Ukrainian_IE> : "Є́"
+
 <U0331> <U00AA>                   : "ª̱"
 <U0331> <U00BA>                   : "º̱"
 <U0331> <A>                       : "ᴬ̱"
@@ -329,3 +361,23 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <UF8D4>                           : "GW"
 <UF8D3>                           : "û̃"
 <UF8D2>                           : "Û̃"
+
+#
+# Moedas
+#
+<dead_currency> <B> : "฿" U0E3F  # Baht da Tailândia
+<dead_currency> <b> : "₿" U20BF  # Bitcoin
+<dead_currency> <ccedilla> : "₢" U20A2  # Cruzeiro
+<dead_currency> <E> : "Ξ" U039E  # Xi grego - Ethereum
+<dead_currency> <p> : "₽" U20BD  # Rublo da Rússia
+<dead_currency> <r> : "₹" U20B9  # Rúpia da Índia
+<dead_currency> <t> : "₺" U20BA  # Lira da Turquia
+<dead_currency> <z> : "zł" # Zuóti da Polônia
+
+#
+# Dígitos especiais
+#
+<UF8D1>: "10"
+<UF8D0>: "11"
+<UF8CF>: "12"
+<UF8CE>: "13"

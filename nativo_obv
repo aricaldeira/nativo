@@ -4,17 +4,17 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │     │     │     │     │     │   ª │   º ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │   ᵃ̱ │   ᵘ̱ ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ W   │ Y   │ Ỹ   │ M   │ K   │ P   │ L   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
+// ┃       ┃     │     │     │ W   │ È   │ H   │ P   │ T   │ K   │ L   │ C   │ Q & ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │   Ç │   @ ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ O   │ U   │ A   │ I   │ E   │ T   │ N   │ S   │ R   │ D   │     │     ┃       ┃
-// ┃Lock     ┃   Ô │   Ú │   Á │   Í │   Ê │     │     │     │     │     │     │     ┃       ┃
+// ┃Caps     ┃ E   │ U   │ A   │ I   │ O   │ M   │ N   │ S   │ D   │ R   │ ô   │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │ ó õ │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ C   │ X   │ J   │ Ò   │ È   │ H   │ V   │ Z   │ F   │ B   │ G   │ Q   ┃           ┃
-// ┃Shift┃   Ç │   À │   Â │   Ó │   É │   Q │   C │   Ç │     │     │     │     ┃Shift      ┃
+// ┃     ┃ À   │ X ¶ │ Ỹ   │ J   │ Y   │ Ò   │ Z   │ V   │ F   │ B   │ G   │     ┃           ┃
+// ┃Shift┃     │   § │   À │   Â │     │     │     │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -22,45 +22,100 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_obv" {
+    //
+    // Linha numérica
+    //
+    key <AE11> { [ NoSymbol, NoSymbol, UF8F2, ordfeminine ] };
+    key <AE12> { [ NoSymbol, NoSymbol, UF8F1, masculine ] };
 
     //
     // Linha superior
     //
     key <AD04> { [ w, W ] };
-    key <AD05> { [ y, Y ] };
-    key <AD06> { [ U1EF9, U1EF8c ] };
-    key <AD07> { [ m, M ] };
-    key <AD08> { [ k, K ] };
-    key <AD09> { [ p, P ] };
+    key <AD05> { [ egrave, Egrave, eacute, Eacute, egrave, Egrave ] };
+    key <AD06> { [ h, H, U00b7 ] };
+
+    key <AD07> { [ p, P ] };
+    key <AD08> { [ t, T ] };
+    key <AD09> { [ k, K ] };
     key <AD10> { [ l, L ] };
+    key <AD11> { [ c, C, ccedilla, Ccedilla ] };
+    key <AD12> { [ q, Q, at, ampersand ] };
 
     //
     // Linha central
     //
-    key <AC01> { [ o, O, ocircumflex, Ocircumflex ] };
+    key <AC01> { [ e, E, ecircumflex, Ecircumflex ] };
     key <AC02> { [ u, U, uacute, Uacute ] };
     key <AC03> { [ a, A, aacute, Aacute ] };
     key <AC04> { [ i, I, iacute, Iacute ] };
-    key <AC05> { [ e, E, ecircumflex, Ecircumflex ] };
-    key <AC06> { [ t, T ] };
+    key <AC05> { [ o, O, ocircumflex, Ocircumflex ] };
+
+    key <AC06> { [ m, M ] };
     key <AC07> { [ n, N ] };
-    key <AC08> { [ s, S ] };
-    key <AC09> { [ r, R ] };
-    key <AC10> { [ d, D ] };
+    key <AC08> { [ s, S, dead_grave ] };
+    key <AC09> { [ d, D, dead_circumflex ] };
+    key <AC10> { [ r, R, dead_acute ] };
+    key <AC11> { [ dead_voiced_sound, dead_tilde ] };
+    // key <AC11> { [ dead_acute, dead_circumflex, dead_tilde ] };
 
     //
     // Linha inferior
     //
-    key <LSGT> { [ c, C, ccedilla, Ccedilla ] };
-    key <AB01> { [ x, X, agrave, Agrave ] };
-    key <AB02> { [ j, J, acircumflex, Acircumflex ] };
-    key <AB03> { [ ograve, Ograve, oacute, Oacute ] };
-    key <AB04> { [ egrave, Egrave, eacute, Eacute ] };
-    key <AB05> { [ h, H, q, Q ] };
-    key <AB06> { [ z, Z, c, C ] };
-    key <AB07> { [ v, V, ccedilla, Ccedilla ] };
+    key <LSGT> { [ agrave, Agrave, acircumflex, Acircumflex ] };
+    key <AB01> { [ x, X, section, paragraph, x, X ] };
+    key <AB02> { [ U1EF9, U1EF8, agrave, Agrave, U1EF9, U1EF8 ] };
+    key <AB03> { [ j, J, acircumflex, Acircumflex, j, J ] };
+    key <AB04> { [ y, Y ] };
+    key <AB05> { [ ograve, Ograve, oacute, Oacute ] };
+
+    key <AB06> { [ z, Z ] };
+    key <AB07> { [ v, V ] };
     key <AB08> { [ f, F ] };
     key <AB09> { [ b, B ] };
     key <AB10> { [ g, G ] };
-    key <AB11> { [ q, Q ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃ Q   │ W   │ E   │ R   │ T   │ Y   │ U   │ I   │ O   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │   Ỹ │     │     │   Ò │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ A   │ S   │ D   │ F   │ G   │ H   │ J   │ K   │ L   │ È   │     │     ┃       ┃
+// ┃Lock     ┃   À │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃ Ò | │ Z   │ X   │ C   │ V   │ B   │ N   │ M   │     │     │     │     ┃           ┃
+// ┃Shift┃   \ │     │     │   Ç │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "abnt2_obv" {
+    //
+    // Linha superior
+    //
+    key <AD06> { [ NoSymbol, NoSymbol, U1EF9, U1EF8 ] };
+    key <AD09> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
+
+    key <AD12> { [ NoSymbol, NoSymbol, UF8F2, ordfeminine ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { [ NoSymbol, NoSymbol, agrave, Agrave ] };
+    key <AC10> { [ egrave, Egrave ] };
+
+    key <BKSL> { [ NoSymbol, NoSymbol, UF8F1, masculine ] };
+
+
+    //
+    // Linha inferior
+    //
+    key <LSGT> { [ ograve, Ograve, backslash, bar ] };
+    key <AB03> { [ NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
 };

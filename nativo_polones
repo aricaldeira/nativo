@@ -4,14 +4,14 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// │     │     │     │     │     │     │   ¤ │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │   € │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ H   │ Ś   │ Ł   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │   X │     │     │     │     │     │     │     ┃         ┃
+// ┃       ┃     │     │     │ H   │ Ś   │ Ł   │ L   │ T ‘ │ K   │ P “ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │   X │     │   ‚ │   ’ │   „ │   ” │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
-// ┃Lock     ┃     │   Ę │   Ą │     │   Ó │     │     │     │     │     │     │     ┃       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │ '   ┃       ┃
+// ┃Lock     ┃     │   Ę │   Ą │     │   Ó │     │   › │   ‹ │   » │   « │     │ ’ " ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃     ┃     │ J   │ Ć   │ Ź   │ B   │ C   │ Y   │ W   │ G   │ F   │ Z   │     ┃           ┃
 // ┃Shift┃     │   Ń │     │   Ż │     │     │   Q │   V │     │     │     │     ┃Shift      ┃
@@ -22,6 +22,9 @@
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_polones" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_polones)"
+    include "nativo_aspas(nativo_apostrofe_primeiro)"
 
     //
     // Linha superior
@@ -36,7 +39,6 @@ xkb_symbols "nativo_polones" {
     key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ e, E, eogonek, Eogonek, e, E ] };
     key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ a, A, aogonek, Aogonek, a, A ] };
     key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ u, U, oacute, Oacute, u, U ] };
-    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, NoSymbol, NoSymbol, n, N ] };
 
     //
     // Linha inferior
@@ -47,5 +49,4 @@ xkb_symbols "nativo_polones" {
     key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, k, K ] };
     key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, q, Q, q, Q ] };
     key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ w, W, v, V, v, V ] };
-
 };

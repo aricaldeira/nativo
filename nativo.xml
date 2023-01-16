@@ -98,6 +98,36 @@
         </variant>
         <variant>
           <configItem>
+            <name>chines_pinyin</name>
+            <shortDescription>zh</shortDescription>
+            <description>Nativo - Chinês - pinyin</description>
+            <languageList>
+              <iso639Id>zho</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>chines_zhuyin</name>
+            <shortDescription>zh</shortDescription>
+            <description>Nativo - Chinês - zhuyin</description>
+            <languageList>
+              <iso639Id>zho</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dinamarques</name>
+            <shortDescription>di</shortDescription>
+            <description>Nativo - Dinamarquês</description>
+            <languageList>
+              <iso639Id>dan</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>espanhol</name>
             <shortDescription>es</shortDescription>
             <description>Nativo - Espanhol</description>
@@ -113,6 +143,16 @@
             <description>Nativo - Esperanto</description>
             <languageList>
               <iso639Id>epo</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>feroes</name>
+            <shortDescription>fe</shortDescription>
+            <description>Nativo - Feroês</description>
+            <languageList>
+              <iso639Id>fao</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -189,11 +229,33 @@
         </variant>
         <variant>
           <configItem>
+            <name>islandes</name>
+            <shortDescription>is</shortDescription>
+            <description>Nativo - Islandês</description>
+            <languageList>
+              <iso639Id>isl</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>latim</name>
             <shortDescription>la</shortDescription>
             <description>Nativo - Latim</description>
             <languageList>
               <iso639Id>lat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>noruegues</name>
+            <shortDescription>no</shortDescription>
+            <description>Nativo - Norueguês</description>
+            <languageList>
+              <iso639Id>nor</iso639Id>
+              <iso639Id>nob</iso639Id>
+              <iso639Id>nno</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -240,6 +302,16 @@
         </variant>
         <variant>
           <configItem>
+            <name>sueco</name>
+            <shortDescription>su</shortDescription>
+            <description>Nativo - Sueco</description>
+            <languageList>
+              <iso639Id>swe</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>turco</name>
             <shortDescription>tr</shortDescription>
             <description>Nativo - Turco</description>
@@ -276,6 +348,16 @@
         </variant>
         <variant>
           <configItem>
+            <name>bielorrusso</name>
+            <shortDescription>бе</shortDescription>
+            <description>Nativo - Bielorrusso</description>
+            <languageList>
+              <iso639Id>bel</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>coreano</name>
             <shortDescription>한글</shortDescription>
             <description>Nativo - Coreano</description>
@@ -291,6 +373,7 @@
             <description>Nativo - Devanagari</description>
             <languageList>
               <iso639Id>hin</iso639Id>
+              <iso639Id>san</iso639Id>
             </languageList>
           </configItem>
         </variant>
