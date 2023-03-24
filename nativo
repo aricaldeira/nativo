@@ -125,6 +125,12 @@ xkb_symbols "guarani_kaiwa" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "hcesar" {
+    include "nativo(nativo)"
+    include "nativo_hcesar(nativo_hcesar)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "italiano" {
     include "nativo(nativo)"
     include "nativo_italiano(nativo_italiano)"
@@ -152,6 +158,12 @@ partial alphanumeric_keys
 xkb_symbols "latim" {
     include "nativo(nativo)"
     include "nativo_latim(nativo_latim)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "maltes" {
+    include "nativo(nativo)"
+    include "nativo_maltes(nativo_maltes)"
 };
 
 partial alphanumeric_keys

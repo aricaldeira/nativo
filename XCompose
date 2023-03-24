@@ -42,8 +42,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_voiced_sound> <j> : "â"
 <dead_voiced_sound> <C> : "Ç"
 <dead_voiced_sound> <c> : "ç"
-<dead_voiced_sound> <parenleft> : "↊" # U218A - dígito duodecimal 10
-<dead_voiced_sound> <parenright> : "↋" # U218B - dígito duodecimal 11
 
 <dead_tilde> <G>                  : "G̃" # U0047 U0303 # LATIN CAPITAL LETTER G + COMBINING TILDE
 <dead_tilde> <g>                  : "g̃" # U0067 U0303 # LATIN SMALL LETTER G + COMBINING TILDE
@@ -375,9 +373,23 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_currency> <z> : "zł" # Zuóti da Polônia
 
 #
-# Dígitos especiais
+# Díjitus Sezimays
 #
-<UF8D1>: "10"
-<UF8D0>: "11"
-<UF8CF>: "12"
-<UF8CE>: "13"
+<dead_voiced_sound> <0> : "󱨀"
+<dead_voiced_sound> <1> : "󱨁"
+<dead_voiced_sound> <2> : "󱨂"
+<dead_voiced_sound> <3> : "󱨃"
+<dead_voiced_sound> <4> : "󱨄"
+<dead_voiced_sound> <5> : "󱨅"
+<dead_voiced_sound> <6> : "󱨆"
+<dead_voiced_sound> <7> : "󱨇"
+<dead_voiced_sound> <8> : "󱨈"
+<dead_voiced_sound> <9> : "󱨉"
+<dead_voiced_sound> <parenleft> : "󱨊"
+<dead_voiced_sound> <parenright> : "󱨋"
+<dead_voiced_sound> <period> : "‍" U200D  # Zero-width word joiner
+<UF8D1>                  : "󱨀󱨀"
+<UF8D0>                  : "󱨀󱨀󱨀"
+<UF8CF>                  : "󱨀󱨀󱨀󱨀"
+<dead_voiced_sound> <less> : "↊" # U218A - dígito duodecimal 10
+<dead_voiced_sound> <greater> : "↋" # U218B - dígito duodecimal 11

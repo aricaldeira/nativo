@@ -199,6 +199,16 @@
         </variant>
         <variant>
           <configItem>
+            <name>hcesar</name>
+            <shortDescription>hc</shortDescription>
+            <description>Nativo - HCESAR</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>italiano</name>
             <shortDescription>it</shortDescription>
             <description>Nativo - Italiano</description>
@@ -244,6 +254,16 @@
             <description>Nativo - Latim</description>
             <languageList>
               <iso639Id>lat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>maltes</name>
+            <shortDescription>mt</shortDescription>
+            <description>Nativo - Maltês</description>
+            <languageList>
+              <iso639Id>mlt</iso639Id>
             </languageList>
           </configItem>
         </variant>

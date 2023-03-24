@@ -101,26 +101,16 @@ xkb_symbols "nativo_simbolos" {
     // sejam o padrão
     //
     key <TLDE> { [ equal, bar, notequal, backslash ] };
-    // key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 9, multiply, NoSymbol, 9, asterisk, multiply ] };
-    // key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 8, plusminus, NoSymbol, 8, plus, plusminus ] };
-    // key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 7, division, U2044, 7, slash, division, U2044 ] };
-    // key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 6, U2212, underscore, 6, minus, U2212, underscore ] };
-    // key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 5, percent, NoSymbol, 5, numbersign, percent ] };
-    // key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 4, dead_currency, NoSymbol, 4, dollar, dead_currency ] };
-    // key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 3, dead_greek, NoSymbol, 3, braceleft, dead_greek ] };
-    // key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 2, degree, NoSymbol, 2, braceright, degree ] };
-    // key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 1, minutes, NoSymbol, 1, bracketleft, minutes ] };
-    // key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 0, seconds, NoSymbol, 0, braceright, seconds ] };
-    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply, NoSymbol, 0, asterisk, multiply ] };
-    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 1, plusminus, NoSymbol, 1, plus, plusminus ] };
-    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 2, division, U2044, 2, slash, division, U2044 ] };
-    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 3, U2212, underscore, 3, minus, U2212, underscore ] };
-    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 4, percent, NoSymbol, 4, numbersign, percent ] };
-    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, dead_currency, NoSymbol, 5, dollar, dead_currency ] };
-    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 6, dead_greek, NoSymbol, 6, braceleft, dead_greek ] };
-    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, degree, NoSymbol, 7, braceright, degree ] };
-    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 8, minutes, NoSymbol, 8, bracketleft, minutes ] };
-    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, seconds, NoSymbol, 9, braceright, seconds ] };
+    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply, NoSymbol, asterisk, 0, multiply ] };
+    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 1, plusminus, NoSymbol, plus, 1, plusminus ] };
+    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 2, division, U2044, slash, 2, division, U2044 ] };
+    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 3, U2212, underscore, minus, 3, U2212, underscore ] };
+    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 4, percent, NoSymbol, numbersign, 4, percent ] };
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, dead_currency, NoSymbol, dollar, 5, dead_currency ] };
+    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 6, dead_greek, NoSymbol, braceleft, 6, dead_greek ] };
+    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, degree, NoSymbol, braceright, 7, degree ] };
+    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 8, minutes, NoSymbol, bracketleft, 9, minutes ] };
+    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, seconds, NoSymbol, braceright, 9, seconds ] };
     key <AE11> { type = "EIGHT_LEVEL", [ parenleft, less, ordfeminine, UF8F2, parenleft, less, ordfeminine, UF8F2 ] };
     key <AE12> { type = "EIGHT_LEVEL", [ parenright, greater, masculine, UF8F1, parenright, greater, masculine, UF8F1 ] };
 

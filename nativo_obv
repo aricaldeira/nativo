@@ -74,6 +74,20 @@ xkb_symbols "nativo_obv" {
     key <AB08> { [ f, F ] };
     key <AB09> { [ b, B ] };
     key <AB10> { [ g, G ] };
+
+    //
+    // Teclado numérico
+    //
+    key <KP7>  { [ UF8D1, UF1A07, UF1A0A, NoSymbol ] }; // 7 ⁷ ↖
+    key <KP8>  { [ UF8D0, UF1A08, UF1A0B, NoSymbol ] }; // 8 ⁸ ↑
+    key <KP9>  { [ UF8CF, UF1A09, NoSymbol, NoSymbol ] }; // 9 ⁹ ↗
+    key <KP4>  { [ UF1A04, UF1A28, UF1A4C, NoSymbol ] }; // 4 ⁴ ←
+    key <KP5>  { [ UF1A05, UF1A29, UF1A4D, NoSymbol ] }; // 5 ⁵ →
+    key <KP6>  { [ U200D, UF1A06, NoSymbol, NoSymbol ] }; // 6 ⁶ →
+    key <KP1>  { [ UF1A01, UF1A25, UF1A49, NoSymbol ] }; // 1 ¹ ↙
+    key <KP2>  { [ UF1A02, UF1A26, UF1A4A, NoSymbol ] }; // 2 ² ↓
+    key <KP3>  { [ UF1A03, UF1A27, UF1A4B, NoSymbol ] }; // 3 ³ ↘
+    key <KP0>  { [ UF1A00, UF1A24, UF1A48, NoSymbol ] }; // 0 ⁰ ↕
 };
 
 //

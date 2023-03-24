@@ -13,9 +13,9 @@
 // ┃Tab    ┃ ;   │     │     │   Ϛ │   Ϟ │   Ϡ │   ‹ │   › │   « │   » │ ω̈ ὡ │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃ Ι   │ Ε   │ Α   │ Ο   │ Υ   │ Μ   │ Δ   │ Σ   │ Ρ   │ Ν   │ ὼ   │     ┃       ┃
-// ┃Lock     ┃   ῳ │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │ ώ ὠ │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │ ώ ὠ │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ ͵   │ Η   │ ς   │ Ω   │ Β   │ Κ   │ Θ   │ Β   │ Γ   │ Φ   │ Ζ   │     ┃           ┃
+// ┃     ┃ ͵   │ ῳ   │ ς   │ Ω   │ Η   │ Κ   │ Θ   │ Β   │ Γ   │ Φ   │ Ζ   │     ┃           ┃
 // ┃Shift┃ ʹ   │     │     │     │     │   Ϗ │     │     │     │     │     │ ?   ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
@@ -48,7 +48,7 @@ xkb_symbols "nativo_grego" {
     //
     // Linha central
     //
-    key <AC01> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_iota,    Greek_IOTA, dead_iota ] };
+    key <AC01> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_iota,    Greek_IOTA ] };
     key <AC02> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_epsilon, Greek_EPSILON ] };
     key <AC03> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_alpha,   Greek_ALPHA ] };
     key <AC04> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_omicron, Greek_OMICRON ] };
@@ -64,10 +64,10 @@ xkb_symbols "nativo_grego" {
     // Linha inferior
     //
     key <LSGT> { [ U0374, U0375 ] };
-    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_eta,     Greek_ETA ] };
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [ dead_iota ] };
     key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [ Greek_finalsmallsigma, Greek_SIGMA ] };
     key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_omega,   Greek_OMEGA ] };
-    key <AB04> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_beta,    Greek_BETA ] };
+    key <AB04> { type = "EIGHT_LEVEL_ALPHABETIC", [     Greek_eta,     Greek_ETA ] };
     key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_kappa,   Greek_KAPPA, U03d7, U03cf ] };
     key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [   Greek_theta,   Greek_THETA ] };
     key <AB07> { type = "EIGHT_LEVEL_ALPHABETIC", [    Greek_beta,    Greek_BETA ] };

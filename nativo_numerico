@@ -3,60 +3,61 @@
 //
 
 //
-// ┏━━━━━┱─────┬─────┬─────┐
-// ┃Num  ┃ ÷   │ ×   │ −   │
-// ┃Lock ┃ / ⁄ │ * . │ - 0̅ │
-// ┡━━━━━╃─────┼─────┼─────┤
-// │ ⁷ ↖ │ ⁸ ↑ │ ⁹ ↗ │ +   │
-// │ 7 ₇ │ 8 ₈ │ 9 ₉ │ + + │
-// ├─────┼─────┼─────┼─────┤
-// │ ⁴ ← │ ⁵ ↔ │ ⁶ ↗ │ ˙   │
-// │ 4 ₄ │ 5 ₅ │ 6 ₆ │ . ˙ │
-// ├─────┼─────┼─────╆━━━━━┪
-// │ ¹ ↙ │ ² ↓ │ ³ ↘ ┃  E  ┃
-// │ 1 ₁ │ 2 ₂ │ 3 ₃ ┃  N  ┃
-// ├─────┴─────┼─────┨  T  ┃
-// │ ⁰       ↕ │     ┃  E  ┃
-// │ 0       ₀ │ , ’ ┃  R  ┃
-// └───────────┴─────┺━━━━━┛
+// ┏━━━━━┱─────┬─────┬─────┐    ┏━━━━━┱─────┬─────┬─────┐
+// ┃Num  ┃ ÷ ∕ │ ×   │ − ₋ │    ┃Num  ┃     │     │     │
+// ┃Lock ┃ / ⁄ │ * . │ - ⁻ │    ┃Lock ┃ /   │ *   │ ‍-   │
+// ┡━━━━━╃─────┼─────┼─────┤    ┡━━━━━╃─────┼─────┼─────┤
+// │ ⁷ ↖ │ ⁸ ↑ │ ⁹ ↗ │ + ₊ │    │ 󱨇 󱨊 │ 󱨈 󱨋 │ 󱨉   │     │
+// │ 7 ₇ │ 8 ₈ │ 9 ₉ │ + ⁺ │    │ 󱨀󱨀  │ 󱨀󱨀󱨀 │󱨀󱨀󱨀󱨀 │ +   │
+// ├─────┼─────┼─────┼─────┤    ├─────┼─────┼─────┼─────┤
+// │ ⁴ ← │ ⁵ ↔ │ ⁶ ↗ │ ˙   │    │ 󱨨   │ 󱨩   │ 󱨆   │     │
+// │ 4 ₄ │ 5 ₅ │ 6 ₆ │ . ˙ │    │ 󱨄 󱩌 │ 󱨅 󱩍 │ ZWJ │ .   │
+// ├─────┼─────┼─────╆━━━━━┪    ├─────┼─────┼─────╆━━━━━┪
+// │ ¹ ↙ │ ² ↓ │ ³ ↘ ┃  E  ┃    │ 󱨥   │ 󱨦   │ 󱨧   ┃     ┃
+// │ 1 ₁ │ 2 ₂ │ 3 ₃ ┃  N  ┃    │ 󱨁 󱩉 │ 󱨂 󱩊 │ 󱨃 󱩋 ┃     ┃
+// ├─────┴─────┼─────┨  T  ┃    ├─────┴─────┼─────┨     ┃
+// │ ⁰       ↕ │     ┃  E  ┃    │ 󱨤         │     ┃     ┃
+// │ 0       ₀ │ ,   ┃  R  ┃    │ 󱨀       󱩈 │ ,   ┃     ┃
+// └───────────┴─────┺━━━━━┛    └───────────┴─────┺━━━━━┛
 //
 partial keypad_keys
 xkb_symbols "teclado_numerico" {
     //
     // Primeira linha
     //
-    key <KPDV> { [ KP_Divide, division, U2044, U2215, XF86_Ungrab ] }; // / ÷ ⁄ ∕
-    key <KPMU> { [ KP_Multiply, multiply, U22C5, NoSymbol, XF86_ClearGrab ] }; // * × ⋅
-    key <KPSU> { [ KP_Subtract, U2212, U0305, NoSymbol, XF86_Prev_VMode ] }; // - − ‒
+    key <KPDV> { [ KP_Divide, division, U2044, U2215 ] }; // / ÷ ⁄ ∕
+    key <KPMU> { [ KP_Multiply, multiply, U0305, U22C5 ] }; // * × 0̅ ⋅
+    key <KPSU> { [ KP_Subtract, U2212, U207B, U208B ] }; // - − ⁻ ₋
 
     //
     // Segunda linha
     //
-    key <KP7>  { [ 7, U2077, U2087, U2196 ] }; // 7 ⁷ ↖
-    key <KP8>  { [ 8, U2078, U2088, U2191 ] }; // 8 ⁸ ↑
-    key <KP9>  { [ 9, U2079, U2089, U2197 ] }; // 9 ⁹ ↗
-    key <KPAD> { [ KP_Add, plus, plus, plus, XF86_Next_VMode ] }; // +
+    key <KP7>  { type="EIGHT_LEVEL", [ 7, U2077, U2087, U2196, UF8D1, UF1A07, UF1A0A, NoSymbol ] }; // 7 ⁷ ↖
+    key <KP8>  { type="EIGHT_LEVEL", [ 8, U2078, U2088, U2191, UF8D0, UF1A08, UF1A0B, NoSymbol ] }; // 8 ⁸ ↑
+    key <KP9>  { type="EIGHT_LEVEL", [ 9, U2079, U2089, U2197, UF8CF, UF1A09, NoSymbol, NoSymbol ] }; // 9 ⁹ ↗
+    key <KPAD> { [ KP_Add, U200D, U207A, U208A ] }; // + ⁺ ₊
 
     //
     // Terceira linha
     //
-    key <KP4>  { [ 4, U2074, U2084, U2190 ] }; // 4 ⁴ ←
-    key <KP5>  { [ 5, U2075, U2085, U2194 ] }; // 5 ⁵ →
-    key <KP6>  { [ 6, U2076, U2086, U2192 ] }; // 6 ⁶ →
-    key <I129> { [ period, U02d9, U02d9, U218B ] }; // . ˙ ↋
+    key <KP4>  { type="EIGHT_LEVEL", [ 4, U2074, U2084, U2190, UF1A04, UF1A28, UF1A4C, NoSymbol ] }; // 4 ⁴ ←
+    key <KP5>  { type="EIGHT_LEVEL", [ 5, U2075, U2085, U2194, UF1A05, UF1A29, UF1A4D, NoSymbol ] }; // 5 ⁵ →
+    key <KP6>  { type="EIGHT_LEVEL", [ 6, U2076, U2086, U2192, U200D, UF1A06, NoSymbol, NoSymbol ] }; // 6 ⁶ →
+    key <I129> { [ period, U02D9, U200D, U02D9 ] }; // . ˙
 
     //
     // Quarta linha
     //
-    key <KP1>  { [ 1, U00B9, U2081, U2199 ] }; // 1 ¹ ↙
-    key <KP2>  { [ 2, U00B2, U2082, U2193 ] }; // 2 ² ↓
-    key <KP3>  { [ 3, U00B3, U2083, U2198 ] }; // 3 ³ ↘
+    key <KP1>  { type="EIGHT_LEVEL", [ 1, U00B9, U2081, U2199, UF1A01, UF1A25, UF1A49, NoSymbol ] }; // 1 ¹ ↙
+    key <KP2>  { type="EIGHT_LEVEL", [ 2, U00B2, U2082, U2193, UF1A02, UF1A26, UF1A4A, NoSymbol ] }; // 2 ² ↓
+    key <KP3>  { type="EIGHT_LEVEL", [ 3, U00B3, U2083, U2198, UF1A03, UF1A27, UF1A4B, NoSymbol ] }; // 3 ³ ↘
 
     //
     // Quinta linha
     //
-    key <KP0>  { [ 0, U2070, U2080, U2195 ] }; // 0 ⁰ ↕
-    key <KPDL> { [ comma, U200A, U202F, U218A ] }; // , [espaço fio] [espaço fino] ↊
+    key <KP0>  { type="EIGHT_LEVEL", [ 0, U2070, U2080, U2195, UF1A00, UF1A24, UF1A48, NoSymbol ] }; // 0 ⁰ ↕
+    // key <KPDL> { [ comma, U200A, U202F ] }; // , [espaço fio] [espaço fino]
+    key <KPDL> { [ comma, U200A, U202F, U202F ] }; // , [espaço fio] [espaço fino] [espaço fino]
 };
 
 //
@@ -66,14 +67,14 @@ xkb_symbols "teclado_numerico" {
 // │     │     │     │     │     │     │     │ ⁷ ↖ │ ⁸ ↑ │ ⁹ ↗ │ ÷   │     │     ┃Backspace  ┃
 // │     │     │     │     │     │     │     │ 7 ₇ │ 8 ₈ │ 9 ₉ │ / ⁄ │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │ ⁴ ← │ ⁵ ↔ │ ⁶ → │ ×   │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │ 4 ₄ │ 5 ₅ │ 6 ₆ │ * ⋅ │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │ ⁴ ← │ ⁵ ↔ │ ⁶ → │ × ⋅ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │ 4 ₄ │ 5 ₅ │ 6 ₆ │ * 0̅ │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │ ¹ ↙ │ ² ↓ │ ³ ↘ │ −   │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │ 1 ₁ │ 2 ₂ │ 3 ₃ │ - 0̅ │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │ 1 ₁ │ 2 ₂ │ 3 ₃ │ -   │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │     │     │     │     │     │     │ ⁰ ↕ │     │ ˙   │     │     ┃           ┃
-// ┃Shift┃     │     │     │     │     │     │     │ 0 ₀ │ , ’ │ . ˙ │ +   │     ┃Shift      ┃
+// ┃     ┃     │     │     │     │     │     │     │ ⁰ ↕ │     │ ˙   │ +   │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │     │ 0 ₀ │ ,   │ . ˙ │ +   │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -95,7 +96,7 @@ xkb_symbols "teclado_numerico_embutido" {
     key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, U2074, U2084, U2190 ] };
     key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, U2075, U2085, U2194 ] };
     key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, U2076, U2086, U2192 ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, multiply, U22C5 ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, multiply, U0305, U22C5 ] };
 
     //
     // Linha central
@@ -103,13 +104,14 @@ xkb_symbols "teclado_numerico_embutido" {
     key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, U00B9, U2081, U2199 ] };
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, U00B2, U2082, U2193 ] };
     key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, U00B3, U2083, U2198 ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, U2212, U0305 ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, U2212, U207B, U208B ] };
 
     //
     // Linha inferior
     //
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, U2070, U2080, U2195 ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U200a, rightsinglequotemark, U202F ] };
+    // key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U200A, U202F, U218A ] };
+    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U202F, U202F, U200A ] };
     key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, U02d9, U02d9, U02d9 ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus, plus, plus ] };
+    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus, U207A, U208A ] };
 };

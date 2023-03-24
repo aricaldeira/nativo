@@ -1,0 +1,58 @@
+//
+// Leiaute Nativo para maltês
+//
+
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ H   │ X   │ W   │ L   │ T   │ K   │ P   │ Ħ   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │ ó   │ '   ┃       ┃
+// ┃Lock     ┃   Ì │   È │   À │   Ò │   Ù │     │     │     │     │     │ ò   │ ’ " ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃ C   │ J   │ Ċ   │ Z   │ B   │ Q   │ Ġ   │ V   │ G   │ F   │ Ż   │     ┃           ┃
+// ┃Shift┃     │   Y │   Ç │   C │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_maltes" {
+    include "nativo_moeda(nativo_moeda_euro)"
+    include "nativo_aspas(nativo_aspas_frances)"
+    include "nativo_aspas(nativo_apostrofe_primeiro)"
+
+    //
+    // Linha superior
+    //
+    key <AD04> { type = "EIGHT_LEVEL_ALPHABETIC", [ h, H, U0127, U0126 ] };
+    key <AD09> { type = "EIGHT_LEVEL_ALPHABETIC", [ k, K ] };
+    key <AD11> { type = "EIGHT_LEVEL_ALPHABETIC", [ U0127, U0126, dead_tilde, dead_circumflex ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, igrave, Igrave ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, egrave, Egrave ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, agrave, Agrave ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, ograve, Ograve ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ NoSymbol, NoSymbol, ugrave, Ugrave ] };
+    key <AC11> { [ dead_grave, dead_acute ] };
+
+    //
+    // Linha inferior
+    //
+    key <LSGT> { type = "EIGHT_LEVEL_ALPHABETIC", [ c, C ] };
+    key <AB01> { type = "EIGHT_LEVEL_ALPHABETIC", [ j, J, y, Y ] };
+    key <AB02> { type = "EIGHT_LEVEL_ALPHABETIC", [ U010b, U010a, ccedilla, Ccedilla ] };
+    key <AB03> { type = "EIGHT_LEVEL_ALPHABETIC", [ z, Z, c, C ] };
+    key <AB05> { type = "EIGHT_LEVEL_ALPHABETIC", [ q, Q ] };
+    key <AB06> { type = "EIGHT_LEVEL_ALPHABETIC", [ U0121, U0120 ] };
+    key <AB10> { type = "EIGHT_LEVEL_ALPHABETIC", [ U017c, U017b ] };
+
+};
