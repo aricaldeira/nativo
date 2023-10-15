@@ -4,17 +4,17 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │     │     │     │     │   ª │   º ┃Backspace  ┃
-// │     │     │     │     │     │     │     │     │     │     │     │   ᵃ̱ │   ᵘ̱ ┃           ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
+// │   ᵃ̱ │     │     │     │     │     │     │     │     │     │     │   ᵘ̱ │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ W   │ Y   │ ô   │ T   │ K   │ M   │ F   │ H   │ Q & ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │ ó õ │     │     │     │     │     │   @ ┃         ┃
+// ┃       ┃     │     │     │ W   │ Y   │ ô ò │ T   │ K   │ P   │ L   │ H   │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │ ó õ │     │     │     │     │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ E   │ U   │ A   │ I   │ O   │ D   │ S   │ N   │ R   │ Z   │ C   │     ┃       ┃
-// ┃Lock     ┃     │     │   À │     │     │     │     │     │     │     │   Ç │     ┃       ┃
+// ┃Caps     ┃ E   │ U   │ A   │ I   │ O   │ D   │ S   │ N   │ R   │ M   │ C   │     ┃       ┃
+// ┃Lock     ┃     │   Ŭ │   À │     │     │     │     │     │     │     │   Ç │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ /   │ X ¶ │ J   │ Ò   │ È   │ Ỹ   │ P   │ L   │ V   │ B   │ G   │     ┃           ┃
-// ┃Shift┃ ’   │   § │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃Caps ┃     │ X   │ J   │ Ò   │ È   │ Ỹ   │ Z   │ V   │ F   │ B   │ G   │ Q   ┃Caps       ┃
+// ┃Shift┃     │     │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -25,8 +25,9 @@ xkb_symbols "nativo_obv" {
     //
     // Linha numérica
     //
-    key <AE11> { [ NoSymbol, NoSymbol, UF8F2, ordfeminine ] };
-    key <AE12> { [ NoSymbol, NoSymbol, UF8F1, masculine ] };
+    key <AE01> { [ NoSymbol, NoSymbol, UF8F2 ] };  // ᵃ̱
+
+    key <AE11> { [ NoSymbol, NoSymbol, UF8F1 ] };  // ᵘ̱
 
     //
     // Linha superior
@@ -47,7 +48,7 @@ xkb_symbols "nativo_obv" {
     // Linha central
     //
     key <AC01> { [ e, E ] };
-    key <AC02> { [ u, U ] };
+    key <AC02> { [ u, U, ubreve, Ubreve ] };
     key <AC03> { [ a, A, agrave, Agrave ] };
     key <AC04> { [ i, I ] };
     key <AC05> { [ o, O ] };
@@ -63,7 +64,7 @@ xkb_symbols "nativo_obv" {
     // Linha inferior
     //
     // key <LSGT> { [ agrave, Agrave, acircumflex, Acircumflex ] };
-    key <AB01> { [ x, X, section, paragraph, x, X ] };
+    key <AB01> { [ x, X, NoSymbol, NoSymbol, x, X ] };
     key <AB02> { [ j, J, NoSymbol, NoSymbol, j, J ] };
     key <AB03> { [ ograve, Ograve, NoSymbol, NoSymbol, ograve, Ograve ] };
     key <AB04> { [ egrave, Egrave, NoSymbol, NoSymbol, egrave, Egrave ] };
@@ -74,6 +75,7 @@ xkb_symbols "nativo_obv" {
     key <AB08> { [ f, F ] };
     key <AB09> { [ b, B ] };
     key <AB10> { [ g, G ] };
+    key <AB11> { [ q, Q ] };
 
     //
     // Teclado numérico
