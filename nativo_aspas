@@ -4,36 +4,25 @@
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │   « │   » │   ‹ │   › │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   “ │   ” │   ‘ │   ’ │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │     │     ┃       ┃
-// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_aspas" {
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, leftsinglequotemark ] };
-    key <AD08> { [ NoSymbol, NoSymbol, rightsinglequotemark ] };
-    key <AD09> { [ NoSymbol, NoSymbol, leftdoublequotemark ] };
-    key <AD10> { [ NoSymbol, NoSymbol, rightdoublequotemark ] };
-
-    //
-    // Linha central
-    //
-    key <AC07> { [ NoSymbol, NoSymbol, U2039 ] };
-    key <AC08> { [ NoSymbol, NoSymbol, U203A ] };
-    key <AC09> { [ NoSymbol, NoSymbol, guillemotleft ] };
-    key <AC10> { [ NoSymbol, NoSymbol, guillemotright ] };
+    key <AD07> { [ NoSymbol, NoSymbol, leftdoublequotemark, guillemotleft ] };
+    key <AD08> { [ NoSymbol, NoSymbol, rightdoublequotemark, guillemotright ] };
+    key <AD09> { [ NoSymbol, NoSymbol, leftsinglequotemark, U2039 ] };
+    key <AD10> { [ NoSymbol, NoSymbol, rightsinglequotemark, U203A ] };
 };
 
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ "   ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ @   ┃       ┃
 // ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ' ’ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
@@ -42,14 +31,14 @@ xkb_symbols "nativo_apostrofe_altgr" {
     //
     // Linha central
     //
-    key <BKSL> { [ apostrophe, quotedbl, rightsinglequotemark ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ apostrophe, at, rightsinglequotemark, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ '   ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ’ " ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ’ @ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -57,14 +46,14 @@ xkb_symbols "nativo_apostrofe_primeiro" {
     //
     // Linha central
     //
-    key <BKSL> { [ rightsinglequotemark, apostrophe, quotedbl ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ rightsinglequotemark, apostrophe, at, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ '   ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ʼ " ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ʼ @ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -75,46 +64,35 @@ xkb_symbols "nativo_apostrofe_letra" {
     // O caracter U02BC é considerado uma letra em algumas línguas;
     // É usado como o “glottal stop”, como “hard sign” etc. depende da língua
     //
-    key <BKSL> { [ U02BC, apostrophe, quotedbl ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ U02BC, apostrophe, at, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │   “ │   ” │   ‘ │   ’ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   « │   » │   ‹ │   › │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   ‘ │   ’ │   “ │   ” │     │     ┃       ┃
-// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
 xkb_symbols "nativo_aspas_frances" {
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, U2039 ] };
-    key <AD08> { [ NoSymbol, NoSymbol, U203A ] };
-    key <AD09> { [ NoSymbol, NoSymbol, guillemotleft ] };
-    key <AD10> { [ NoSymbol, NoSymbol, guillemotright ] };
-
-    //
-    // Linha central
-    //
-    key <AC07> { [ NoSymbol, NoSymbol, leftsinglequotemark ] };
-    key <AC08> { [ NoSymbol, NoSymbol, rightsinglequotemark ] };
-    key <AC09> { [ NoSymbol, NoSymbol, leftdoublequotemark ] };
-    key <AC10> { [ NoSymbol, NoSymbol, rightdoublequotemark ] };
+    key <AD07> { [ NoSymbol, NoSymbol, guillemotleft, leftsinglequotemark ] };
+    key <AD08> { [ NoSymbol, NoSymbol, guillemotright, rightsinglequotemark ] };
+    key <AD09> { [ NoSymbol, NoSymbol, U2039, leftdoublequotemark ] };
+    key <AD10> { [ NoSymbol, NoSymbol, U203A, rightdoublequotemark ] };
 };
 
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │   ’ │     │   ” │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‚ │   ‘ │   „ │   “ │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │     │   ” │     │   ’ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   „ │   “ │   ‚ │   ‘ │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   › │   ‹ │   » │   « │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   » │   « │   › │   ‹ │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -122,28 +100,28 @@ xkb_symbols "nativo_aspas_alemao" {
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, U201a ] };
-    key <AD08> { [ NoSymbol, NoSymbol, leftsinglequotemark, rightsinglequotemark ] };
-    key <AD09> { [ NoSymbol, NoSymbol, U201e] };
-    key <AD10> { [ NoSymbol, NoSymbol, leftdoublequotemark, rightdoublequotemark ] };
+    key <AD07> { [ NoSymbol, NoSymbol, U201e] };
+    key <AD08> { [ NoSymbol, NoSymbol, leftdoublequotemark, rightdoublequotemark ] };
+    key <AD09> { [ NoSymbol, NoSymbol, U201a ] };
+    key <AD10> { [ NoSymbol, NoSymbol, leftsinglequotemark, rightsinglequotemark ] };
 
     //
     // Linha central
     //
-    key <AC07> { [ NoSymbol, NoSymbol, U203A ] };
-    key <AC08> { [ NoSymbol, NoSymbol, U2039 ] };
-    key <AC09> { [ NoSymbol, NoSymbol, guillemotright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, guillemotleft ] };
+    key <AC07> { [ NoSymbol, NoSymbol, guillemotright ] };
+    key <AC08> { [ NoSymbol, NoSymbol, guillemotleft ] };
+    key <AC09> { [ NoSymbol, NoSymbol, U203A ] };
+    key <AC10> { [ NoSymbol, NoSymbol, U2039 ] };
 };
 
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │   ‘ │     │   “ │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‚ │   ’ │   „ │   ” │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │     │   “ │     │   ‘ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   „ │   ” │   ‚ │   ’ │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   › │   ‹ │   » │   « │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   » │   « │   › │   ‹ │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -151,28 +129,28 @@ xkb_symbols "nativo_aspas_polones" {
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, U201a ] };
-    key <AD08> { [ NoSymbol, NoSymbol, rightsinglequotemark, leftsinglequotemark ] };
-    key <AD09> { [ NoSymbol, NoSymbol, U201e] };
-    key <AD10> { [ NoSymbol, NoSymbol, rightdoublequotemark, leftdoublequotemark ] };
+    key <AD07> { [ NoSymbol, NoSymbol, U201e] };
+    key <AD08> { [ NoSymbol, NoSymbol, rightdoublequotemark, leftdoublequotemark ] };
+    key <AD09> { [ NoSymbol, NoSymbol, U201a ] };
+    key <AD10> { [ NoSymbol, NoSymbol, rightsinglequotemark, leftsinglequotemark ] };
 
     //
     // Linha central
     //
-    key <AC07> { [ NoSymbol, NoSymbol, U203A ] };
-    key <AC08> { [ NoSymbol, NoSymbol, U2039 ] };
-    key <AC09> { [ NoSymbol, NoSymbol, guillemotright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, guillemotleft ] };
+    key <AC07> { [ NoSymbol, NoSymbol, guillemotright ] };
+    key <AC08> { [ NoSymbol, NoSymbol, guillemotleft ] };
+    key <AC09> { [ NoSymbol, NoSymbol, U203A ] };
+    key <AC10> { [ NoSymbol, NoSymbol, U2039 ] };
 };
 
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │   ‘ │     │   “ │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ’ │   ’ │   ” │   ” │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │     │     │   “ │     │   ‘ │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │   ” │   ” │   ’ │   ’ │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │   ‹ │     │   « │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   › │   › │   » │   » │     │     ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │   « │     │   ‹ │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   » │   » │   › │   › │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -180,28 +158,28 @@ xkb_symbols "nativo_aspas_sueco" {
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, rightsinglequotemark ] };
-    key <AD08> { [ NoSymbol, NoSymbol, rightsinglequotemark, leftsinglequotemark ] };
-    key <AD09> { [ NoSymbol, NoSymbol, rightdoublequotemark] };
-    key <AD10> { [ NoSymbol, NoSymbol, rightdoublequotemark, leftdoublequotemark ] };
+    key <AD07> { [ NoSymbol, NoSymbol, rightdoublequotemark] };
+    key <AD08> { [ NoSymbol, NoSymbol, rightdoublequotemark, leftdoublequotemark ] };
+    key <AD09> { [ NoSymbol, NoSymbol, rightsinglequotemark ] };
+    key <AD10> { [ NoSymbol, NoSymbol, rightsinglequotemark, leftsinglequotemark ] };
 
     //
     // Linha central
     //
-    key <AC07> { [ NoSymbol, NoSymbol, U203A ] };
-    key <AC08> { [ NoSymbol, NoSymbol, U203A, U2039 ] };
-    key <AC09> { [ NoSymbol, NoSymbol, guillemotright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, guillemotright, guillemotleft ] };
+    key <AC07> { [ NoSymbol, NoSymbol, guillemotright ] };
+    key <AC08> { [ NoSymbol, NoSymbol, guillemotright, guillemotleft ] };
+    key <AC09> { [ NoSymbol, NoSymbol, U203A ] };
+    key <AC10> { [ NoSymbol, NoSymbol, U203A, U2039 ] };
 };
 
 
 //
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
 // ┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │   ‹ │   › │   « │   » │     │     ┃         ┃
+// ┃Tab    ┃     │     │     │     │     │     │   « │   » │   ‹ │   › │     │     ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │   ’ │     │   ” │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │   ‚ │   ‘ │   „ │   “ │     │     ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │   ” │     │   ’ │     │     ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │   „ │   “ │   ‚ │   ‘ │     │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -211,8 +189,8 @@ xkb_symbols "nativo_aspas_russo" {
     //
     // Linha superior
     //
-    key <AC07> { [ NoSymbol, NoSymbol, U201a ] };
-    key <AC08> { [ NoSymbol, NoSymbol, leftsinglequotemark, rightsinglequotemark ] };
-    key <AC09> { [ NoSymbol, NoSymbol, U201e] };
-    key <AC10> { [ NoSymbol, NoSymbol, leftdoublequotemark, rightdoublequotemark ] };
+    key <AC07> { [ NoSymbol, NoSymbol, U201e] };
+    key <AC08> { [ NoSymbol, NoSymbol, leftdoublequotemark, rightdoublequotemark ] };
+    key <AC09> { [ NoSymbol, NoSymbol, U201a ] };
+    key <AC10> { [ NoSymbol, NoSymbol, leftsinglequotemark, rightsinglequotemark ] };
 };

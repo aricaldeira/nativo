@@ -7,16 +7,16 @@
 // ┃Num  ┃ ÷ ∕ │ ×   │ − ₋ │    ┃Num  ┃     │     │     │
 // ┃Lock ┃ / ⁄ │ * . │ - ⁻ │    ┃Lock ┃ /   │ *   │ ‍-   │
 // ┡━━━━━╃─────┼─────┼─────┤    ┡━━━━━╃─────┼─────┼─────┤
-// │ ⁷ ↖ │ ⁸ ↑ │ ⁹ ↗ │ + ₊ │    │ 󱨇 󱨊 │ 󱨈 󱨋 │ 󱨉   │     │
+// │ ⁷   │ ⁸   │ ⁹   │ + ₊ │    │ 󱨇 󱨊 │ 󱨈 󱨋 │ 󱨉   │     │
 // │ 7 ₇ │ 8 ₈ │ 9 ₉ │ + ⁺ │    │ 󱨀󱨀  │ 󱨀󱨀󱨀 │󱨀󱨀󱨀󱨀 │ +   │
 // ├─────┼─────┼─────┼─────┤    ├─────┼─────┼─────┼─────┤
-// │ ⁴ ← │ ⁵ ↔ │ ⁶ ↗ │ ˙   │    │ 󱨨   │ 󱨩   │ 󱨆   │     │
+// │ ⁴   │ ⁵   │ ⁶   │ ˙   │    │ 󱨨   │ 󱨩   │ 󱨆   │     │
 // │ 4 ₄ │ 5 ₅ │ 6 ₆ │ . ˙ │    │ 󱨄 󱩌 │ 󱨅 󱩍 │ ZWJ │ .   │
 // ├─────┼─────┼─────╆━━━━━┪    ├─────┼─────┼─────╆━━━━━┪
-// │ ¹ ↙ │ ² ↓ │ ³ ↘ ┃  E  ┃    │ 󱨥   │ 󱨦   │ 󱨧   ┃     ┃
+// │ ¹   │ ²   │ ³   ┃  E  ┃    │ 󱨥   │ 󱨦   │ 󱨧   ┃     ┃
 // │ 1 ₁ │ 2 ₂ │ 3 ₃ ┃  N  ┃    │ 󱨁 󱩉 │ 󱨂 󱩊 │ 󱨃 󱩋 ┃     ┃
 // ├─────┴─────┼─────┨  T  ┃    ├─────┴─────┼─────┨     ┃
-// │ ⁰       ↕ │     ┃  E  ┃    │ 󱨤         │     ┃     ┃
+// │ ⁰         │     ┃  E  ┃    │ 󱨤         │     ┃     ┃
 // │ 0       ₀ │ ,   ┃  R  ┃    │ 󱨀       󱩈 │ ,   ┃     ┃
 // └───────────┴─────┺━━━━━┛    └───────────┴─────┺━━━━━┛
 //
@@ -64,17 +64,17 @@ xkb_symbols "teclado_numerico" {
 // Teclado numérico embutido - ativar com AltGr + Win; desativar com Win
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │     │     │     │     │     │     │     │ ⁷ ↖ │ ⁸ ↑ │ ⁹ ↗ │ ÷   │     │     ┃Backspace  ┃
-// │     │     │     │     │     │     │     │ 7 ₇ │ 8 ₈ │ 9 ₉ │ / ⁄ │     │     ┃           ┃
+// │     │     │     │     │     │     │ ≠   │ ‍‍± ₊ │ − ₋ │ × ⋅ │ ÷ ∕ │ #   │     ┃Backspace  ┃
+// │     │     │     │     │     │     │ =   │ + ⁺ │ - ⁻ │ * 0̅ │ / ⁄ │ % ‰│ $   ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │ ⁴ ← │ ⁵ ↔ │ ⁶ → │ × ⋅ │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │ 4 ₄ │ 5 ₅ │ 6 ₆ │ * 0̅ │     │     ┃         ┃
+// ┃       ┃     │     │     │     │     │ ⁹   │ ¹   │ ³   │ ⁵   │ ⁷   │ <   │ >   ┃Enter    ┃
+// ┃Tab    ┃ ‹   │ ›   │ ‘   │ ’   │     │ 9 ₉ │ 1 ₁ │ 3 ₃ │ 5 ₅ │ 7 ₇ │ [   │ ]   ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │ ¹ ↙ │ ² ↓ │ ³ ↘ │ −   │     │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │ 1 ₁ │ 2 ₂ │ 3 ₃ │ -   │     │     ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │ ⁸   │ ⁰   │ ²   │ ⁴   │ ⁶   │ {   │ }   ┃       ┃
+// ┃Lock     ┃ «   │ »   │ “   │ ”   │     │ 8 ₈ │ 0 ₀ │ 2 ₂ │ 4 ₄ │ 6 ₆ │ (   │ )   ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃     │     │     │     │     │     │     │ ⁰ ↕ │     │ ˙   │ +   │     ┃           ┃
-// ┃Shift┃     │     │     │     │     │     │     │ 0 ₀ │ ,   │ . ˙ │ +   │     ┃Shift      ┃
+// ┃     ┃     │     │     │     │     │     │     │ ˙   │     │     │     │     ┃           ┃
+// ┃Shift┃     │     │     │     │     │     │ ,   │ .   │ 00  │ 000 │ 0000│ ZWJ ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -85,33 +85,43 @@ xkb_symbols "teclado_numerico_embutido" {
     //
     // Linha numérica
     //
-    key <AE07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, U2077, U2087, U2196 ] };
-    key <AE08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, U2078, U2088, U2191 ] };
-    key <AE09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, U2079, U2089, U2197 ] };
-    key <AE10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, division, U2044, U2215 ] };
+    key <AE06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, notequal, NoSymbol, NoSymbol ] };
+    key <AE07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, KP_Add, plusminus, U207A, U208A ] };
+    key <AE08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, KP_Subtract, U2212, U207B, U208B ] };
+    key <AE09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, KP_Multiply, multiply, U0305, U22C5 ] };
+    key <AE10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, KP_Divide, division, U2044, U2215 ] };
+    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, percent, numbersign, permille ] };
 
     //
     // Linha superior
     //
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, U2074, U2084, U2190 ] };
-    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, U2075, U2085, U2194 ] };
-    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, U2076, U2086, U2192 ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, multiply, U0305, U22C5 ] };
+    key <AD06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, U2079, U2089, U2197 ] };
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, U00B9, U2081, U2199 ] };
+    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, U00B3, U2083, U2198 ] };
+    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, U2075, U2085, U2194 ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, U2077, U2087, U2196 ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft, less, NoSymbol, NoSymbol ] };
+    key <AD12> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright, greater, NoSymbol, NoSymbol ] };
 
     //
     // Linha central
     //
-    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, U00B9, U2081, U2199 ] };
+    key <AC06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, U2078, U2088, U2191 ] };
+    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, U2070, U2080, U2195 ] };
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, U00B2, U2082, U2193 ] };
-    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, U00B3, U2083, U2198 ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, U2212, U207B, U208B ] };
+    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, U2074, U2084, U2190 ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, U2076, U2086, U2192 ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, braceleft, NoSymbol, NoSymbol ] };
+    key <BKSL> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, braceright, NoSymbol, NoSymbol ] };
 
     //
     // Linha inferior
     //
-    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, U2070, U2080, U2195 ] };
-    // key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U200A, U202F, U218A ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U202F, U202F, U200A ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, U02d9, U02d9, U02d9 ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus, U207A, U208A ] };
+    key <AB06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, U200A, U202F, U202F ] };
+    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, U02d9, U02d9, U02d9 ] };
+    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, UF8CD, U200D, NoSymbol, NoSymbol ] };
+    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, UF8CC, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, UF8CB, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, U200D, NoSymbol, NoSymbol, NoSymbol ] };
+
 };

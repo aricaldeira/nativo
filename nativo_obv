@@ -7,14 +7,14 @@
 // │     │     │     │     │     │     │     │     │     │     │     │   ª │   º ┃Backspace  ┃
 // │     │     │     │     │     │     │     │     │     │     │     │   ᵃ̱ │   ᵘ̱ ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │ W   │ È   │ H   │ P   │ T   │ K   │ L   │ C   │ Q & ┃Enter    ┃
-// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │   Ç │   @ ┃         ┃
+// ┃       ┃     │     │     │ W   │ Y   │ ô   │ T   │ K   │ M   │ F   │ H   │ Q & ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │ ó õ │     │     │     │     │     │   @ ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃ E   │ U   │ A   │ I   │ O   │ M   │ N   │ S   │ D   │ R   │ ô   │     ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │ ó õ │     ┃       ┃
+// ┃Caps     ┃ E   │ U   │ A   │ I   │ O   │ D   │ S   │ N   │ R   │ Z   │ C   │     ┃       ┃
+// ┃Lock     ┃     │     │   À │     │     │     │     │     │     │     │   Ç │     ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ À   │ X ¶ │ Ỹ   │ J   │ Y   │ Ò   │ Z   │ V   │ F   │ B   │ G   │     ┃           ┃
-// ┃Shift┃     │   § │   À │   Â │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┃     ┃ /   │ X ¶ │ J   │ Ò   │ È   │ Ỹ   │ P   │ L   │ V   │ B   │ G   │     ┃           ┃
+// ┃Shift┃ ’   │   § │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -32,42 +32,42 @@ xkb_symbols "nativo_obv" {
     // Linha superior
     //
     key <AD04> { [ w, W ] };
-    key <AD05> { [ egrave, Egrave, eacute, Eacute, egrave, Egrave ] };
-    key <AD06> { [ h, H, U00b7 ] };
+    key <AD05> { [ y, Y ] };
+    // key <AD06> { [ dead_voiced_sound, dead_tilde ] };
+    key <AD06> { [ dead_acute, dead_circumflex, dead_tilde, dead_grave ] };
 
-    key <AD07> { [ p, P ] };
-    key <AD08> { [ t, T ] };
-    key <AD09> { [ k, K ] };
+    key <AD07> { [ t, T ] };
+    key <AD08> { [ k, K ] };
+    key <AD09> { [ p, P ] };
     key <AD10> { [ l, L ] };
-    key <AD11> { [ c, C, ccedilla, Ccedilla ] };
+    key <AD11> { [ h, H, U00b7 ] };
     key <AD12> { [ q, Q, at, ampersand ] };
 
     //
     // Linha central
     //
-    key <AC01> { [ e, E, ecircumflex, Ecircumflex ] };
-    key <AC02> { [ u, U, uacute, Uacute ] };
-    key <AC03> { [ a, A, aacute, Aacute ] };
-    key <AC04> { [ i, I, iacute, Iacute ] };
-    key <AC05> { [ o, O, ocircumflex, Ocircumflex ] };
+    key <AC01> { [ e, E ] };
+    key <AC02> { [ u, U ] };
+    key <AC03> { [ a, A, agrave, Agrave ] };
+    key <AC04> { [ i, I ] };
+    key <AC05> { [ o, O ] };
 
-    key <AC06> { [ m, M ] };
-    key <AC07> { [ n, N ] };
-    key <AC08> { [ s, S, dead_grave ] };
-    key <AC09> { [ d, D, dead_circumflex ] };
-    key <AC10> { [ r, R, dead_acute ] };
-    key <AC11> { [ dead_voiced_sound, dead_tilde ] };
-    // key <AC11> { [ dead_acute, dead_circumflex, dead_tilde ] };
+    key <AC06> { [ d, D ] };
+    key <AC07> { [ s, S ] };
+    key <AC08> { [ n, N ] };
+    key <AC09> { [ r, R ] };
+    key <AC10> { [ m, M ] };
+    key <AC11> { [ c, C, ccedilla, Ccedilla ] };
 
     //
     // Linha inferior
     //
-    key <LSGT> { [ agrave, Agrave, acircumflex, Acircumflex ] };
+    // key <LSGT> { [ agrave, Agrave, acircumflex, Acircumflex ] };
     key <AB01> { [ x, X, section, paragraph, x, X ] };
-    key <AB02> { [ U1EF9, U1EF8, agrave, Agrave, U1EF9, U1EF8 ] };
-    key <AB03> { [ j, J, acircumflex, Acircumflex, j, J ] };
-    key <AB04> { [ y, Y ] };
-    key <AB05> { [ ograve, Ograve, oacute, Oacute ] };
+    key <AB02> { [ j, J, NoSymbol, NoSymbol, j, J ] };
+    key <AB03> { [ ograve, Ograve, NoSymbol, NoSymbol, ograve, Ograve ] };
+    key <AB04> { [ egrave, Egrave, NoSymbol, NoSymbol, egrave, Egrave ] };
+    key <AB05> { [ U1EF9, U1EF8, NoSymbol, NoSymbol, U1EF9, U1EF8 ] };
 
     key <AB06> { [ z, Z ] };
     key <AB07> { [ v, V ] };

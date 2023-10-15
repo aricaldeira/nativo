@@ -7,11 +7,11 @@
 // │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
 // │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃     │     │     │   χ │   ɕ │     │     │     │     │     │     │     ┃Enter    ┃
-// ┃Tab    ┃     │     │     │   ɣ │   ʃ │   ŋ │   ʎ │  t͡s │     │  p͡s │     │     ┃         ┃
+// ┃       ┃     │     │     │   χ │   ɕ │     │     │     │     │     │     │ "   ┃Enter    ┃
+// ┃Tab    ┃     │     │     │   ɣ │   ʃ │   ŋ │   ʎ │  t͡s │     │  p͡s │     │ ˌ & ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │   ʁ │     │     │ ˌ   ┃       ┃
-// ┃Lock     ┃   ɪ │   ɛ │   ɐ │   ɔ │   ʊ │     │  d͡z │     │   ɾ │     │     │     ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │   ʁ │     │     │ '   ┃       ┃
+// ┃Lock     ┃   ɪ │   ɛ │   ɐ │   ɔ │   ʊ │     │  d͡z │     │   ɾ │     │     │ ˈ @ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃     ┃     │     │     │   ʑ │     │     │     │     │     │     │     │     ┃           ┃
 // ┃Shift┃     │   ɲ │  t͡ʃ │   ʒ │  b͡z │  k͡s │  d͡ʒ │     │  g͡z │     │     │     ┃Shift      ┃
@@ -26,6 +26,9 @@ xkb_symbols "nativo_simbolos_afi" {
     //
     // Linha superior
     //
+    key <AD03> { [ NoSymbol, NoSymbol, U203f ] }; // ? ! ‿
+    key <AD03> { [ NoSymbol, NoSymbol, U02d1 ] }; // , ;
+    key <AD03> { [ NoSymbol, NoSymbol, U02d0 ] }; // . :
     key <AD04> { [ NoSymbol, NoSymbol, U0263, U03c7 ] }; // H
     key <AD05> { [ NoSymbol, NoSymbol, U0283, U0255 ] }; // X
     key <AD06> { [ NoSymbol, NoSymbol, U014b ] }; // W
@@ -34,25 +37,28 @@ xkb_symbols "nativo_simbolos_afi" {
 
     key <AD10> { [ NoSymbol, NoSymbol, Uf8f6 ] }; // P
 
+    key <AD12> { [ U02cc, quotedbl, ampersand, section ] };           // ˌ " &
+
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol, U026a ] }; // I
+    key <AC01> { [ NoSymbol, NoSymbol, U026a, ibreve ] }; // I
     key <AC02> { [ NoSymbol, NoSymbol, U025b ] }; // E
     key <AC03> { [ NoSymbol, NoSymbol, U0250 ] }; // A
     key <AC04> { [ NoSymbol, NoSymbol, U0254 ] }; // O
-    key <AC05> { [ NoSymbol, NoSymbol, U028a ] }; // U
+    key <AC05> { [ NoSymbol, NoSymbol, U028a, ubreve ] }; // U
     key <AC06> { [ NoSymbol, NoSymbol ] };        // M
     key <AC07> { [ NoSymbol, NoSymbol, Uf8f9 ] }; // D
     key <AC08> { [ NoSymbol, NoSymbol ] };        // S
     key <AC09> { [ NoSymbol, NoSymbol, U027e, U0281 ] }; // R
     key <AC10> { [ NoSymbol, NoSymbol ] };        // N
     key <AC11> { [ NoSymbol, NoSymbol ] };        // ´^
-    key <BKSL> { [ NoSymbol, U02cc ] };           // '
+    key <BKSL> { [ U02c8, apostrophe, at ] };           // ˈ ' @
 
     //
     // Linha inferior
     //
+    key <LSGT> { [ NoSymbol, dead_breve ] }; // ’ ̆
     key <AB01> { [ NoSymbol, NoSymbol, U0272 ] }; // Y
     key <AB02> { [ NoSymbol, NoSymbol, Uf8fc ] }; // Ç
     key <AB03> { [ NoSymbol, NoSymbol, U0292, U0291 ] }; // J

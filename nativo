@@ -359,7 +359,5 @@ xkb_symbols "ucraniano" {
 // dead_hook
 // dead_horn
 // dead_invertedbreve
-// dead_longsolidusoverlay
-// dead_lowline
 // dead_ogonek
 // dead_stroke

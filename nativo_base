@@ -72,17 +72,17 @@ xkb_symbols "nativo_letras" {
 // Acentos são mostrados usando “o” como exemplo; dead_currency é ¤ e dead_greek é β
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │ | \ │ 0   │ 1   │ 2 ∕ │ 3 _ │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ < ᵃ̱ │ > ᵘ̱ ┃Backspace  ┃
-// │ = ≠ │ * × │ + ± │ / ÷ │ - − │ # % │ $ ¤ │ { β │ } ° │ [ ′ │ ] ″ │ ( ª │ ) º ┃           ┃
+// │ |   │ 7   │ 5   │ 3   │ 1   │ 9   │ 8   │ 0   │ 2   │ 4   │ 6   │ % ª │ R$  ┃Backspace  ┃
+// │ {   │ }   │ (   │ )   │ [ < │ ] > │ = ≠ │ + ± │ - − │ * × │ / ÷ │ # º │ $ ¤ ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃ !   │ :   │ ;   │     │     │     │     │     │     │     │ ò o̱ │ & ¶ ┃Enter    ┃
-// ┃Tab    ┃ ? ― │ . — │ , — │   • │   · │   W̃ │   ‘ │   ’ │   “ │   ” │ õ o゙ │ @ § ┃         ┃
+// ┃       ┃ !   │ :   │ ;   │   ◦ │     │     │   « │   » │   ‹ │   › │ ò o̱ │ & ¶ ┃Enter    ┃
+// ┃Tab    ┃ ? − │ . − │ , − │   • │   · │   W̃ │   “ │   ” │   ‘ │   ’ │ õ o゙ │ " § ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô   │ "   ┃       ┃
-// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │   µ │   ‹ │   › │   « │   » │ ó ö │ ' ’ ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô ọ │ @ ø ┃       ┃
+// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │   µ │     │     │     │     │ ó ö │ ' ’ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ /   │     │     │     │     │     │     │     │     │     │     │ |   ┃           ┃
-// ┃Shift┃ ~   │   Ỹ │     │     │     │     │     │     │     │     │     │ \   ┃Shift      ┃
+// ┃     ┃ ‒   │     │     │     │     │     │     │     │     │     │     │ | ơ ┃           ┃
+// ┃Shift┃ ’ ő │   Ỹ │   ȯ │   ö │   o̊ │   ō │   ŏ │   ǒ │   ǫ │   o̧ │   o̦ │ \ ỏ ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -100,62 +100,103 @@ xkb_symbols "nativo_simbolos" {
     // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
     // sejam o padrão
     //
-    key <TLDE> { [ equal, bar, notequal, backslash ] };
-    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply, NoSymbol, asterisk, 0, multiply ] };
-    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 1, plusminus, NoSymbol, plus, 1, plusminus ] };
-    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 2, division, U2044, slash, 2, division, U2044 ] };
-    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 3, U2212, underscore, minus, 3, U2212, underscore ] };
-    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ numbersign, 4, percent, NoSymbol, numbersign, 4, percent ] };
-    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ dollar, 5, dead_currency, NoSymbol, dollar, 5, dead_currency ] };
-    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceleft, 6, dead_greek, NoSymbol, braceleft, 6, dead_greek ] };
-    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, degree, NoSymbol, braceright, 7, degree ] };
-    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 8, minutes, NoSymbol, bracketleft, 9, minutes ] };
-    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, seconds, NoSymbol, braceright, 9, seconds ] };
-    key <AE11> { type = "EIGHT_LEVEL", [ parenleft, less, ordfeminine, UF8F2, parenleft, less, ordfeminine, UF8F2 ] };
-    key <AE12> { type = "EIGHT_LEVEL", [ parenright, greater, masculine, UF8F1, parenright, greater, masculine, UF8F1 ] };
+    key <TLDE> { type="EIGHT_LEVEL", [ braceleft, bar, ordfeminine, backslash, braceleft, bar, ordfeminine, backslash ] };
+    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, NoSymbol, NoSymbol, braceright, 7, NoSymbol, NoSymbol ] };
+    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ parenleft, 5, dead_greek, NoSymbol, parenleft, 5, dead_greek, NoSymbol ] };
+    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ parenright, 3, degree, NoSymbol, parenright, 3, degree, NoSymbol ] };
+    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 1, less, NoSymbol, bracketleft, 1, less, NoSymbol ] };
+    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, greater, NoSymbol, bracketright, 9, greater, NoSymbol ] };
+
+    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ equal, 8, notequal, NoSymbol, equal, 8, notequal, NoSymbol ] };
+    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 0, plusminus, NoSymbol, plus, 0, plusminus, NoSymbol ] };
+    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 2, U2212, NoSymbol, minus, 2, U2212, NoSymbol ] };
+    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 4, multiply, NoSymbol, asterisk, 4, multiply, NoSymbol ] };
+    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 6, division, U2044, slash, 6, division, U2044 ] };
+    key <AE11> { type = "EIGHT_LEVEL", [ numbersign, percent, masculine, permille, numbersign, percent, masculine, permille ] };
+
+    key <AE12> { [ dollar, UF8CE, dead_currency, NoSymbol ] };
 
     //
     // Linha superior
     //
-    key <AD01> { [ question, exclam, U2015, hyphen ] };
+    key <AD01> { [ question, exclam, endash, U2012 ] };
     key <AD02> { [ comma, semicolon, emdash, U2011 ] };
-    key <AD03> { [ period, colon, endash, figdash ] };
-    key <AD04> { [ NoSymbol, NoSymbol, enfilledcircbullet ] };
+    key <AD03> { [ period, colon, U2015, U2010 ] };
+    key <AD04> { [ NoSymbol, NoSymbol, enfilledcircbullet, U25e6 ] };
     key <AD05> { [ NoSymbol, NoSymbol, U00b7 ] };
     key <AD06> { [ NoSymbol, NoSymbol, UF8FD, UF8FE ] };
 
-    key <AD11> { [ dead_tilde, dead_grave, dead_voiced_sound, U0331 ] };
-    key <AD12> { [ at, ampersand, section, paragraph ] };
+    key <AD11> { type="EIGHT_LEVEL", [ dead_tilde, dead_grave, dead_voiced_sound, dead_belowmacron, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD12> { type="EIGHT_LEVEL", [ quotedbl, ampersand, section, paragraph, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol ] };
+    key <AC01> { [ NoSymbol, NoSymbol, ibreve, Ibreve ] };
     key <AC02> { [ NoSymbol, NoSymbol, egrave, Egrave ] };
     key <AC03> { [ NoSymbol, NoSymbol, agrave, Agrave ] };
     key <AC04> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
     key <AC05> { [ NoSymbol, NoSymbol, ubreve, Ubreve ] };
     key <AC06> { [ NoSymbol, NoSymbol, mu ] };
 
-    key <AC11> { [ dead_acute, dead_circumflex, dead_diaeresis, dead_abovedot ] };
+    key <AC11> { type="EIGHT_LEVEL", [ dead_acute, dead_circumflex, dead_diaeresis, dead_belowdot, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ quote, at, NoSymbol, dead_stroke, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     //
     // Linha inferior
     //
-    key <LSGT> { [ asciitilde, slash ] };
+    key <LSGT> { [ rightsinglequotemark, U2010, dead_doubleacute ] };
     key <AB01> { [ NoSymbol, NoSymbol, U1EF9, U1EF8 ] };
-    key <AB01> { [ NoSymbol, NoSymbol ] };
-    key <AB02> { [ NoSymbol, NoSymbol ] };
-    key <AB03> { [ NoSymbol, NoSymbol ] };
-    key <AB04> { [ NoSymbol, NoSymbol ] };
-    key <AB05> { [ NoSymbol, NoSymbol ] };
-    key <AB06> { [ NoSymbol, NoSymbol ] };
-    key <AB07> { [ NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol ] };
-    key <AB09> { [ NoSymbol, NoSymbol ] };
-    key <AB10> { [ NoSymbol, NoSymbol ] };
-    key <AB11> { [ backslash, bar ] };
+    key <AB02> { [ NoSymbol, NoSymbol, dead_abovedot  ] };
+    key <AB03> { [ NoSymbol, NoSymbol, dead_diaeresis ] };
+    key <AB04> { [ NoSymbol, NoSymbol, dead_abovering ] };
+    key <AB05> { [ NoSymbol, NoSymbol, dead_macron ] };
+    key <AB06> { [ NoSymbol, NoSymbol, dead_breve ] };
+    key <AB07> { [ NoSymbol, NoSymbol, dead_caron ] };
+    key <AB08> { [ NoSymbol, NoSymbol, dead_ogonek ] };
+    key <AB09> { [ NoSymbol, NoSymbol, dead_cedilla ] };
+    key <AB10> { [ NoSymbol, NoSymbol, dead_belowcomma ] };
+    key <AB11> { [ backslash, bar, dead_hook, dead_horn ] };
 
+//
+// Lista dos símbolos possíveis:
+// https://doc.servo.org/x11/keysym/index.html
+//
+// dead_A              dead_a
+// dead_E              dead_e
+// dead_I              dead_i
+// dead_O              dead_o
+// dead_U              dead_u
+// dead_capital_schwa  dead_small_schwa
+//
+// dead_semivoiced_sound
+// dead_voiced_sound
+//
+// dead_greek
+// dead_dasia
+// dead_iota
+// dead_perispomeni
+// dead_psili
+//
+// dead_currency
+//
+// dead_abovecomma          dead_belowcomma
+// dead_abovedot            dead_belowdot
+// dead_abovering           dead_belowring
+// dead_aboveverticalline   dead_belowverticalline
+// dead_acute               dead_doubleacute
+// dead_breve               dead_belowbreve         dead_invertedbreve
+// dead_caron
+// dead_cedilla             dead_abovereversedcomma
+// dead_circumflex          dead_belowcircumflex
+// dead_diaeresis           dead_belowdiaeresis
+// dead_grave               dead_doublegrave
+// dead_hook
+// dead_horn                dead_ogonek
+// dead_macron              dead_belowmacron
+// dead_tilde               dead_belowtilde
+// dead_stroke
+//
 };
 
 partial alphanumeric_keys
@@ -183,7 +224,7 @@ xkb_symbols "nativo_base" {
     //
     include "keypad(core)"
     include "nativo_numerico(teclado_numerico)"
-    // include "nativo_numerico(teclado_numerico_embutido)"
+    include "nativo_numerico(teclado_numerico_embutido)"
 
     //
     // Makes AltGr use latch behavior, i.e., you can press AltGr, release it,
@@ -195,14 +236,24 @@ xkb_symbols "nativo_base" {
     };
 
     //
-    // Uses left AltGr+Win key to access latin letters and shortcuts on non-latin layouts
+    // Usa o CapsLock para acessar letras do alfabeto latino e atalhos
+    // em leiautes com outros alfabetos; no teclado normal, ativa um
+    // teclado numérico embutido
     //
-    include "level5(lock)"
+    // include "level5(lock)"
 
-    key <LWIN> {
+    key <CAPS> {
     type[Group1] = "EIGHT_LEVEL",
-        symbols[Group1] = [ Super_L, Super_L, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock ]
+        symbols[Group1] = [ ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock ]
     };
+
+    //
+    // Usa AltGr+Win para a mesma função
+    //
+    // key <LWIN> {
+    // type[Group1] = "EIGHT_LEVEL",
+    //     symbols[Group1] = [ Super_L, Super_L, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock ]
+    // };
 
     //
     // Tecla de composição pode ser AltGr + Control esquerdo, AltGr + Control direito, ou AltGr + Menu
@@ -210,4 +261,9 @@ xkb_symbols "nativo_base" {
     key <LCTL> { type[Group1]="FOUR_LEVEL", [ Control_L, Control_L, Multi_key, Multi_key ] };
     key <RCTL> { type[Group1]="FOUR_LEVEL", [ Control_R, Control_R, Multi_key, Multi_key ] };
     key <MENU> { type[Group1]="FOUR_LEVEL", [ Menu, Menu, Multi_key, Multi_key ] };
+
+    //
+    // Usa Shift + Shift para CapsLock
+    //
+    include "shift(both_capslock)"
 };

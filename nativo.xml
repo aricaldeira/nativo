@@ -16,6 +16,9 @@
         <name>nativo</name>
         <shortDescription>br</shortDescription>
         <description>Nativo</description>
+        <countryList>
+          <iso3166Id>BR</iso3166Id>
+        </countryList>
         <languageList>
           <iso639Id>por</iso639Id>
         </languageList>
