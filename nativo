@@ -16,6 +16,13 @@ xkb_symbols "nativo_acento_combinante" {
     include "nativo_base(nativo_simbolos_acento_combinante)"
 };
 
+partial alphanumeric_keys
+xkb_symbols "direita" {
+    include "nativo_direita(nativo_letras_direita)"
+    include "nativo_direita(nativo_simbolos_direita)"
+    include "nativo_base(nativo_base)"
+};
+
 //
 //
 // Subleiautes por idioma - alfabeto latino normal

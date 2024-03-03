@@ -22,7 +22,7 @@ xkb_symbols "nativo_aspas" {
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ @   ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ "   ┃       ┃
 // ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ' ’ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
@@ -31,14 +31,14 @@ xkb_symbols "nativo_apostrofe_altgr" {
     //
     // Linha central
     //
-    key <BKSL> { type="EIGHT_LEVEL", [ apostrophe, at, rightsinglequotemark, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ apostrophe, quotedbl, rightsinglequotemark, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ '   ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ’ @ ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ’ " ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -46,14 +46,14 @@ xkb_symbols "nativo_apostrofe_primeiro" {
     //
     // Linha central
     //
-    key <BKSL> { type="EIGHT_LEVEL", [ rightsinglequotemark, apostrophe, at, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ rightsinglequotemark, apostrophe, quotedbl, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 
 //
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
 // ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │     │ '   ┃       ┃
-// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ʼ @ ┃       ┃
+// ┃Lock     ┃     │     │     │     │     │     │     │     │     │     │     │ ʼ " ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 //
 partial alphanumeric_keys
@@ -64,7 +64,7 @@ xkb_symbols "nativo_apostrofe_letra" {
     // O caracter U02BC é considerado uma letra em algumas línguas;
     // É usado como o “glottal stop”, como “hard sign” etc. depende da língua
     //
-    key <BKSL> { type="EIGHT_LEVEL", [ U02BC, apostrophe, at, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ U02BC, apostrophe, quotedbl, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 

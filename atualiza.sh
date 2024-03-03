@@ -28,6 +28,7 @@ sudo cp nativo /usr/share/X11/xkb/symbols
 sudo cp nativo /usr/share/X11/xkb/symbols/br
 sudo cp nativo_base /usr/share/X11/xkb/symbols
 sudo cp nativo_numerico /usr/share/X11/xkb/symbols
+sudo cp nativo_linha_superior /usr/share/X11/xkb/symbols
 
 #
 # Línguas com o alfabeto latino
@@ -39,6 +40,7 @@ sudo cp nativo_alemao /usr/share/X11/xkb/symbols
 sudo cp nativo_aspas /usr/share/X11/xkb/symbols
 sudo cp nativo_catalao /usr/share/X11/xkb/symbols
 sudo cp nativo_chines /usr/share/X11/xkb/symbols
+sudo cp nativo_direita /usr/share/X11/xkb/symbols
 sudo cp nativo_eslovaco /usr/share/X11/xkb/symbols
 sudo cp nativo_espanhol /usr/share/X11/xkb/symbols
 sudo cp nativo_esperanto /usr/share/X11/xkb/symbols

@@ -445,6 +445,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <UF8CF>                  : "󱨀󱨀󱨀󱨀"
 <dead_voiced_sound> <less> : "↊" # U218A - dígito duodecimal 10
 <dead_voiced_sound> <greater> : "↋" # U218B - dígito duodecimal 11
+<dead_voiced_sound> <space> : " " # U2007 - espaço "numérico"
 
 <dead_voiced_sound> <braceleft> : "↊" # U218A - dígito duodecimal 10
 <dead_voiced_sound> <numbersign> : "↋" # U218B - dígito duodecimal 11
@@ -455,6 +456,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <UF8CD>: "00"
 <UF8CC>: "000"
 <UF8CB>: "0000"
+<UF8CA>: ",00"
 
 <dead_abovedot> <0> : "0̇"
 <dead_abovedot> <1> : "1̇"
@@ -490,3 +492,20 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_breve> <3> : "3̆"
 <dead_breve> <4> : "4̆"
 <dead_breve> <5> : "5̆"
+
+#
+# Asentus konbinantis
+#
+#<dead_aboveverticalline>  <U00A0>: "̍"  # U030D linha vertical acima - combinante
+#<dead_belowverticalline>  <U00A0>: "̎"  # U030E linha vertical dupla acima - combinante
+<dead_belowdiaeresis>     <U00A0>: "̤"  # U0324 trema abaixo - combinante
+<dead_belowring>          <U00A0>: "̥"  # U0325 anel abaixo - combinante
+<dead_belowmacron>        <U00A0>: "̱"  # # U0331 macron abaixo - combinante
+<dead_belowbreve>         <U00A0>: "̮"  # U032E breve abaixo - combinante
+#<dead_invertedbreve>      <U00A0>: "̆"  # U0306 breve invertida - combinante
+<dead_invertedbreve>      <U00A0>: "̯"  # U032F breve invertida abaixo - combinante
+<dead_belowcircumflex>    <U00A0>: "̭"  # U032D circunflexo abaixo - combinante
+<dead_belowtilde>         <U00A0>: "̰"  # U0330 til abaixo - combinante
+#<dead_abovereversedcomma> <U00A0>: "̒"  # U0312 vírgula inversa acima - combinante
+<dead_abovereversedcomma> <U00A0>: "̔"  # U0314 vírgula inversa acima - combinante
+<dead_abovecomma>         <U00A0>: "̓"  # U0313 vírgula acima - combinante

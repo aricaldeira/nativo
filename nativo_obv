@@ -4,6 +4,52 @@
 
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │ ᵘ̱ ᵃ̱ ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃     │     │     │ W   │ Y   │ H   │ L   │ T   │ K   │ P   │     │     ┃Enter    ┃
+// ┃Tab    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N   │     │     ┃       ┃
+// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃Caps ┃     │ X   │ Ỹ   │ J   │ B   │ C   │ Z   │ V   │ G   │ F   │ Q   │     ┃Caps       ┃
+// ┃Shift┃     │     │     │     │     │   Ç │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_obv" {
+    //
+    // Linha numérica
+    //
+    key <AE11> { [ NoSymbol, UF8F1, NoSymbol, UF8F2, NoSymbol, UF8F1, NoSymbol, UF8F2 ] };  // ᵘ̱ ᵃ̱
+
+    //
+    // Linha superior
+    //
+    key <AD04> { [ w, W, UF8FD, UF8FE, w, W, UF8FD, UF8FE ] };
+    key <AD05> { [ y, Y, U1EF9, U1EF8, y, Y, U1EF9, U1EF8 ] };
+    key <AD06> { [ h, H, enfilledcircbullet, U25e6, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+
+    key <AD09> { [ k, K, NoSymbol, NoSymbol, k, K, NoSymbol, NoSymbol ] };
+
+    //
+    // Linha inferior
+    //
+    key <AB01> { [ x, X, dead_macron, X, X, x, dead_macron, X ] };
+    key <AB02> { [ U1EF9, U1EF8, NoSymbol, NoSymbol, U1EF9, U1EF8, NoSymbol, NoSymbol ] };
+
+    key <AB05> { [ c, C, ccedilla, Ccedilla, c, C, ccedilla, Ccedilla ] };
+    key <AB06> { [ z, Z, NoSymbol, NoSymbol, z, Z, NoSymbol, NoSymbol ] };
+
+    key <AB10> { [ q, Q, NoSymbol, NoSymbol, q, Q, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
 // │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace  ┃
 // │   ᵃ̱ │     │     │     │     │     │     │     │     │     │     │   ᵘ̱ │     ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
@@ -21,7 +67,7 @@
 // ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
 //
 partial alphanumeric_keys
-xkb_symbols "nativo_obv" {
+xkb_symbols "nativo_obv_puru" {
     //
     // Linha numérica
     //

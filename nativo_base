@@ -31,58 +31,58 @@ xkb_symbols "nativo_letras" {
     //
     // Linha superior
     //
-    key <AD04> { type="EIGHT_LEVEL_ALPHABETIC", [ h, H, NoSymbol, NoSymbol, h, H ] };
-    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ x, X, NoSymbol, NoSymbol, x, X ] };
-    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ w, W, NoSymbol, NoSymbol, w, W ] };
-    key <AD07> { type="EIGHT_LEVEL_ALPHABETIC", [ l, L, NoSymbol, NoSymbol, l, L ] };
-    key <AD08> { type="EIGHT_LEVEL_ALPHABETIC", [ t, T, NoSymbol, NoSymbol, t, T ] };
-    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, c, C ] };
-    key <AD10> { type="EIGHT_LEVEL_ALPHABETIC", [ p, P, NoSymbol, NoSymbol, p, P ] };
+    key <AD04> { type="EIGHT_LEVEL_ALPHABETIC", [ h, H, NoSymbol, NoSymbol, h, H, NoSymbol, NoSymbol ] };
+    key <AD05> { type="EIGHT_LEVEL_ALPHABETIC", [ x, X, NoSymbol, NoSymbol, x, X, NoSymbol, NoSymbol ] };
+    key <AD06> { type="EIGHT_LEVEL_ALPHABETIC", [ w, W, NoSymbol, NoSymbol, w, W, NoSymbol, NoSymbol ] };
+    key <AD07> { type="EIGHT_LEVEL_ALPHABETIC", [ l, L, NoSymbol, NoSymbol, l, L, NoSymbol, NoSymbol ] };
+    key <AD08> { type="EIGHT_LEVEL_ALPHABETIC", [ t, T, NoSymbol, NoSymbol, t, T, NoSymbol, NoSymbol ] };
+    key <AD09> { type="EIGHT_LEVEL_ALPHABETIC", [ c, C, NoSymbol, NoSymbol, c, C, NoSymbol, NoSymbol ] };
+    key <AD10> { type="EIGHT_LEVEL_ALPHABETIC", [ p, P, NoSymbol, NoSymbol, p, P, NoSymbol, NoSymbol ] };
 
     //
     // Linha central
     //
-    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ i, I, NoSymbol, NoSymbol, i, I ] };
-    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ e, E, NoSymbol, NoSymbol, e, E ] };
-    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ a, A, NoSymbol, NoSymbol, a, A ] };
-    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ o, O, NoSymbol, NoSymbol, o, O ] };
-    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ u, U, NoSymbol, NoSymbol, u, U ] };
-    key <AC06> { type="EIGHT_LEVEL_ALPHABETIC", [ m, M, NoSymbol, NoSymbol, m, M ] };
-    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ d, D, NoSymbol, NoSymbol, d, D ] };
-    key <AC08> { type="EIGHT_LEVEL_ALPHABETIC", [ s, S, NoSymbol, NoSymbol, s, S ] };
-    key <AC09> { type="EIGHT_LEVEL_ALPHABETIC", [ r, R, NoSymbol, NoSymbol, r, R ] };
-    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, NoSymbol, NoSymbol, n, N ] };
+    key <AC01> { type="EIGHT_LEVEL_ALPHABETIC", [ i, I, NoSymbol, NoSymbol, i, I, NoSymbol, NoSymbol ] };
+    key <AC02> { type="EIGHT_LEVEL_ALPHABETIC", [ e, E, NoSymbol, NoSymbol, e, E, NoSymbol, NoSymbol ] };
+    key <AC03> { type="EIGHT_LEVEL_ALPHABETIC", [ a, A, NoSymbol, NoSymbol, a, A, NoSymbol, NoSymbol ] };
+    key <AC04> { type="EIGHT_LEVEL_ALPHABETIC", [ o, O, NoSymbol, NoSymbol, o, O, NoSymbol, NoSymbol ] };
+    key <AC05> { type="EIGHT_LEVEL_ALPHABETIC", [ u, U, NoSymbol, NoSymbol, u, U, NoSymbol, NoSymbol ] };
+    key <AC06> { type="EIGHT_LEVEL_ALPHABETIC", [ m, M, NoSymbol, NoSymbol, m, M, NoSymbol, NoSymbol ] };
+    key <AC07> { type="EIGHT_LEVEL_ALPHABETIC", [ d, D, NoSymbol, NoSymbol, d, D, NoSymbol, NoSymbol ] };
+    key <AC08> { type="EIGHT_LEVEL_ALPHABETIC", [ s, S, NoSymbol, NoSymbol, s, S, NoSymbol, NoSymbol ] };
+    key <AC09> { type="EIGHT_LEVEL_ALPHABETIC", [ r, R, NoSymbol, NoSymbol, r, R, NoSymbol, NoSymbol ] };
+    key <AC10> { type="EIGHT_LEVEL_ALPHABETIC", [ n, N, NoSymbol, NoSymbol, n, N, NoSymbol, NoSymbol ] };
 
     //
     // Linha inferior
     //
-    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, NoSymbol, NoSymbol, y, Y ] };
-    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ccedilla, Ccedilla, NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
-    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ j, J, NoSymbol, NoSymbol, j, J ] };
-    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ b, B, NoSymbol, NoSymbol, b, B ] };
-    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K, NoSymbol, NoSymbol, k, K ] };
-    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ q, Q, NoSymbol, NoSymbol, q, Q ] };
-    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ v, V, NoSymbol, NoSymbol, v, V ] };
-    key <AB08> { type="EIGHT_LEVEL_ALPHABETIC", [ g, G, NoSymbol, NoSymbol, g, G ] };
-    key <AB09> { type="EIGHT_LEVEL_ALPHABETIC", [ f, F, NoSymbol, NoSymbol, f, F ] };
-    key <AB10> { type="EIGHT_LEVEL_ALPHABETIC", [ z, Z, NoSymbol, NoSymbol, z, Z ] };
+    key <AB01> { type="EIGHT_LEVEL_ALPHABETIC", [ y, Y, NoSymbol, NoSymbol, y, Y, NoSymbol, NoSymbol ] };
+    key <AB02> { type="EIGHT_LEVEL_ALPHABETIC", [ ccedilla, Ccedilla, NoSymbol, NoSymbol, ccedilla, Ccedilla, NoSymbol, NoSymbol ] };
+    key <AB03> { type="EIGHT_LEVEL_ALPHABETIC", [ j, J, NoSymbol, NoSymbol, j, J, NoSymbol, NoSymbol ] };
+    key <AB04> { type="EIGHT_LEVEL_ALPHABETIC", [ b, B, NoSymbol, NoSymbol, b, B, NoSymbol, NoSymbol ] };
+    key <AB05> { type="EIGHT_LEVEL_ALPHABETIC", [ k, K, NoSymbol, NoSymbol, k, K, NoSymbol, NoSymbol ] };
+    key <AB06> { type="EIGHT_LEVEL_ALPHABETIC", [ q, Q, NoSymbol, NoSymbol, q, Q, NoSymbol, NoSymbol ] };
+    key <AB07> { type="EIGHT_LEVEL_ALPHABETIC", [ v, V, NoSymbol, NoSymbol, v, V, NoSymbol, NoSymbol ] };
+    key <AB08> { type="EIGHT_LEVEL_ALPHABETIC", [ g, G, NoSymbol, NoSymbol, g, G, NoSymbol, NoSymbol ] };
+    key <AB09> { type="EIGHT_LEVEL_ALPHABETIC", [ f, F, NoSymbol, NoSymbol, f, F, NoSymbol, NoSymbol ] };
+    key <AB10> { type="EIGHT_LEVEL_ALPHABETIC", [ z, Z, NoSymbol, NoSymbol, z, Z, NoSymbol, NoSymbol ] };
 };
 
 //
 // Acentos são mostrados usando “o” como exemplo; dead_currency é ¤ e dead_greek é β
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │ |   │ 7   │ 5   │ 3   │ 1   │ 9   │ 8   │ 0   │ 2   │ 4   │ 6   │ % ª │ R$  ┃Backspace  ┃
-// │ {   │ }   │ (   │ )   │ [ < │ ] > │ = ≠ │ + ± │ - − │ * × │ / ÷ │ # º │ $ ¤ ┃           ┃
+// │ | \ │ 7   │ 5   │ 3 ⁄ │ 1 _ │ 9   │ % ¤ │ 0 β │ 2 ° │ 4 ′ │ 6 ″ │ 8   │ º ª ┃Backspace  ┃
+// │ = ≠ │ * × │ + ± │ / ÷ │ - − │ # % │ $   │ {   │ }   │ [   │ ]   │ ( < │ ) > ┃           ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃ !   │ :   │ ;   │   ◦ │     │     │   « │   » │   ‹ │   › │ ò o̱ │ & ¶ ┃Enter    ┃
-// ┃Tab    ┃ ? − │ . − │ , − │   • │   · │   W̃ │   “ │   ” │   ‘ │   ’ │ õ o゙ │ " § ┃         ┃
+// ┃       ┃ !   │ ;   │ :   │   · │   ◦ │     │   « │   » │   ‹ │   › │ ò o̱ │ & ¶ ┃Enter    ┃
+// ┃Tab    ┃ ? − │ , − │ . − │   · │   • │   W̃ │   “ │   ” │   ‘ │   ’ │ õ o゙ │ " § ┃         ┃
 // ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
-// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô ọ │ @ ø ┃       ┃
-// ┃Lock     ┃     │   È │   À │   Ò │   Ŭ │   µ │     │     │     │     │ ó ö │ ' ’ ┃       ┃
+// ┃Caps     ┃     │     │     │     │     │     │     │     │     │     │ ô   │ @ o ┃       ┃
+// ┃Lock     ┃   Ĭ │   È │   À │   Ò │   Ŭ │   µ │     │     │     │     │ ó ö │ ' o̍ ┃       ┃
 // ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃     ┃ ‒   │     │     │     │     │     │     │     │     │     │     │ | ơ ┃           ┃
-// ┃Shift┃ ’ ő │   Ỹ │   ȯ │   ö │   o̊ │   ō │   ŏ │   ǒ │   ǫ │   o̧ │   o̦ │ \ ỏ ┃Shift      ┃
+// ┃     ┃ ‐ ő │     │   ọ │   o̤ │   o̥ │   o̱ │   o̯ │   o̭ │   o̰ │   o̔ │   o̓ │ | ơ ┃           ┃
+// ┃Shift┃ ’ ø │   Ỹ │   ȯ │   ö │   o̊ │   ō │   ŏ │   ǒ │   ǫ │   o̧ │   o̦ │ \ ỏ ┃Shift      ┃
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
 // ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
@@ -91,40 +91,25 @@ xkb_symbols "nativo_letras" {
 partial alphanumeric_keys
 xkb_symbols "nativo_simbolos" {
     include "nativo_aspas(nativo_aspas)"
-    include "nativo_aspas(nativo_apostrofe_altgr)"
+    // include "nativo_aspas(nativo_apostrofe_altgr)"
 
     //
-    // Linha numérica
+    // Números e símbolos na primeira e na segunda camadas
     //
-    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
-    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
-    // sejam o padrão
-    //
-    key <TLDE> { type="EIGHT_LEVEL", [ braceleft, bar, ordfeminine, backslash, braceleft, bar, ordfeminine, backslash ] };
-    key <AE01> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ braceright, 7, NoSymbol, NoSymbol, braceright, 7, NoSymbol, NoSymbol ] };
-    key <AE02> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ parenleft, 5, dead_greek, NoSymbol, parenleft, 5, dead_greek, NoSymbol ] };
-    key <AE03> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ parenright, 3, degree, NoSymbol, parenright, 3, degree, NoSymbol ] };
-    key <AE04> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketleft, 1, less, NoSymbol, bracketleft, 1, less, NoSymbol ] };
-    key <AE05> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright, 9, greater, NoSymbol, bracketright, 9, greater, NoSymbol ] };
-
-    key <AE06> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ equal, 8, notequal, NoSymbol, equal, 8, notequal, NoSymbol ] };
-    key <AE07> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ plus, 0, plusminus, NoSymbol, plus, 0, plusminus, NoSymbol ] };
-    key <AE08> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ minus, 2, U2212, NoSymbol, minus, 2, U2212, NoSymbol ] };
-    key <AE09> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ asterisk, 4, multiply, NoSymbol, asterisk, 4, multiply, NoSymbol ] };
-    key <AE10> { type = "EIGHT_LEVEL_SEMIALPHABETIC", [ slash, 6, division, U2044, slash, 6, division, U2044 ] };
-    key <AE11> { type = "EIGHT_LEVEL", [ numbersign, percent, masculine, permille, numbersign, percent, masculine, permille ] };
-
-    key <AE12> { [ dollar, UF8CE, dead_currency, NoSymbol ] };
+    include "nativo_linha_superior(simbolos_separados_sinais_matematicos_parenteses)"
+    include "nativo_linha_superior(numeros_separados_zero_a_nove)"
+    include "nativo_linha_superior(simbolos_separados_capslock_tecla_a_direita)"
+    include "nativo_numerico(embutido)"
 
     //
     // Linha superior
     //
-    key <AD01> { [ question, exclam, endash, U2012 ] };
-    key <AD02> { [ comma, semicolon, emdash, U2011 ] };
-    key <AD03> { [ period, colon, U2015, U2010 ] };
-    key <AD04> { [ NoSymbol, NoSymbol, enfilledcircbullet, U25e6 ] };
-    key <AD05> { [ NoSymbol, NoSymbol, U00b7 ] };
-    key <AD06> { [ NoSymbol, NoSymbol, UF8FD, UF8FE ] };
+    key <AD01> { type="EIGHT_LEVEL", [ question, exclam, U2015, U2012, question, exclam, U2015, U2010 ] };
+    key <AD02> { type="EIGHT_LEVEL", [ comma, semicolon, emdash, U2011, comma, semicolon, emdash, U2012 ] };
+    key <AD03> { type="EIGHT_LEVEL", [ period, colon, endash, U2010, period, colon, endash, U2011 ] };
+    key <AD04> { [ NoSymbol, NoSymbol, U00b7, U02d9, quote, quotedbl, NoSymbol, NoSymbol ] };
+    key <AD05> { [ NoSymbol, NoSymbol, enfilledcircbullet, U25e6, at, ampersand, NoSymbol, NoSymbol ] };
+    key <AD06> { [ NoSymbol, NoSymbol, UF8FD, UF8FE, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AD11> { type="EIGHT_LEVEL", [ dead_tilde, dead_grave, dead_voiced_sound, dead_belowmacron, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AD12> { type="EIGHT_LEVEL", [ quotedbl, ampersand, section, paragraph, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -132,31 +117,32 @@ xkb_symbols "nativo_simbolos" {
     //
     // Linha central
     //
-    key <AC01> { [ NoSymbol, NoSymbol, ibreve, Ibreve ] };
-    key <AC02> { [ NoSymbol, NoSymbol, egrave, Egrave ] };
-    key <AC03> { [ NoSymbol, NoSymbol, agrave, Agrave ] };
-    key <AC04> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
-    key <AC05> { [ NoSymbol, NoSymbol, ubreve, Ubreve ] };
-    key <AC06> { [ NoSymbol, NoSymbol, mu ] };
+    key <AC01> { [ NoSymbol, NoSymbol, ibreve, Ibreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC02> { [ NoSymbol, NoSymbol, egrave, Egrave, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC03> { [ NoSymbol, NoSymbol, agrave, Agrave, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC04> { [ NoSymbol, NoSymbol, ograve, Ograve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC05> { [ NoSymbol, NoSymbol, ubreve, Ubreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC06> { [ NoSymbol, NoSymbol, mu, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <AC11> { type="EIGHT_LEVEL", [ dead_acute, dead_circumflex, dead_diaeresis, dead_belowdot, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <BKSL> { type="EIGHT_LEVEL", [ quote, at, NoSymbol, dead_stroke, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC11> { type="EIGHT_LEVEL", [ dead_acute, dead_circumflex, dead_diaeresis, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key <BKSL> { type="EIGHT_LEVEL", [ apostrophe, at, U030D, U030E, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ apostrophe, at, U02cc, U02c8, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     //
     // Linha inferior
     //
-    key <LSGT> { [ rightsinglequotemark, U2010, dead_doubleacute ] };
-    key <AB01> { [ NoSymbol, NoSymbol, U1EF9, U1EF8 ] };
-    key <AB02> { [ NoSymbol, NoSymbol, dead_abovedot  ] };
-    key <AB03> { [ NoSymbol, NoSymbol, dead_diaeresis ] };
-    key <AB04> { [ NoSymbol, NoSymbol, dead_abovering ] };
-    key <AB05> { [ NoSymbol, NoSymbol, dead_macron ] };
-    key <AB06> { [ NoSymbol, NoSymbol, dead_breve ] };
-    key <AB07> { [ NoSymbol, NoSymbol, dead_caron ] };
-    key <AB08> { [ NoSymbol, NoSymbol, dead_ogonek ] };
-    key <AB09> { [ NoSymbol, NoSymbol, dead_cedilla ] };
-    key <AB10> { [ NoSymbol, NoSymbol, dead_belowcomma ] };
-    key <AB11> { [ backslash, bar, dead_hook, dead_horn ] };
+    key <LSGT> { type="EIGHT_LEVEL", [ rightsinglequotemark, U2010, dead_stroke, dead_doubleacute, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB01> { [ NoSymbol, NoSymbol, U1EF9, U1EF8, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB02> { [ NoSymbol, NoSymbol, dead_abovedot, dead_belowdot, NoSymbol, NoSymbol, NoSymbol, NoSymbol  ] };
+    key <AB03> { [ NoSymbol, NoSymbol, dead_diaeresis, dead_belowdiaeresis, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB04> { [ NoSymbol, NoSymbol, dead_abovering, dead_belowring, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB05> { [ NoSymbol, NoSymbol, dead_macron, dead_belowmacron, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB06> { [ NoSymbol, NoSymbol, dead_breve, dead_invertedbreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB07> { [ NoSymbol, NoSymbol, dead_caron, dead_belowcircumflex, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB08> { [ NoSymbol, NoSymbol, dead_ogonek, dead_belowtilde, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB09> { [ NoSymbol, NoSymbol, dead_cedilla, dead_abovereversedcomma, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB10> { [ NoSymbol, NoSymbol, dead_belowcomma, dead_abovecomma, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB11> { type="EIGHT_LEVEL", [ backslash, bar, dead_hook, dead_horn, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
 //
 // Lista dos símbolos possíveis:
@@ -209,7 +195,7 @@ xkb_symbols "nativo_simbolos_acento_combinante" {
 //
 // ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
 // ┃      ┃      ┃       ┃ Underline _   Espaço inseparável fino ┃      ┃      ┃      ┃      ┃
-// ┃Ctrl  ┃Meta  ┃Alt    ┃ Espaço    ␣        Espaço inseparável ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃ Espaço    ␣   ⍽    Espaço inseparável ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
 // ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
 //
 partial alphanumeric_keys
@@ -223,8 +209,7 @@ xkb_symbols "nativo_base" {
     // Configura o "." e a "," no teclado numérico
     //
     include "keypad(core)"
-    include "nativo_numerico(teclado_numerico)"
-    include "nativo_numerico(teclado_numerico_embutido)"
+    include "nativo_numerico(dedicado)"
 
     //
     // Makes AltGr use latch behavior, i.e., you can press AltGr, release it,
@@ -243,16 +228,27 @@ xkb_symbols "nativo_base" {
     // include "level5(lock)"
 
     key <CAPS> {
-    type[Group1] = "EIGHT_LEVEL",
-        symbols[Group1] = [ ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock ]
+        type[Group1] = "EIGHT_LEVEL",
+        symbols[Group1] = [
+            Caps_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock,
+            Caps_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock
+        ]
     };
 
-    //
-    // Usa AltGr+Win para a mesma função
-    //
+    // //
+    // // Usa Shift + Shift para CapsLock
+    // //
+    // include "shift(both_capslock)"
+
+    // //
+    // // Usa Shift+Win para a mesma função
+    // //
     // key <LWIN> {
-    // type[Group1] = "EIGHT_LEVEL",
-    //     symbols[Group1] = [ Super_L, Super_L, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock ]
+    //     type[Group1] = "EIGHT_LEVEL",
+    //     symbols[Group1] = [
+    //         Super_L, ISO_Level5_Lock, ISO_Level5_Shift, ISO_Level5_Lock,
+    //         Super_L, ISO_Level5_Lock, ISO_Level5_Shift, ISO_Level5_Lock
+    //     ]
     // };
 
     //
@@ -261,9 +257,4 @@ xkb_symbols "nativo_base" {
     key <LCTL> { type[Group1]="FOUR_LEVEL", [ Control_L, Control_L, Multi_key, Multi_key ] };
     key <RCTL> { type[Group1]="FOUR_LEVEL", [ Control_R, Control_R, Multi_key, Multi_key ] };
     key <MENU> { type[Group1]="FOUR_LEVEL", [ Menu, Menu, Multi_key, Multi_key ] };
-
-    //
-    // Usa Shift + Shift para CapsLock
-    //
-    include "shift(both_capslock)"
 };

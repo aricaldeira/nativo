@@ -1,0 +1,360 @@
+//
+// Leiaute Nativo - subleiautes da linha superior/numerica
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_um_a_zero" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key <AE11> { type = "EIGHT_LEVEL", [ parenleft, ordfeminine, less, UF8F2, parenleft, less, ordfeminine, UF8F2 ] };
+    // key <AE12> { type = "EIGHT_LEVEL", [ parenright, masculine, greater, UF8F1, parenright, greater, masculine, UF8F1 ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 0   │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_zero_a_nove" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 9   │ 7   │ 5   │ 3   │ 1   │ 0   │ 2   │ 4   │ 6   │ 8   │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_impar_par" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 9   │ 8   │ 7   │ 6   │ 5   │ 0   │ 1   │ 2   │ 3   │ 4   │     │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_mao_invertida" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 1   │ 2   │ 3   │ 4   │ 5   │     │ 6   │ 7   │ 8   │ 9   │ 0   │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_separados_um_a_zero" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 0   │ 1   │ 2   │ 3   │ 4   │     │ 5   │ 6   │ 7   │ 8   │ 9   │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_separados_zero_a_nove" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    // key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 9   │ 7   │ 5   │ 3   │ 1   │     │ 0   │ 2   │ 4   │ 6   │ 8   │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_separados_impar_par" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ 9   │ 8   │ 7   │ 6   │ 5   │     │ 0   │ 1   │ 2   │ 3   │ 4   │     ┃Backspace  ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "numeros_separados_mao_invertida" {
+    //
+    // Linha numérica
+    //
+    // O uso do tipo EIGHT_LEVEL_SEMIALPHABETIC faz com que, pra essas teclas, o CapsLock
+    // tenha o mesmo efeito do NumLock, ou seja, CapsLock vai fazer com que os números
+    // sejam o padrão
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        9, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        8, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        7, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        6, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        5, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        0, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        1, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        2, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        3, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ NoSymbol,        4, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │ | \ │     │     │   ⁄ │   _ │     │ % ¤ │   β │   ° │   ′ │   ″ │ ª   │ º ª ┃Backspace  ┃
+// │ = ≠ │ * × │ + ± │ / ÷ │ - − │ # % │ $ ‰│ {   │ }   │ [   │ ]   │ ( < │ ) > ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │ ≠   │ ×   │ ±   │ ÷   │ −   │ #   │ R$ ¤│ β   │ °   │ ′   │ ″   │ <   │ >   ┃Backspace  ┃
+// │ =   │ *   │ +   │ / ⁄ │ -   │ % ‰│ $ ‱│ {   │ }   │ [   │ ]   │ (   │ )   ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+partial keypad_keys
+xkb_symbols "simbolos_sinais_matematicos_parenteses" {
+    //
+    // Linha numérica
+    //
+    key <TLDE> { type="EIGHT_LEVEL"               , [        equal,        bar,      notequal,   backslash,
+                                                             equal,   notequal,           bar,   backslash ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [     asterisk,   NoSymbol,      multiply,    NoSymbol,
+                                                          asterisk,   multiply,      NoSymbol,    NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [         plus,   NoSymbol,     plusminus,    NoSymbol,
+                                                              plus,   plusminus,     NoSymbol,    NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        slash,   NoSymbol,      division,       U2044,
+                                                             slash,   division,         U2044,    NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        minus,   NoSymbol,         U2212,  underscore,
+                                                             minus,      U2212,    underscore,    NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   numbersign,   NoSymbol,       percent,    permille,
+                                                           percent, numbersign,      permille,    NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [       dollar,    percent,      permille, dead_currency,
+                                                            dollar,      UF8CE,         U2031, dead_currency ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    braceleft,   NoSymbol,         U2031,  dead_greek,
+                                                         braceleft, dead_greek,      NoSymbol,  dead_greek ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   braceright,   NoSymbol,      NoSymbol,      degree,
+                                                        braceright,     degree,      NoSymbol,      degree ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [  bracketleft,   NoSymbol,      NoSymbol,     minutes,
+                                                       bracketleft,    minutes,      NoSymbol,     minutes ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright,   NoSymbol,      NoSymbol,     seconds,
+                                                      bracketright,    seconds,      NoSymbol,     seconds ] };
+    key <AE11> { type="EIGHT_LEVEL"               , [    parenleft, ordfeminine,          less,   NoSymbol,
+                                                         parenleft,        less,      NoSymbol,   NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [   parenright,   masculine,       greater, ordfeminine,
+                                                        parenright,    greater,      masculine, ordfeminine ] };
+    // key <AE11> { type = "EIGHT_LEVEL", [ parenleft, ordfeminine, less, UF8F2, parenleft, less, ordfeminine, UF8F2 ] };
+    // key <AE12> { type = "EIGHT_LEVEL", [ parenright, masculine, greater, UF8F1, parenright, greater, masculine, UF8F1 ] };
+};
+
+
+partial keypad_keys
+xkb_symbols "simbolos_separados_sinais_matematicos_parenteses" {
+    include "nativo_linha_superior(simbolos_sinais_matematicos_parenteses)"
+
+    key <AE06> { type="EIGHT_LEVEL" };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AE12> { type="EIGHT_LEVEL_SEMIALPHABETIC" };
+};
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │ º ª │     │   ° │   ′ │   ″ │   β │ %   │     │   ⁄ │     │     │     │ | \ ┃Backspace  ┃
+// │ {   │ }   │ [   │ ]   │ ( < │ ) > │ #   │ $   │ / ÷ │ * × │ - − │ + ± │ = ≠ ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │ º   │     │   ° │   ′ │ < ″ │ > β │ #   │     │ ÷   │ × ⋅ │ − ₋ │ ± ₊ │ ≠   ┃Backspace  ┃
+// │ {   │ }   │ [   │ ]   │ (   │ )   │ %   │ $   │ / ⁄ │ *  ̅ │ - ⁻ │ + ⁺ │ = ≅ ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+
+//
+partial keypad_keys
+xkb_symbols "simbolos_parenteses_sinais_matematicos" {
+    //
+    // Linha numérica
+    //
+    key <TLDE> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    braceleft,  masculine,      NoSymbol, ordfeminine,
+                                                         braceleft,  masculine,      NoSymbol, ordfeminine ] };
+    key <AE01> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   braceright,      UF8CE,      NoSymbol,    NoSymbol,
+                                                        braceright,      UF8CE,      NoSymbol,    NoSymbol ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [  bracketleft,   NoSymbol,      NoSymbol,     degree,
+                                                       bracketleft,     degree,      NoSymbol,    NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright,   NoSymbol,      NoSymbol,     minutes,
+                                                      bracketright,    minutes,      NoSymbol,    NoSymbol  ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    parenleft,   NoSymbol,          less,     seconds,
+                                                         parenleft,       less,       seconds,    NoSymbol ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   parenright,   NoSymbol,       greater,  dead_greek,
+                                                        parenright,    greater,    dead_greek,    NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   numbersign,    percent,      permille,    NoSymbol,
+                                                           percent,   permille,      NoSymbol,    NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [       dollar,   NoSymbol,      NoSymbol, dead_currency,
+                                                            dollar,   NoSymbol,      NoSymbol, dead_currency ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        slash,   NoSymbol,      division,       U2044,
+                                                             slash,   division,         U2044,    NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [     asterisk,      UF8CE,      multiply,    NoSymbol,
+                                                          asterisk,   multiply,      NoSymbol,    NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        minus,   NoSymbol,         U2212,  underscore,
+                                                             minus,      U2212,    underscore,    NoSymbol ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [         plus,   NoSymbol,     plusminus,    NoSymbol,
+                                                              plus,  plusminus,      NoSymbol,    NoSymbol ] };
+    key <AE12> { type="EIGHT_LEVEL"               , [        equal,        bar,      notequal,   backslash,
+                                                             equal,   notequal,           bar,   backslash ] };
+};
+
+partial keypad_keys
+xkb_symbols "simbolos_separados_parenteses_sinais_matematicos" {
+    include "nativo_linha_superior(simbolos_parenteses_sinais_matematicos)"
+
+    key <AE06> { type="EIGHT_LEVEL" };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AE12> { type="EIGHT_LEVEL_SEMIALPHABETIC" };
+};
+
+partial keypad_keys
+xkb_symbols "simbolos_separados_capslock_tecla_a_direita" {
+    key <AE12> { type="EIGHT_LEVEL_SEMIALPHABETIC" };
+};

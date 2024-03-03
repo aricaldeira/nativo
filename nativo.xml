@@ -131,6 +131,17 @@
         </variant>
         <variant>
           <configItem>
+            <name>direita</name>
+            <shortDescription>→</shortDescription>
+            <description>Nativo - Uma tecla pra direita</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>espanhol</name>
             <shortDescription>es</shortDescription>
             <description>Nativo - Espanhol</description>
