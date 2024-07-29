@@ -1,0 +1,105 @@
+#
+# nativo.map
+#
+alt_is_meta
+keymaps 0-12
+include "qwerty-layout"
+include "linux-with-alt-and-altgr"
+strings as usual
+compose as usual for "iso-8859-1"
+
+keycode   1 = Escape Escape
+keycode  14 = Delete  Delete
+keycode  15 = Tab Tab
+keycode  28 = Return
+keycode  29 = Control
+keycode  42 = Shift
+keycode  54 = Shift
+keycode  56 = Alt
+keycode  58 = Caps_Lock
+keycode  69 = Num_Lock
+keycode  97 = Control
+keycode 125 = Scroll_Backward
+keycode 126 = Scroll_Forward
+keycode 127 = Compose
+keycode  70 = Scroll_Lock Show_Memory Show_Registers Show_State
+
+#strings as usual
+#compose as usual for "iso-8859-1"
+
+keycode  57 = space underscore nobreakspace U+202f Control_underscore
+
+#
+# Garante o funcionamento correto do teclado numérico
+#
+keycode 83 = comma
+shift keycode 83 = comma
+control alt keycode  83 = Boot
+
+keycode 121 = period
+shift keycode 121 = period
+
+#
+# Linha numérica
+#
+keycode 41 = bar backslash Control_backslash
+keycode  2 = equal dollar U+2260
+keycode  3 = +asterisk +zero multiply
+keycode  4 = +plus +one plusminus
+keycode  5 = +slash +two division
+keycode  6 = +minus +three U+2212
+keycode  7 = +numbersign +four U+2044
+keycode  8 = +braceleft +five backslash
+keycode  9 = +braceright +six bar
+keycode 10 = +bracketleft +seven
+keycode 11 = +bracketright +eight degree
+keycode 12 = +parenleft +nine less
+keycode 13 = +parenright +percent greater
+
+#
+# Primeira linha
+#
+keycode 16 = quotedbl ampersand section paragraph
+keycode 17 = question exclam
+keycode 18 = comma semicolon
+keycode 19 = period colon
+keycode 20 = +h +H VoidSymbol VoidSymbol Control_h
+keycode 21 = +x +X VoidSymbol VoidSymbol Control_x
+keycode 22 = +w +W VoidSymbol VoidSymbol Control_w
+keycode 23 = +l +L U+2018 U+2039 Control_l
+keycode 24 = +t +T U+2019 U+2040 Control_t
+keycode 25 = +c +C U+201C U+00AB Control_c
+keycode 26 = +p +P U+201D U+00BB Control_p
+keycode 27 = dead_tilde dead_grave U+0331
+
+#
+# Segunda linha
+#
+keycode 30 = apostrophe at masculine ordfeminine
+keycode 31 = +i +I VoidSymbol VoidSymbol Control_i
+keycode 32 = +e +E +egrave +Egrave Control_e
+keycode 33 = +a +A +agrave +Agrave Control_a
+keycode 34 = +o +O +ograve +Ograve Control_o
+keycode 35 = +u +U +ubreve +Ubreve Control_w
+keycode 36 = +m +M U+00b5 VoidSymbol Control_m
+keycode 37 = +d +D VoidSymbol VoidSymbol Control_d
+keycode 38 = +s +S VoidSymbol VoidSymbol Control_s
+keycode 39 = +r +R VoidSymbol VoidSymbol Control_r
+keycode 40 = +n +N VoidSymbol VoidSymbol Control_n
+keycode 43 = dead_acute dead_circumflex dead_diaeresis
+
+#
+# Terceira linha
+#
+keycode 86 = U+210C U+210C U+2018 U+2019
+keycode 44 = U+2019 U+2010
+keycode 45 = +y +Y VoidSymbol VoidSymbol Control_y
+keycode 46 = +ccedilla +Ccedilla
+keycode 47 = +j +J VoidSymbol VoidSymbol Control_j
+keycode 48 = +b +B VoidSymbol VoidSymbol Control_b
+keycode 49 = +k +K VoidSymbol VoidSymbol Control_k
+keycode 50 = +q +Q VoidSymbol VoidSymbol Control_q
+keycode 51 = +v +V VoidSymbol VoidSymbol Control_v
+keycode 52 = +g +G VoidSymbol VoidSymbol Control_g
+keycode 53 = +f +F VoidSymbol VoidSymbol Control_f
+keycode 89 = +z +Z VoidSymbol VoidSymbol Control_z

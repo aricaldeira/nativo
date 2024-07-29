@@ -263,6 +263,17 @@
         </variant>
         <variant>
           <configItem>
+            <name>kanata</name>
+            <shortDescription>KNT</shortDescription>
+            <description>Nativo - uso com o kanata</description>
+            <languageList>
+              <iso639Id>por</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>latim</name>
             <shortDescription>la</shortDescription>
             <description>Nativo - Latim</description>

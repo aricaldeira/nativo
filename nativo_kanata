@@ -1,0 +1,150 @@
+//
+// Leiaute Nativo - para uso com o Kanata
+//
+
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+// │     │ ≠   │ ×   │ ±   │ ÷   │ −   │ µ   │ ⁄   │ {   │ }   │ <   │ >   │ ¤   ┃Backspace  ┃
+// │     │ =   │ * 0 │ + 1 │ / 2 │ - 3 │ # 4 │ % 5 │ ( 6 │ ) 7 │ [ 8 │ ] 9 │ $   ┃           ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+// ┃       ┃ @   │ !   │ ;   │ :   │ H ◦ │ X   │ W   │ L   │ T   │ C   │ P   │ `   ┃Enter    ┃
+// ┃Tab    ┃ " ‐ │ ?   │ ,   │ .   │   • │   · │     │   “ │   ” │   ‘ │   ’ │ ~   ┃         ┃
+// ┣━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┓       ┃
+// ┃Caps     ┃ &   │ I   │ E   │ A   │ O   │ U   │ M   │ D   │ S   │ R   │ N ª │ ^   ┃       ┃
+// ┃Lock     ┃ ' ’ │     │   É │   Ã │     │   Ŭ │   µ │     │     │  R$ │   º │ ´ ¨ ┃       ┃
+// ┣━━━━━┳━━━┹─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
+// ┃     ┃ ¶   │ §   │ Y   │ Ç   │ J   │ B   │ K   │ Q   │ V   │ G   │ F   │ Z   ┃           ┃
+// ┃Shift┃ \   │ |   │     │     │     │     │     │     │     │     │     │     ┃Shift      ┃
+// ┣━━━━━┻┳━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━┳━━┷━━━┳━┻━━━━┳━━━━━━┫
+// ┃      ┃      ┃       ┃                                       ┃      ┃      ┃      ┃      ┃
+// ┃Ctrl  ┃Meta  ┃Alt    ┃                                       ┃AltGr ┃Meta  ┃Menu  ┃Ctrl  ┃
+// ┗━━━━━━┻━━━━━━┻━━━━━━━┹───────────────────────────────────────┺━━━━━━┻━━━━━━┻━━━━━━┻━━━━━━┛
+//
+partial alphanumeric_keys
+xkb_symbols "nativo_kanata" {
+    //
+    // Linha numérica
+    //
+    // key <TLDE> { type="FOUR_LEVEL", [         bar,        section,  NoSymbol,      NoSymbol ] };
+    key <AE01> { type="FOUR_LEVEL", [        equal,      notequal,     U202f,      NoSymbol ] };
+    key <AE02> { type="FOUR_LEVEL", [     asterisk,      multiply,    degree,             0 ] };
+    key <AE03> { type="FOUR_LEVEL", [         plus,     plusminus,   minutes,             1 ] };
+    key <AE04> { type="FOUR_LEVEL", [        slash,      division,   seconds,             2 ] };
+    key <AE05> { type="FOUR_LEVEL", [        minus,         U2212,  NoSymbol,             3 ] };
+    key <AE06> { type="FOUR_LEVEL", [   numbersign,    dead_greek,  NoSymbol,             4 ] };
+    key <AE07> { type="FOUR_LEVEL", [      percent,         U2044,  NoSymbol,             5 ] };
+    key <AE08> { type="FOUR_LEVEL", [    parenleft,     braceleft,  NoSymbol,             6 ] };
+    key <AE09> { type="FOUR_LEVEL", [   parenright,    braceright,  NoSymbol,             7 ] };
+    key <AE10> { type="FOUR_LEVEL", [  bracketleft,          less,  NoSymbol,             8 ] };
+    key <AE11> { type="FOUR_LEVEL", [ bracketright,       greater,  NoSymbol,             9 ] };
+    key <AE12> { type="FOUR_LEVEL", [       dollar, dead_currency,     U2007,      NoSymbol ] };
+
+    //
+    // Linha superior
+    //
+    key <AD01> { type="FOUR_LEVEL"           , [   quotedbl,  ampersand,                U2010,         NoSymbol ] };
+    key <AD02> { type="FOUR_LEVEL"           , [   question,     exclam,               endash,          NoSymbol ] };
+    key <AD03> { type="FOUR_LEVEL"           , [      comma,  semicolon,               emdash,            U2011 ] };
+    key <AD04> { type="FOUR_LEVEL"           , [     period,      colon,                U2015,            U2012 ] };
+    key <AD05> { type="FOUR_LEVEL_ALPHABETIC", [          h,          H,   enfilledcircbullet,            U25e6 ] };
+    key <AD06> { type="FOUR_LEVEL_ALPHABETIC", [          x,          X,                U00b7,         NoSymbol ] };
+    key <AD07> { type="FOUR_LEVEL_ALPHABETIC", [          w,          W,             NoSymbol,         NoSymbol ] };
+    key <AD08> { type="FOUR_LEVEL_ALPHABETIC", [          l,          L,  leftdoublequotemark,    guillemotleft ] };
+    key <AD09> { type="FOUR_LEVEL_ALPHABETIC", [          t,          T, rightdoublequotemark,   guillemotright ] };
+    key <AD10> { type="FOUR_LEVEL_ALPHABETIC", [          c,          C,  leftsinglequotemark,            U2039 ] };
+    key <AD11> { type="FOUR_LEVEL_ALPHABETIC", [          p,          P, rightsinglequotemark,            U203A ] };
+    key <AD12> { type="FOUR_LEVEL"           , [ dead_tilde, dead_grave,    dead_voiced_sound, dead_belowmacron ] };
+
+    //
+    // Linha central
+    //
+    key <AC01> { type="FOUR_LEVEL"           , [ apostrophe,              at, rightsinglequotemark, NoSymbol ] };
+    key <AC02> { type="FOUR_LEVEL_ALPHABETIC", [          i,               I,         egrave,      Egrave ] };
+    key <AC03> { type="FOUR_LEVEL_ALPHABETIC", [          e,               E,         eacute,      Eacute ] };
+    key <AC04> { type="FOUR_LEVEL_ALPHABETIC", [          a,               A,         atilde,      Atilde ] };
+    key <AC05> { type="FOUR_LEVEL_ALPHABETIC", [          o,               O,         ograve,      Ograve ] };
+    key <AC06> { type="FOUR_LEVEL_ALPHABETIC", [          u,               U,         ubreve,      Ubreve ] };
+    key <AC07> { type="FOUR_LEVEL_ALPHABETIC", [          m,               M,             mu,    NoSymbol ] };
+    key <AC08> { type="FOUR_LEVEL_ALPHABETIC", [          d,               D,       NoSymbol,    NoSymbol ] };
+    key <AC09> { type="FOUR_LEVEL_ALPHABETIC", [          s,               S,       NoSymbol,    NoSymbol ] };
+    key <AC10> { type="FOUR_LEVEL_ALPHABETIC", [          r,               R,          UF8CE,    NoSymbol ] };
+    key <AC11> { type="FOUR_LEVEL_ALPHABETIC", [          n,               N,      masculine, ordfeminine ] };
+    key <BKSL> { type="FOUR_LEVEL"           , [ dead_acute, dead_circumflex, dead_diaeresis,    NoSymbol ] };
+
+    //
+    // Linha inferior
+    //
+    key <LSGT> { type="FOUR_LEVEL"           , [ backslash, paragraph, NoSymbol, NoSymbol ] };
+    key <AB01> { type="FOUR_LEVEL"           , [       bar,   section, NoSymbol, NoSymbol ] };
+    key <AB02> { type="FOUR_LEVEL_ALPHABETIC", [         y,         Y,    U1EF9,    U1EF8 ] };
+    key <AB03> { type="FOUR_LEVEL_ALPHABETIC", [  ccedilla,  Ccedilla, NoSymbol, NoSymbol ] };
+    key <AB04> { type="FOUR_LEVEL_ALPHABETIC", [         j,         J, NoSymbol, NoSymbol ] };
+    key <AB05> { type="FOUR_LEVEL_ALPHABETIC", [         b,         B, NoSymbol, NoSymbol ] };
+    key <AB06> { type="FOUR_LEVEL_ALPHABETIC", [         k,         K, NoSymbol, NoSymbol ] };
+    key <AB07> { type="FOUR_LEVEL_ALPHABETIC", [         q,         Q, NoSymbol, NoSymbol ] };
+    key <AB08> { type="FOUR_LEVEL_ALPHABETIC", [         v,         V, NoSymbol, NoSymbol ] };
+    key <AB09> { type="FOUR_LEVEL_ALPHABETIC", [         g,         G, NoSymbol, NoSymbol ] };
+    key <AB10> { type="FOUR_LEVEL_ALPHABETIC", [         f,         F, NoSymbol, NoSymbol ] };
+    key <AB11> { type="FOUR_LEVEL_ALPHABETIC", [         z,         Z, NoSymbol, NoSymbol ] };
+
+    //
+    // Linha do espaço
+    //
+    key <SPCE> { [ space, underscore, nobreakspace, U202f ] };
+
+    //
+    // Configura o "." e a "," no teclado numérico
+    //
+    include "keypad(core)"
+    include "nativo_numerico(dedicado)"
+    // key <RALT> {
+    //   type[Group1]="THREE_LEVEL",
+    //   symbols[Group1] = [ ISO_Level3_Latch, ISO_Level3_Latch, ISO_Level3_Latch ]
+    // };
+    include "level3(ralt_switch)"
+    include "level5(lock)"
+
+    key <KPDL> { type="FOUR_LEVEL", [  comma,  U201E, U202F, U200A ] };
+    key <I129> { type="FOUR_LEVEL", [ period,  U2025, U02D9, U200D ] };
+    key <TLDE> { type="FOUR_LEVEL", [ UF1E6E, UF1E6F, U202F, U200A ] };
+
+    key <I125> { type="FOUR_LEVEL", [  U202F,  U200A, U202F, U200A ] };
+
+// https://doc.servo.org/x11/keysym/index.html
+//
+// dead_A              dead_a
+// dead_E              dead_e
+// dead_I              dead_i
+// dead_O              dead_o
+// dead_U              dead_u
+// dead_capital_schwa  dead_small_schwa
+//
+// dead_semivoiced_sound
+// dead_voiced_sound
+//
+// dead_greek
+// dead_dasia
+// dead_iota
+// dead_perispomeni
+// dead_psili
+//
+// dead_currency
+//
+// dead_abovecomma          dead_belowcomma
+// dead_abovedot            dead_belowdot
+// dead_abovering           dead_belowring
+// dead_aboveverticalline   dead_belowverticalline
+// dead_acute               dead_doubleacute
+// dead_breve               dead_belowbreve         dead_invertedbreve
+// dead_caron
+// dead_cedilla             dead_abovereversedcomma
+// dead_circumflex          dead_belowcircumflex
+// dead_diaeresis           dead_belowdiaeresis
+// dead_grave               dead_doublegrave
+// dead_hook
+// dead_horn                dead_ogonek
+// dead_macron              dead_belowmacron
+// dead_tilde               dead_belowtilde
+// dead_stroke
+//
+};

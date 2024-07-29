@@ -95,78 +95,118 @@ xkb_symbols "nativo_simbolos_direita" {
     //
     // key <AB11> { type="EIGHT_LEVEL", [ backslash, bar, dead_hook, dead_horn, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <TLDE> { type="EIGHT_LEVEL"               , [         bar,   backslash,      NoSymbol, NoSymbol,
-                                                              bar,  backslash,      NoSymbol, NoSymbol ] };
-    key <AE01> { type="EIGHT_LEVEL"               , [    braceleft,  masculine,  ordfeminine, dead_greek,
-                                                         braceleft,  masculine,  ordfeminine, dead_greek ] };
-    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   braceright,          0,      NoSymbol,    degree,
-                                                        braceright,          0,      NoSymbol,    degree ] };
-    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [  bracketleft,          1,      NoSymbol,    minutes,
-                                                       bracketleft,          1,      NoSymbol,    minutes ] };
-    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright,          2,      NoSymbol,    seconds,
-                                                      bracketright,          2,      NoSymbol,    seconds  ] };
-    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    parenleft,          3,          less,    NoSymbol,
-                                                         parenleft,          3,          less,    NoSymbol ] };
-    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   parenright,          4,       greater,    NoSymbol,
-                                                        parenright,          4,       greater,    NoSymbol ] };
-    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        equal,          5,      notequal,    NoSymbol,
-                                                             equal,          5,      notequal,    NoSymbol ] };
-    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [         plus,          6,     plusminus,    NoSymbol,
-                                                              plus,          6,     plusminus,    NoSymbol ] };
-    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        minus,          7,         U2212,    NoSymbol,
-                                                             minus,          7,         U2212,    NoSymbol ] };
-    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        asterisk,       8,      multiply,    NoSymbol,
-                                                             asterisk,       8,      multiply,    NoSymbol ] };
-    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [         slash,         9,      division,       U2044,
-                                                              slash,         9,      division,       U2044 ] };
-    key <AE12> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    numbersign,   percent,      permille,       U2031,
-                                                          numbersign,  percent,      permille,       U2031 ] };
+    key <TLDE> { type="EIGHT_LEVEL"               , [          bar, backslash,      NoSymbol,    NoSymbol,
+                                                               bar, backslash,      NoSymbol,    NoSymbol ] };
+    key <AE01> { type="EIGHT_LEVEL"               , [        equal,    dollar,      notequal, dead_currency,
+                                                             equal,    dollar,      notequal, dead_currency ] };
+    key <AE02> { type="EIGHT_LEVEL_SEMIALPHABETIC", [     asterisk,         0,      multiply,    NoSymbol,
+                                                          asterisk,         0,      multiply,    NoSymbol ] };
+    key <AE03> { type="EIGHT_LEVEL_SEMIALPHABETIC", [         plus,         1,     plusminus,    NoSymbol,
+                                                              plus,         1,     plusminus,    NoSymbol ] };
+    key <AE04> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        slash,         2,      division,    NoSymbol,
+                                                             slash,         2,      division,    NoSymbol  ] };
+    key <AE05> { type="EIGHT_LEVEL_SEMIALPHABETIC", [        minus,         3,         U2212,    NoSymbol,
+                                                             minus,         3,         U2212,    NoSymbol ] };
+    key <AE06> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   numbersign,         4,         U2044,    NoSymbol,
+                                                        numbersign,         4,         U2044,    NoSymbol ] };
+    key <AE07> { type="EIGHT_LEVEL_SEMIALPHABETIC", [      percent,         5,     backslash,    NoSymbol,
+                                                           percent,         5,     backslash,    NoSymbol ] };
+    key <AE08> { type="EIGHT_LEVEL_SEMIALPHABETIC", [    parenleft,         6,     braceleft,    NoSymbol,
+                                                         parenleft,         6,     braceleft,    NoSymbol ] };
+    key <AE09> { type="EIGHT_LEVEL_SEMIALPHABETIC", [   parenright,         7,    braceright,    NoSymbol,
+                                                        parenright,         7,    braceright,    NoSymbol ] };
+    key <AE10> { type="EIGHT_LEVEL_SEMIALPHABETIC", [  bracketleft,         8,          less,    degree,
+                                                       bracketleft,         8,          less,    degree ] };
+    key <AE11> { type="EIGHT_LEVEL_SEMIALPHABETIC", [ bracketright,         9,       greater,    minutes,
+                                                      bracketright,         9,       greater,    minutes ] };
+    key <AE12> { type="EIGHT_LEVEL_SEMIALPHABETIC", [          bar,   percent,     backslash,    seconds,
+                                                               bar,   percent,     backslash,    seconds ] };
 
     //
     // Linha superior
     //
-    key <AD01> { type="EIGHT_LEVEL", [ quotedbl, ampersand, section, paragraph, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD02> { type="EIGHT_LEVEL", [ question, exclam, U2015, U2012, question, exclam, U2015, U2010 ] };
-    key <AD03> { type="EIGHT_LEVEL", [ comma, semicolon, emdash, U2011, comma, semicolon, emdash, U2012 ] };
-    key <AD04> { type="EIGHT_LEVEL", [ period, colon, endash, U2010, period, colon, endash, U2011 ] };
-    key <AD05> { [ NoSymbol, NoSymbol, enfilledcircbullet, U25e6, quote, quotedbl, NoSymbol, NoSymbol ] };
-    key <AD06> { [ NoSymbol, NoSymbol, U00b7, NoSymbol, at, ampersand, NoSymbol, NoSymbol ] };
-    key <AD07> { [ NoSymbol, NoSymbol, UF8FD, UF8FE, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD08> { [ NoSymbol, NoSymbol, leftdoublequotemark, guillemotleft ] };
-    key <AD09> { [ NoSymbol, NoSymbol, rightdoublequotemark, guillemotright ] };
-    key <AD10> { [ NoSymbol, NoSymbol, leftsinglequotemark, U2039 ] };
-    key <AD11> { [ NoSymbol, NoSymbol, rightsinglequotemark, U203A ] };
-    key <AD12> { type="EIGHT_LEVEL", [ dead_tilde, dead_grave, dead_voiced_sound, dead_belowmacron, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD01> { type="EIGHT_LEVEL", [   quotedbl,  ampersand,             section,         paragraph,
+                                         quotedbl,  ampersand,             section,         paragraph ] };
+    key <AD02> { type="EIGHT_LEVEL", [   question,     exclam,                U2015,            U2012,
+                                                9,      U2079,                U2089,            U2197 ] };
+    key <AD03> { type="EIGHT_LEVEL", [      comma,  semicolon,               emdash,            U2011,
+                                                8,      U2078,                U2088,            U2191 ] };
+    key <AD04> { type="EIGHT_LEVEL", [     period,      colon,               endash,            U2010,
+                                                7,      U2077,                U2087,            U2196 ] };
+    key <AD05> {                     [   NoSymbol,   NoSymbol,   enfilledcircbullet,            U25e6,
+                                                6,      U2076,                U2086,            U2192 ] };
+    key <AD06> {                     [   NoSymbol,   NoSymbol,                U00b7,         NoSymbol,
+                                                5,      U2075,                U2085,            U2194 ] };
+    key <AD07> {                     [   NoSymbol,   NoSymbol,                UF8FD,            UF8FE,
+                                         NoSymbol,   NoSymbol,                UF8FD,            UF8FE ] };
+    key <AD08> {                     [   NoSymbol,   NoSymbol,  leftdoublequotemark,    guillemotleft,
+                                         NoSymbol,   NoSymbol,  leftdoublequotemark,    guillemotleft ] };
+    key <AD09> {                     [   NoSymbol,   NoSymbol, rightdoublequotemark,   guillemotright,
+                                         NoSymbol,   NoSymbol, rightdoublequotemark,   guillemotright ] };
+    key <AD10> {                     [   NoSymbol,   NoSymbol,  leftsinglequotemark,            U2039,
+                                         NoSymbol,   NoSymbol,  leftsinglequotemark,            U2039 ] };
+    key <AD11> {                     [   NoSymbol,   NoSymbol, rightsinglequotemark,            U203A,
+                                         NoSymbol,   NoSymbol, rightsinglequotemark,            U203A ] };
+    key <AD12> { type="EIGHT_LEVEL", [ dead_tilde, dead_grave,    dead_voiced_sound, dead_belowmacron,
+                                       dead_tilde, dead_grave,    dead_voiced_sound, dead_belowmacron ] };
 
     //
     // Linha central
     //
-    key <AC01> { type="EIGHT_LEVEL", [ apostrophe, at, U030D, U030E, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC02> { [ NoSymbol, NoSymbol, ibreve, Ibreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC03> { [ NoSymbol, NoSymbol, egrave, Egrave, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC04> { [ NoSymbol, NoSymbol, agrave, Agrave, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC05> { [ NoSymbol, NoSymbol, ograve, Ograve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC06> { [ NoSymbol, NoSymbol, ubreve, Ubreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC07> { [ NoSymbol, NoSymbol, mu, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <BKSL> { type="EIGHT_LEVEL", [ dead_acute, dead_circumflex, dead_diaeresis, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC01> { type="EIGHT_LEVEL", [ apostrophe,              at,      masculine, ordfeminine,
+                                       apostrophe,              at,      masculine, ordfeminine ] };
+    key <AC02> {                     [   NoSymbol,        NoSymbol,         ibreve,      Ibreve,
+                                                4,           U2074,          U2084,       U2190 ] };
+    key <AC03> {                     [   NoSymbol,        NoSymbol,         egrave,      Egrave,
+                                                3,           U00B3,          U2083,       U2198 ] };
+    key <AC04> {                     [   NoSymbol,        NoSymbol,         agrave,      Agrave,
+                                                2,           U00B2,          U2082,       U2193 ] };
+    key <AC05> {                     [   NoSymbol,        NoSymbol,         ograve,      Ograve,
+                                                1,           U00B9,          U2081,       U2199 ] };
+    key <AC06> {                     [   NoSymbol,        NoSymbol,         ubreve,      Ubreve,
+                                                0,           U2070,          U2080,       U2195 ] };
+    key <AC07> {                     [   NoSymbol,        NoSymbol,             mu,  dead_greek,
+                                         NoSymbol,        NoSymbol,             mu,  dead_greek ] };
+    key <AC08> {                     [   NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol,
+                                         NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol ] };
+    key <AC09> {                     [   NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol,
+                                         NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol ] };
+    key <AC10> {                     [   NoSymbol,        NoSymbol,          UF8CE,    NoSymbol,
+                                         NoSymbol,        NoSymbol,          UF8CE,    NoSymbol ] };
+    key <AC11> {                     [   NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol,
+                                         NoSymbol,        NoSymbol,       NoSymbol,    NoSymbol ] };
+    key <BKSL> { type="EIGHT_LEVEL", [ dead_acute, dead_circumflex, dead_diaeresis,    NoSymbol,
+                                       dead_acute, dead_circumflex, dead_diaeresis,    NoSymbol ] };
 
     //
     // Linha inferior
     //
     // key <AB11> { type="EIGHT_LEVEL", [ backslash, bar, dead_hook, dead_horn, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <LSGT> { type="EIGHT_LEVEL", [ dollar, UF8CE, dead_currency, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB01> { type="EIGHT_LEVEL", [ rightsinglequotemark, U2010, dead_stroke, dead_doubleacute, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB02> { [ NoSymbol, NoSymbol, U1EF9, U1EF8, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB03> { [ NoSymbol, NoSymbol, dead_abovedot, dead_belowdot, NoSymbol, NoSymbol, NoSymbol, NoSymbol  ] };
-    key <AB04> { [ NoSymbol, NoSymbol, dead_diaeresis, dead_belowdiaeresis, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB05> { [ NoSymbol, NoSymbol, dead_abovering, dead_belowring, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB06> { [ NoSymbol, NoSymbol, dead_macron, dead_belowmacron, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB07> { [ NoSymbol, NoSymbol, dead_breve, dead_invertedbreve, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, dead_caron, dead_belowcircumflex, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB09> { [ NoSymbol, NoSymbol, dead_ogonek, dead_belowtilde, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB10> { [ NoSymbol, NoSymbol, dead_cedilla, dead_abovereversedcomma, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB11> { [ NoSymbol, NoSymbol, dead_belowcomma, dead_abovecomma, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <LSGT> { type="EIGHT_LEVEL", [  leftdoublequotemark, rightdoublequotemark, leftsinglequotemark,    rightsinglequotemark,
+                                        leftdoublequotemark, rightdoublequotemark, leftsinglequotemark,    rightsinglequotemark ] };
+    key <AB01> { type="EIGHT_LEVEL", [ rightsinglequotemark,                U2010,         dead_stroke,        dead_doubleacute,
+                                       rightsinglequotemark,                U2010,         dead_stroke,        dead_doubleacute ] };
+    key <AB02> {                     [             NoSymbol,             NoSymbol,               U1EF9,                   U1EF8,
+                                                      UF8CC,             NoSymbol,               U1EF9,                   U1EF8 ] };
+    key <AB03> {                     [             NoSymbol,             NoSymbol,       dead_abovedot,           dead_belowdot,
+                                                      UF8CD,             NoSymbol,       dead_abovedot,           dead_belowdot ] };
+    key <AB04> {                     [             NoSymbol,             NoSymbol,      dead_diaeresis,     dead_belowdiaeresis,
+                                                     period,                colon,              endash,                   U2010 ] };
+    key <AB05> {                     [             NoSymbol,             NoSymbol,      dead_abovering,          dead_belowring,
+                                                      comma,            semicolon,              emdash,                   U2011 ] };
+    key <AB06> {                     [             NoSymbol,             NoSymbol,         dead_macron,        dead_belowmacron,
+                                                   NoSymbol,             NoSymbol,         dead_macron,        dead_belowmacron ] };
+    key <AB07> {                     [             NoSymbol,             NoSymbol,          dead_breve,      dead_invertedbreve,
+                                                   NoSymbol,             NoSymbol,          dead_breve,      dead_invertedbreve ] };
+    key <AB08> {                     [             NoSymbol,             NoSymbol,          dead_caron,    dead_belowcircumflex,
+                                                   NoSymbol,             NoSymbol,          dead_caron,    dead_belowcircumflex ] };
+    key <AB09> {                     [             NoSymbol,             NoSymbol,         dead_ogonek,         dead_belowtilde,
+                                                   NoSymbol,             NoSymbol,         dead_ogonek,         dead_belowtilde ] };
+    key <AB10> {                     [             NoSymbol,             NoSymbol,        dead_cedilla, dead_abovereversedcomma,
+                                                   NoSymbol,             NoSymbol,        dead_cedilla, dead_abovereversedcomma ] };
+    key <AB11> {                     [             NoSymbol,             NoSymbol,     dead_belowcomma,         dead_abovecomma,
+                                                   NoSymbol,             NoSymbol,     dead_belowcomma,         dead_abovecomma ] };
 
 //
 // Lista dos símbolos possíveis:

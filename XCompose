@@ -427,36 +427,40 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 #
 # Díjitus Sezimays
 #
-<dead_voiced_sound> <0> : "󱨀"
-<dead_voiced_sound> <1> : "󱨁"
-<dead_voiced_sound> <2> : "󱨂"
-<dead_voiced_sound> <3> : "󱨃"
-<dead_voiced_sound> <4> : "󱨄"
-<dead_voiced_sound> <5> : "󱨅"
-<dead_voiced_sound> <6> : "󱨆"
-<dead_voiced_sound> <7> : "󱨇"
-<dead_voiced_sound> <8> : "󱨈"
-<dead_voiced_sound> <9> : "󱨉"
-<dead_voiced_sound> <parenleft> : "󱨊"
-<dead_voiced_sound> <parenright> : "󱨋"
+<dead_voiced_sound> <0> : "󱸀"
+<dead_voiced_sound> <1> : "󱸁"
+<dead_voiced_sound> <2> : "󱸂"
+<dead_voiced_sound> <3> : "󱸃"
+<dead_voiced_sound> <4> : "󱸄"
+<dead_voiced_sound> <5> : "󱸅"
+<dead_voiced_sound> <6> : "󱸆"
+<dead_voiced_sound> <7> : "󱸇"
+<dead_voiced_sound> <8> : "󱸈"
+<dead_voiced_sound> <9> : "󱸉"
+<dead_voiced_sound> <parenleft> : "󱸊"
+<dead_voiced_sound> <parenright> : "󱸋"
 <dead_voiced_sound> <period> : "‍" U200D  # Zero-width word joiner
-<UF8D1>                  : "󱨀󱨀"
-<UF8D0>                  : "󱨀󱨀󱨀"
-<UF8CF>                  : "󱨀󱨀󱨀󱨀"
+<UF8D1>                  : "󱸀󱸀"
+<UF8D0>                  : "󱸀󱸀󱸀"
+<UF8CF>                  : "󱸀󱸀󱸀󱸀"
 <dead_voiced_sound> <less> : "↊" # U218A - dígito duodecimal 10
 <dead_voiced_sound> <greater> : "↋" # U218B - dígito duodecimal 11
 <dead_voiced_sound> <space> : " " # U2007 - espaço "numérico"
 
 <dead_voiced_sound> <braceleft> : "↊" # U218A - dígito duodecimal 10
 <dead_voiced_sound> <numbersign> : "↋" # U218B - dígito duodecimal 11
-<dead_voiced_sound> <percent> : "󱨊"
-<dead_voiced_sound> <bar> : "󱨋"
+<dead_voiced_sound> <percent> : "󱸊"
+<dead_voiced_sound> <bar> : "󱸋"
 
 
 <UF8CD>: "00"
 <UF8CC>: "000"
 <UF8CB>: "0000"
 <UF8CA>: ",00"
+<UF8C9>: "󱸀󱸀"
+<UF8C8>: "󱸀󱸀󱸀"
+<UF8C7>: ",,"
+<UF8C6>: ".."
 
 <dead_abovedot> <0> : "0̇"
 <dead_abovedot> <1> : "1̇"
@@ -493,6 +497,41 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_breve> <4> : "4̆"
 <dead_breve> <5> : "5̆"
 
+<dead_abovedot> <UF1E00> : "󱸆"
+<dead_abovedot> <UF1E01> : "󱸇"
+<dead_abovedot> <UF1E02> : "󱸈"
+<dead_abovedot> <UF1E03> : "󱸉"
+<dead_abovedot> <UF1E04> : "󱸊"
+<dead_abovedot> <UF1E05> : "󱸋"
+
+<dead_diaeresis> <UF1E00> : "󱸌"
+<dead_diaeresis> <UF1E01> : "󱸍"
+<dead_diaeresis> <UF1E02> : "󱸎"
+<dead_diaeresis> <UF1E03> : "󱸏"
+<dead_diaeresis> <UF1E04> : "󱸐"
+<dead_diaeresis> <UF1E05> : "󱸑"
+
+<dead_abovering> <UF1E00> : "󱸒"
+<dead_abovering> <UF1E01> : "󱸓"
+<dead_abovering> <UF1E02> : "󱸔"
+<dead_abovering> <UF1E03> : "󱸕"
+<dead_abovering> <UF1E04> : "󱸖"
+<dead_abovering> <UF1E05> : "󱸗"
+
+<dead_macron> <UF1E00> : "󱸘"
+<dead_macron> <UF1E01> : "󱸙"
+<dead_macron> <UF1E02> : "󱸚"
+<dead_macron> <UF1E03> : "󱸛"
+<dead_macron> <UF1E04> : "󱸜"
+<dead_macron> <UF1E05> : "󱸝"
+
+<dead_breve> <UF1E00> : "󱸞"
+<dead_breve> <UF1E01> : "󱸟"
+<dead_breve> <UF1E02> : "󱸠"
+<dead_breve> <UF1E03> : "󱸡"
+<dead_breve> <UF1E04> : "󱸢"
+<dead_breve> <UF1E05> : "󱸣"
+
 #
 # Asentus konbinantis
 #
@@ -509,3 +548,22 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 #<dead_abovereversedcomma> <U00A0>: "̒"  # U0312 vírgula inversa acima - combinante
 <dead_abovereversedcomma> <U00A0>: "̔"  # U0314 vírgula inversa acima - combinante
 <dead_abovecomma>         <U00A0>: "̓"  # U0313 vírgula acima - combinante
+
+#
+# Sinays matemátikus
+#
+<dead_tilde> <U003D> : "≅"
+
+<dead_voiced_sound> <U0073>: "󱺈"
+<dead_voiced_sound> <U0072>: "󱺊"
+<dead_voiced_sound> <U006E>: "󱺉"
+<dead_voiced_sound> <U0053>: "󱹸"
+<dead_voiced_sound> <U0052>: "󱹺"
+<dead_voiced_sound> <U004E>: "󱹹"
+
+<dead_voiced_sound> <U0067>: "󱺋"
+<dead_voiced_sound> <U0066>: "󱺍"
+<dead_voiced_sound> <U007A>: "󱺌"
+<dead_voiced_sound> <U0047>: "󱹻"
+<dead_voiced_sound> <U0046>: "󱹽"
+<dead_voiced_sound> <U005A>: "󱹼"

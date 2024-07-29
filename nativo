@@ -23,6 +23,11 @@ xkb_symbols "direita" {
     include "nativo_base(nativo_base)"
 };
 
+partial alphanumeric_keys
+xkb_symbols "kanata" {
+    include "nativo_kanata(nativo_kanata)"
+};
+
 //
 //
 // Subleiautes por idioma - alfabeto latino normal
