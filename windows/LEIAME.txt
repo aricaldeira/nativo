@@ -1,0 +1,6 @@
+
+Estes arquivos foram criados entre 2006 e 2009, quando eu ainda usava Windows
+
+Os arquivos .klc são fontes do Microsoft Keyboard Layout Creator
+
+Os .msi são a instalação dos drivers
